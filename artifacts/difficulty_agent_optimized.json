@@ -1,0 +1,96 @@
+{
+  "judge.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "stem": "Farida packed a light sweater before leaving for the museum trip.\n\nWhat does this suggest about Farida?",
+        "options": "[\"She expected the weather or indoor temperature to be cool.\", \"She planned to buy clothes during the trip.\", \"She had forgotten where the museum was.\", \"She wanted to lend the sweater to the guide.\"]",
+        "correct_answer": "She expected the weather or indoor temperature to be cool.",
+        "explanation": "Packing a light sweater suggests she was preparing for cool conditions, either outside or inside the museum.",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "reasoning": "The stem of the question provides a simple scenario where Farida is packing a sweater, which is a common, everyday action. The options require the reader to infer Farida's intention based on this action. This inference is a key skill at the B1 level, where learners can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. The difficulty is medium as it requires some deduction but is not overly complex. The vocabulary and grammar are also appropriate for B1 level.",
+        "output_json": "{\n  \"predicted_cefr\": \"B1\",\n  \"predicted_difficulty\": \"Medium\",\n  \"vocabulary_level\": \"B1\",\n  \"grammar_complexity\": \"B1\",\n  \"reasoning_load\": \"Low\",\n  \"distractor_difficulty\": \"Medium\",\n  \"alignment\": \"High\",\n  \"justification\": \"The question requires simple inference based on a common action, which is appropriate for B1 level learners.\",\n  \"revision_feedback\": \"Consider adding more distractors to increase the challenge.\"\n}"
+      },
+      {
+        "augmented": true,
+        "stem": "The health camp starts at 10 a.m. on the ground floor.\n\nWhich statement is correct?",
+        "options": "[\"It starts at night on the ground floor\", \"It starts in the evening on the ground floor\", \"It starts in the morning on the ground floor\", \"It is cancelled\"]",
+        "correct_answer": "It starts in the morning on the ground floor",
+        "explanation": "10 a.m. is in the morning, so the correct statement is that the camp starts in the morning on the ground floor.",
+        "target_cefr": "A2",
+        "target_difficulty": "Easy",
+        "reasoning": "The question tests basic understanding of time expressions and simple sentences, which is appropriate for an A2 CEFR level. The vocabulary used is simple and common, and the grammar is straightforward. The distractors are also simple and do not introduce additional complexity. Therefore, the question aligns well with the intended CEFR level and difficulty.",
+        "output_json": "{\n  \"predicted_cefr\": \"A2\",\n  \"predicted_difficulty\": \"Easy\",\n  \"vocabulary_level\": \"Simple\",\n  \"grammar_complexity\": \"Simple\",\n  \"reasoning_load\": \"Low\",\n  \"distractor_difficulty\": \"Easy\",\n  \"alignment\": \"Good\",\n  \"justification\": \"The question tests basic understanding of time expressions and simple sentences, using simple vocabulary and grammar, and the distractors do not introduce additional complexity.\",\n  \"revision_feedback\": \"None\"\n}"
+      },
+      {
+        "augmented": true,
+        "stem": "The instructions were explicit.\n\nWhat does 'explicit' mean?",
+        "options": "[\"Vague and unclear\", \"Clearly stated\", \"Very long\", \"Confusing\"]",
+        "correct_answer": "Clearly stated",
+        "explanation": "'Explicit' means clearly expressed or clearly stated, which is the opposite of vague.",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "reasoning": "The stem of the question asks for the meaning of the word 'explicit', which is a B1 level vocabulary word according to the CEFR. The options provided are all plausible, but only one is correct, making this a medium difficulty question. The reasoning load is low as the question only requires understanding of a single word, and the distractor difficulty is also low as the incorrect options are not very similar to the correct answer. The alignment between the stem and the correct answer is strong as the stem directly asks for the meaning of the word used in the correct answer.",
+        "output_json": "{\n  \"predicted_cefr\": \"B1\",\n  \"predicted_difficulty\": \"Medium\",\n  \"vocabulary_level\": \"B1\",\n  \"grammar_complexity\": \"N/A\",\n  \"reasoning_load\": \"Low\",\n  \"distractor_difficulty\": \"Low\",\n  \"alignment\": \"Strong\",\n  \"justification\": \"The question tests knowledge of a single B1 level vocabulary word, with plausible but incorrect options provided.\",\n  \"revision_feedback\": \"Consider adding more distractor options to increase the difficulty of the question.\"\n}"
+      },
+      {
+        "stem": "My name is Maria, and I love spending time in the park near my house. Every morning, I go there for a walk before school. On weekends, I take my dog, Max, and we play together.\n\nWhere does Maria go with her dog on weekends?",
+        "options": "[\"She sleeps at home.\", \"She meets her teacher.\", \"She goes to the park with her dog\", \"She studies at the park\"]",
+        "correct_answer": "She goes to the park with her dog",
+        "explanation": "Correct answer: She feels settled and happy. Olivia now feels comfortable in village life... (explanation is about a completely different question - mismatched explanation is a critical flaw)",
+        "target_cefr": "A2",
+        "target_difficulty": "Easy",
+        "expected_predicted_cefr": "A2",
+        "expected_overall_decision": "Fail"
+      }
+    ],
+    "signature": {
+      "instructions": "Judge whether the MCQ matches the intended CEFR level and derived difficulty.\n\nReturn valid JSON with keys:\npredicted_cefr, predicted_difficulty, vocabulary_level, grammar_complexity,\nreasoning_load, distractor_difficulty, alignment, justification, revision_feedback.",
+      "fields": [
+        {
+          "prefix": "Stem:",
+          "description": "${stem}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Correct Answer:",
+          "description": "${correct_answer}"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "${explanation}"
+        },
+        {
+          "prefix": "Target Cefr:",
+          "description": "${target_cefr}"
+        },
+        {
+          "prefix": "Target Difficulty:",
+          "description": "${target_difficulty}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Output Json:",
+          "description": "${output_json}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

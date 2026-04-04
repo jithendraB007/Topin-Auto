@@ -1,0 +1,78 @@
+{
+  "subject": "English",
+  "syllabus_unit": "Unit 3",
+  "topic": "Present Tense",
+  "subtopics": [
+    "Simple Present",
+    "Present Continuous",
+    "Adverbs of Frequency",
+    "Subject-Verb Agreement"
+  ],
+  "question_type": "MCQ",
+  "total_questions": 15,
+  "cefr_distribution": {
+    "A1": 3,
+    "A2": 4,
+    "B1": 4,
+    "B2": 4
+  },
+  "constraints": {
+    "options_per_question": 4,
+    "single_correct_answer": true,
+    "include_explanation": true,
+    "exam_acceptable_language": true,
+    "avoid_ambiguity": true,
+    "language_variant": "British English",
+    "no_duplicate_questions": true
+  },
+  "sample_questions": [
+    {
+      "stem": "Choose the sentence that uses the simple present tense correctly.",
+      "options": [
+        "She go to school every day.",
+        "She goes to school every day.",
+        "She going to school every day.",
+        "She gone to school every day."
+      ],
+      "correct_answer": "She goes to school every day.",
+      "explanation": "Third-person singular subjects (she/he/it) require adding -s or -es to the base verb in the simple present tense.",
+      "target_cefr": "A1"
+    },
+    {
+      "stem": "Spot the error in the following sentence: 'They is playing football in the garden right now.'",
+      "options": [
+        "They → It",
+        "is → are",
+        "playing → play",
+        "in the garden → at the garden"
+      ],
+      "correct_answer": "is → are",
+      "explanation": "With plural subjects such as 'they', the auxiliary verb in the present continuous must be 'are', not 'is'.",
+      "target_cefr": "A2"
+    },
+    {
+      "stem": "Read the passage and answer the question.\n\nMaria works as a nurse. She _______ starts her shift at 7 a.m., but today she is starting at 9 a.m. because her supervisor changed the rota.\n\nWhich word best completes the blank to show her usual habit?",
+      "options": [
+        "never",
+        "rarely",
+        "usually",
+        "hardly ever"
+      ],
+      "correct_answer": "usually",
+      "explanation": "'Usually' signals a habitual action in the simple present. The contrast with 'today' (present continuous for a temporary change) confirms that the blank describes her regular routine.",
+      "target_cefr": "B1"
+    },
+    {
+      "stem": "Which of the following sentences demonstrates correct subject-verb agreement in a complex noun phrase?",
+      "options": [
+        "The quality of the reports are improving steadily.",
+        "The quality of the reports is improving steadily.",
+        "The quality of the reports have improved steadily.",
+        "The quality of the reports were improving steadily."
+      ],
+      "correct_answer": "The quality of the reports is improving steadily.",
+      "explanation": "The head noun of the subject phrase is 'quality' (singular), so the verb must be singular ('is improving'). The prepositional phrase 'of the reports' does not change the number of the subject.",
+      "target_cefr": "B2"
+    }
+  ]
+}

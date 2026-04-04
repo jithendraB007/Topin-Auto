@@ -1,0 +1,97 @@
+description: MCQ pipeline end-to-end eval
+
+providers:
+  - file://provider.py
+
+prompts:
+  - "Run the MCQ generation pipeline and return JSON output."
+
+defaultTest:
+  assert:
+    - type: contains-json
+
+tests:
+  # --- Structural checks ---
+  - description: accepted item count should be greater than zero
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          const accepted = arr.filter(x => x.accepted).length;
+          return accepted > 0;
+
+  - description: every generated item should have exactly 4 options
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          return arr.every(x => x.item.options.length === 4);
+
+  - description: every correct answer should exist in options
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          return arr.every(x => x.item.options.includes(x.item.correct_answer));
+
+  - description: every item should have a non-empty explanation
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          return arr.every(x => x.item.explanation && x.item.explanation.trim().length > 0);
+
+  - description: every item should have a valid CEFR level
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          const valid = ["A1","A2","B1","B2","C1","C2"];
+          return arr.every(x => valid.includes(x.item.target_cefr));
+
+  - description: no duplicate question stems should appear in output
+    assert:
+      - type: javascript
+        value: |
+          const arr = JSON.parse(output);
+          const stems = arr.map(x => x.item.stem.trim().toLowerCase());
+          return new Set(stems).size === stems.length;
+
+  # --- LLM-as-judge checks ---
+  - description: LLM judge - explanations should match the correct answer
+    assert:
+      - type: llm-rubric
+        value: |
+          Each MCQ item in the JSON output must have an explanation that clearly
+          supports only the correct answer and does not contradict or describe a
+          different question. Flag any item where the explanation mentions different
+          characters, scenarios, or facts than those in the stem.
+
+  - description: LLM judge - distractors should be plausible but clearly wrong
+    assert:
+      - type: llm-rubric
+        value: |
+          For each MCQ item, the incorrect options (distractors) should be plausible
+          enough to challenge the learner but clearly distinguishable from the correct
+          answer. Flag any item where distractors are obviously absurd, unrelated to
+          the topic, or where one distractor is a non-option (e.g. a statement about
+          timing instead of an activity choice).
+
+  - description: LLM judge - correct answer should match the task description
+    assert:
+      - type: llm-rubric
+        value: |
+          For each MCQ item, the marked correct answer must genuinely be the best
+          answer given the question stem. Flag any item where a different option is
+          clearly more appropriate than the marked correct answer based on the
+          information provided in the stem or passage.
+
+  - description: LLM judge - language should be appropriate for target CEFR level
+    assert:
+      - type: llm-rubric
+        value: |
+          Each MCQ item has a target_cefr field. Check that the vocabulary,
+          grammar complexity, and sentence length in the stem and options are
+          appropriate for that CEFR level (A1-A2 = simple/everyday, B1-B2 =
+          intermediate, C1-C2 = advanced/academic). Flag items where the language
+          is significantly above or below the target level.
