@@ -1,0 +1,32 @@
+{
+  "judge.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Judge whether the MCQ matches the intended CEFR level.\n\nAnalyse the question along four dimensions:\n  1. vocabulary_level      — A1=basic (go, eat), B1=everyday-formal (routine, consistent),\n                             C1=academic (discrepancy, implication)\n  2. grammar_complexity    — A1=simple present, B1=mixed tenses/conditionals,\n                             C1=inversion/embedded clauses\n  3. reasoning_load        — Low=recall/recognition (A1-A2), Medium=inference (B1-B2),\n                             High=multi-step logic (C1-C2)\n  4. distractor_difficulty — Low=clearly wrong options, High=semantically subtle options\n\nMap the combination of all four dimensions to a CEFR band:\n  A1/A2 → Easy   |   B1/B2 → Medium   |   C1/C2 → Hard\n\nReturn valid JSON with ONLY these two keys:\n  predicted_cefr       — one of: A1, A2, B1, B2, C1, C2\n  predicted_difficulty — one of: Easy, Medium, Hard\n\nDo NOT include any other keys in the JSON output.",
+      "fields": [
+        {
+          "prefix": "Questions:",
+          "description": "List of MCQ questions to be classified"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Output:",
+          "description": "Classification results for all questions"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

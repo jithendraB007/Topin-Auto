@@ -1,0 +1,4 @@
+{
+    "reasoning": "The vocabulary level is B2 as it includes academic vocabulary like \"converted\" and \"natural\". The grammar complexity is B2 as it involves identifying the correct sentence that can form a passive voice, requiring understanding of passive voice structure. The reasoning load is medium as it involves inference and understanding of grammar rules. The distractor difficulty is medium as some options might seem correct but cannot be passivized. Therefore, the predicted CEFR is B2 and the predicted difficulty is Medium.",
+    "output_json": "{\"predicted_cefr\": \"B2\", \"predicted_difficulty\": \"Medium\"}"
+}

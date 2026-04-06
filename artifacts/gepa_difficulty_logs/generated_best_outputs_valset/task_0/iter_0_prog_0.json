@@ -1,0 +1,4 @@
+{
+    "reasoning": "- **Vocabulary Level**: B1 (everyday-formal: \"calmly\", \"on time\")\n- **Grammar Complexity**: B1 (passive voice: \"was given\")\n- **Reasoning Load**: Medium (inference: understanding the purpose of setting the alarm earlier)\n- **Distractor Difficulty**: Low (options are clearly distinct from the correct answer)",
+    "output_json": "{\"predicted_cefr\": \"B1\", \"predicted_difficulty\": \"Medium\"}"
+}
