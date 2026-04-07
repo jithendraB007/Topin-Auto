@@ -1,0 +1,482 @@
+description: RubricJudge eval — overall_decision per question
+providers:
+- id: file://rubric_eval_provider.py
+prompts:
+- '{{question_json}}'
+tests:
+- description: Q1 | cefr=A1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q1", "stem": "Read the sentence carefully and
+      answer the question.\n\nThe girl is reading beside the window.\n\nWhere is the
+      girl reading?", "options": ["Beside the window", "In the garden", "Near the
+      staircase", "Under the table"], "correct_answer": "Beside the window", "explanation":
+      "Correct answer: Beside the window\n\nExplanation: The sentence clearly states
+      where the girl is reading.\n\nExplanation of each option:\nBeside the window
+      is correct because it directly matches the statement.\nIn the garden is incorrect
+      because no outdoor location is mentioned.\nNear the staircase is incorrect because
+      that place is not referred to.\nUnder the table is incorrect because the sentence
+      says she is beside the window.", "target_cefr": "A1", "target_difficulty": "Easy",
+      "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q2 | cefr=A2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q2", "stem": "Choose the option that is NOT
+      true according to the statement.\n\nThe help desk does not answer calls after
+      8 p.m.\n\nWhich option is NOT true?", "options": ["The help desk stops answering
+      after 8 p.m.", "Calls are not answered after 8 p.m.", "The help desk answers
+      calls at 9 p.m.", "The help desk is unavailable after 8 p.m."], "correct_answer":
+      "The help desk answers calls at 9 p.m.", "explanation": "Correct answer: The
+      help desk answers calls at 9 p.m.\n\nExplanation: The statement says calls are
+      not answered after 8 p.m., so answering at 9 p.m. is not possible.\n\nExplanation
+      of each option:\nThe help desk stops answering after 8 p.m. is incorrect because
+      it matches the statement.\nCalls are not answered after 8 p.m. is incorrect
+      because it repeats the same meaning.\nThe help desk answers calls at 9 p.m.
+      is correct because it contradicts the statement.\nThe help desk is unavailable
+      after 8 p.m. is incorrect because it is consistent with the information given.",
+      "target_cefr": "A2", "target_difficulty": "Easy", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q3 | cefr=B1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q3", "stem": "Read the statement and identify
+      the reason.\n\nLeena carried a torch because the corridor lights had failed.\n\nWhy
+      did Leena carry a torch?", "options": ["The corridor lights had failed", "She
+      was looking for her keys", "She wanted to go camping", "The torch was new"],
+      "correct_answer": "The corridor lights had failed", "explanation": "Correct
+      answer: The corridor lights had failed\n\nExplanation: The sentence directly
+      provides the reason for carrying the torch.\n\nExplanation of each option:\nThe
+      corridor lights had failed is correct because it clearly explains the action.\nShe
+      was looking for her keys is incorrect because keys are not mentioned.\nShe wanted
+      to go camping is incorrect because the context is a corridor, not a trip.\nThe
+      torch was new is incorrect because novelty is not given as a reason.", "target_cefr":
+      "B1", "target_difficulty": "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q4 | cefr=B2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q4", "stem": "What can be inferred from the
+      statement?\n\nAlthough the train was delayed, the team still reached the stadium
+      before the match began.", "options": ["The team adjusted well to the delay",
+      "The match had already ended", "The stadium was closed", "The train arrived
+      early"], "correct_answer": "The team adjusted well to the delay", "explanation":
+      "Correct answer: The team adjusted well to the delay\n\nExplanation: The sentence
+      shows that despite the delay, the team still arrived in time, which suggests
+      effective adjustment.\n\nExplanation of each option:\nThe team adjusted well
+      to the delay is correct because they overcame the problem successfully.\nThe
+      match had already ended is incorrect because they arrived before it began.\nThe
+      stadium was closed is incorrect because that information is not given.\nThe
+      train arrived early is incorrect because the train was delayed.", "target_cefr":
+      "B2", "target_difficulty": "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q5 | cefr=C1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q5", "stem": "Choose the best interpretation.\n\nShe
+      insists that deadlines matter, but she regularly submits her own reports late.",
+      "options": ["Her behaviour conflicts with her stated principle", "She always
+      meets her deadlines", "She does not believe deadlines are important", "Her reports
+      are never required"], "correct_answer": "Her behaviour conflicts with her stated
+      principle", "explanation": "Correct answer: Her behaviour conflicts with her
+      stated principle\n\nExplanation: The sentence contrasts what she says with what
+      she does.\n\nExplanation of each option:\nHer behaviour conflicts with her stated
+      principle is correct because her actions do not match her claim.\nShe always
+      meets her deadlines is incorrect because she submits reports late.\nShe does
+      not believe deadlines are important is incorrect because she says they matter.\nHer
+      reports are never required is incorrect because submission is clearly expected.",
+      "target_cefr": "C1", "target_difficulty": "Hard", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q6 | cefr=C2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q6", "stem": "Choose the most accurate evaluation
+      based on the statement.\n\nThe agency launched the campaign to restore public
+      trust, but its misleading statistics were exposed within days.", "options":
+      ["The campaign undermined its own objective", "The campaign immediately restored
+      trust", "The statistics were transparent and accurate", "Public trust had never
+      declined"], "correct_answer": "The campaign undermined its own objective", "explanation":
+      "Correct answer: The campaign undermined its own objective\n\nExplanation: A
+      campaign intended to restore trust instead damaged credibility because misleading
+      statistics were exposed.\n\nExplanation of each option:\nThe campaign undermined
+      its own objective is correct because the action had the opposite effect of what
+      was intended.\nThe campaign immediately restored trust is incorrect because
+      the misleading statistics harmed trust.\nThe statistics were transparent and
+      accurate is incorrect because they were exposed as misleading.\nPublic trust
+      had never declined is incorrect because restoring trust implies there was already
+      a problem.", "target_cefr": "C2", "target_difficulty": "Hard", "language_variant":
+      "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q7 | cefr=A1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q7", "stem": "Read the sentence carefully and
+      answer the question.\n\nThe apples are kept in the wooden basket.\n\nWhere are
+      the apples?", "options": ["In the wooden basket", "On the shelf", "Inside the
+      fridge", "Under the chair"], "correct_answer": "In the wooden basket", "explanation":
+      "Correct answer: In the wooden basket\n\nExplanation: The sentence directly
+      states where the apples are kept.\n\nExplanation of each option:\nIn the wooden
+      basket is correct because it matches the information given.\nOn the shelf is
+      incorrect because that location is not mentioned.\nInside the fridge is incorrect
+      because no fridge is referred to.\nUnder the chair is incorrect because the
+      apples are said to be in a basket.", "target_cefr": "A1", "target_difficulty":
+      "Easy", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q8 | cefr=A2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q8", "stem": "Based on the information given,
+      choose the option that is NOT true.\n\nThe workshop accepts registrations until
+      Friday only.\n\nWhich option is NOT true?", "options": ["Registration closes
+      on Friday", "People may register on Saturday", "The final day for registration
+      is Friday", "Registrations are accepted up to Friday"], "correct_answer": "People
+      may register on Saturday", "explanation": "Correct answer: People may register
+      on Saturday\n\nExplanation: If registrations are accepted only until Friday,
+      then Saturday registration is not allowed.\n\nExplanation of each option:\nRegistration
+      closes on Friday is incorrect because it is true according to the statement.\nPeople
+      may register on Saturday is correct because it contradicts the information given.\nThe
+      final day for registration is Friday is incorrect because it restates the same
+      idea.\nRegistrations are accepted up to Friday is incorrect because it matches
+      the statement.", "target_cefr": "A2", "target_difficulty": "Easy", "language_variant":
+      "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q9 | cefr=B1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q9", "stem": "Read the statement and answer
+      the question.\n\nNora took notes quickly because the lecturer moved through
+      the slides at a fast pace.\n\nWhy did Nora take notes quickly?", "options":
+      ["The lecturer moved through the slides at a fast pace", "She wanted to leave
+      early", "Her pen was running out", "The lecture was very short"], "correct_answer":
+      "The lecturer moved through the slides at a fast pace", "explanation": "Correct
+      answer: The lecturer moved through the slides at a fast pace\n\nExplanation:
+      The sentence directly explains why Nora wrote quickly.\n\nExplanation of each
+      option:\nThe lecturer moved through the slides at a fast pace is correct because
+      it is the stated reason.\nShe wanted to leave early is incorrect because no
+      such intention is mentioned.\nHer pen was running out is incorrect because pen
+      ink is not discussed.\nThe lecture was very short is incorrect because speed,
+      not total length, is given as the reason.", "target_cefr": "B1", "target_difficulty":
+      "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q10 | cefr=B2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q10", "stem": "What can be inferred from the
+      statement?\n\nEven without a microphone, the speaker was heard clearly at the
+      back of the hall.", "options": ["The speaker projected their voice effectively",
+      "The hall was completely empty", "The audience could not hear the talk", "A
+      sound technician increased the volume"], "correct_answer": "The speaker projected
+      their voice effectively", "explanation": "Correct answer: The speaker projected
+      their voice effectively\n\nExplanation: Being heard clearly without a microphone
+      suggests strong vocal projection.\n\nExplanation of each option:\nThe speaker
+      projected their voice effectively is correct because it best explains the result.\nThe
+      hall was completely empty is incorrect because audience size is not mentioned.\nThe
+      audience could not hear the talk is incorrect because the speaker was heard
+      clearly.\nA sound technician increased the volume is incorrect because no microphone
+      was being used.", "target_cefr": "B2", "target_difficulty": "Medium", "language_variant":
+      "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q11 | cefr=C1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q11", "stem": "Select the option that best describes
+      the situation.\n\nHe claims to support transparent decision-making, yet he avoids
+      sharing the criteria behind his own choices.", "options": ["His commitment to
+      transparency appears selective", "He explains all decisions in detail", "He
+      has no influence over decisions", "His choices are based only on fairness"],
+      "correct_answer": "His commitment to transparency appears selective", "explanation":
+      "Correct answer: His commitment to transparency appears selective\n\nExplanation:
+      The statement suggests that he supports transparency in theory but does not
+      practise it consistently.\n\nExplanation of each option:\nHis commitment to
+      transparency appears selective is correct because his actions do not fully match
+      his claim.\nHe explains all decisions in detail is incorrect because he avoids
+      sharing criteria.\nHe has no influence over decisions is incorrect because he
+      makes choices himself.\nHis choices are based only on fairness is incorrect
+      because fairness is not the main issue described.", "target_cefr": "C1", "target_difficulty":
+      "Hard", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q12 | cefr=C2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q12", "stem": "Choose the most accurate evaluation.\n\nThe
+      report praised efficiency gains, but it ignored the extra unpaid hours employees
+      were required to work to achieve them.", "options": ["The report presents a
+      misleadingly incomplete picture", "The efficiency gains benefited everyone equally",
+      "Employees volunteered extra time willingly", "The unpaid hours were unrelated
+      to the gains"], "correct_answer": "The report presents a misleadingly incomplete
+      picture", "explanation": "Correct answer: The report presents a misleadingly
+      incomplete picture\n\nExplanation: By praising gains while omitting the unpaid
+      labour behind them, the report does not present the full reality.\n\nExplanation
+      of each option:\nThe report presents a misleadingly incomplete picture is correct
+      because it highlights the omitted cost.\nThe efficiency gains benefited everyone
+      equally is incorrect because employees bore an unpaid burden.\nEmployees volunteered
+      extra time willingly is incorrect because willingness is not stated.\nThe unpaid
+      hours were unrelated to the gains is incorrect because the sentence links them
+      directly.", "target_cefr": "C2", "target_difficulty": "Hard", "language_variant":
+      "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q13 | cefr=A1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q13", "stem": "Read the sentence carefully and
+      answer the question.\n\nThe baby is waving from the balcony.\n\nWhat is the
+      baby doing?", "options": ["Waving", "Jumping", "Crying", "Sleeping"], "correct_answer":
+      "Waving", "explanation": "Correct answer: Waving\n\nExplanation: The sentence
+      directly states the baby''s action.\n\nExplanation of each option:\nWaving is
+      correct because it exactly matches the sentence.\nJumping is incorrect because
+      that action is not mentioned.\nCrying is incorrect because no sound or sadness
+      is described.\nSleeping is incorrect because the baby is actively waving.",
+      "target_cefr": "A1", "target_difficulty": "Easy", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q14 | cefr=A2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q14", "stem": "Choose the option that is NOT
+      true according to the statement.\n\nThe bookstore opens at 9 a.m. and shuts
+      at 5 p.m.\n\nWhich option is NOT true?", "options": ["The bookstore closes at
+      5 p.m.", "The bookstore is open at 10 a.m.", "The bookstore opens at 9 a.m.",
+      "The bookstore is open at 6 p.m."], "correct_answer": "The bookstore is open
+      at 6 p.m.", "explanation": "Correct answer: The bookstore is open at 6 p.m.\n\nExplanation:
+      Since the store shuts at 5 p.m., it cannot be open at 6 p.m.\n\nExplanation
+      of each option:\nThe bookstore closes at 5 p.m. is incorrect because it matches
+      the statement.\nThe bookstore is open at 10 a.m. is incorrect because that time
+      falls within opening hours.\nThe bookstore opens at 9 a.m. is incorrect because
+      it repeats the given information.\nThe bookstore is open at 6 p.m. is correct
+      because it contradicts the closing time stated.", "target_cefr": "A2", "target_difficulty":
+      "Easy", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q15 | cefr=B1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q15", "stem": "Read the statement and identify
+      the reason.\n\nIshaan left the window open because the paint needed to dry faster.\n\nWhy
+      did Ishaan leave the window open?", "options": ["The paint needed to dry faster",
+      "He wanted to hear the traffic", "He was waiting for a friend", "The room was
+      too dark"], "correct_answer": "The paint needed to dry faster", "explanation":
+      "Correct answer: The paint needed to dry faster\n\nExplanation: The sentence
+      directly gives the reason for leaving the window open.\n\nExplanation of each
+      option:\nThe paint needed to dry faster is correct because it is stated as the
+      reason.\nHe wanted to hear the traffic is incorrect because noise is not mentioned.\nHe
+      was waiting for a friend is incorrect because no visitor is referred to.\nThe
+      room was too dark is incorrect because light is not discussed.", "target_cefr":
+      "B1", "target_difficulty": "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q16 | cefr=B2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q16", "stem": "What can be inferred from the
+      statement?\n\nThough the instructions were brief, the volunteers completed the
+      setup without any confusion.", "options": ["The instructions were sufficiently
+      clear", "The volunteers ignored the instructions", "The setup was impossible
+      to complete", "The instructions were extremely detailed"], "correct_answer":
+      "The instructions were sufficiently clear", "explanation": "Correct answer:
+      The instructions were sufficiently clear\n\nExplanation: If the volunteers completed
+      the task without confusion, the brief instructions must still have been clear
+      enough.\n\nExplanation of each option:\nThe instructions were sufficiently clear
+      is correct because the successful outcome supports this inference.\nThe volunteers
+      ignored the instructions is incorrect because nothing suggests that.\nThe setup
+      was impossible to complete is incorrect because it was completed.\nThe instructions
+      were extremely detailed is incorrect because the statement says they were brief.",
+      "target_cefr": "B2", "target_difficulty": "Medium", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q17 | cefr=C1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q17", "stem": "Choose the best interpretation.\n\nThe
+      editor says she values original thinking, but she rejects any article that does
+      not follow her usual style closely.", "options": ["She may be less open to originality
+      than she claims", "She encourages writers to experiment freely", "She accepts
+      every article she receives", "Her style changes constantly"], "correct_answer":
+      "She may be less open to originality than she claims", "explanation": "Correct
+      answer: She may be less open to originality than she claims\n\nExplanation:
+      The sentence suggests a contradiction between her stated value and her editorial
+      behaviour.\n\nExplanation of each option:\nShe may be less open to originality
+      than she claims is correct because rejecting anything different limits originality.\nShe
+      encourages writers to experiment freely is incorrect because her actions suggest
+      the opposite.\nShe accepts every article she receives is incorrect because she
+      rejects many articles.\nHer style changes constantly is incorrect because the
+      sentence refers to her usual style as fixed.", "target_cefr": "C1", "target_difficulty":
+      "Hard", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q18 | cefr=C2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q18", "stem": "Choose the most accurate evaluation
+      based on the statement.\n\nThe town invested heavily in a luxury conference
+      centre, but neglected the road repairs residents had requested for years.",
+      "options": ["The spending priorities were misaligned with local needs", "Residents
+      preferred the conference centre", "Road repairs were completed earlier", "The
+      investment solved the transport problem"], "correct_answer": "The spending priorities
+      were misaligned with local needs", "explanation": "Correct answer: The spending
+      priorities were misaligned with local needs\n\nExplanation: The statement contrasts
+      costly prestige spending with the neglect of practical issues residents cared
+      about.\n\nExplanation of each option:\nThe spending priorities were misaligned
+      with local needs is correct because essential repairs were ignored while funds
+      went elsewhere.\nResidents preferred the conference centre is incorrect because
+      the sentence highlights their requests for road repairs.\nRoad repairs were
+      completed earlier is incorrect because they were neglected.\nThe investment
+      solved the transport problem is incorrect because the road issue remained unresolved.",
+      "target_cefr": "C2", "target_difficulty": "Hard", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q19 | cefr=A1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q19", "stem": "Read the sentence carefully and
+      answer the question.\n\nThe keys are hanging beside the calendar.\n\nWhere are
+      the keys?", "options": ["Beside the calendar", "Inside the drawer", "On the
+      kitchen floor", "Under the pillow"], "correct_answer": "Beside the calendar",
+      "explanation": "Correct answer: Beside the calendar\n\nExplanation: The sentence
+      clearly tells us where the keys are.\n\nExplanation of each option:\nBeside
+      the calendar is correct because it directly matches the location given.\nInside
+      the drawer is incorrect because that place is not mentioned.\nOn the kitchen
+      floor is incorrect because the keys are hanging, not lying on the floor.\nUnder
+      the pillow is incorrect because the sentence gives a different location.", "target_cefr":
+      "A1", "target_difficulty": "Easy", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q20 | cefr=A2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q20", "stem": "Based on the information given,
+      choose the option that is NOT true.\n\nThe gym is closed for maintenance on
+      Wednesday.\n\nWhich option is NOT true?", "options": ["The gym is not open on
+      Wednesday", "The gym is closed for maintenance on Wednesday", "People can use
+      the gym on Wednesday as usual", "Maintenance is the reason for the closure"],
+      "correct_answer": "People can use the gym on Wednesday as usual", "explanation":
+      "Correct answer: People can use the gym on Wednesday as usual\n\nExplanation:
+      The statement says the gym is closed on Wednesday, so regular use is not possible.\n\nExplanation
+      of each option:\nThe gym is not open on Wednesday is incorrect because it matches
+      the statement.\nThe gym is closed for maintenance on Wednesday is incorrect
+      because it repeats the exact information.\nPeople can use the gym on Wednesday
+      as usual is correct because it contradicts the statement.\nMaintenance is the
+      reason for the closure is incorrect because that is clearly stated.", "target_cefr":
+      "A2", "target_difficulty": "Easy", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q21 | cefr=B1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q21", "stem": "Read the statement and answer
+      the question.\n\nPooja borrowed a ladder because she needed to reach the top
+      shelf.\n\nWhy did Pooja borrow a ladder?", "options": ["She needed to reach
+      the top shelf", "She wanted to clean the garden", "The ladder was on sale",
+      "She was repairing the roof"], "correct_answer": "She needed to reach the top
+      shelf", "explanation": "Correct answer: She needed to reach the top shelf\n\nExplanation:
+      The sentence directly gives the reason for borrowing the ladder.\n\nExplanation
+      of each option:\nShe needed to reach the top shelf is correct because it is
+      stated in the sentence.\nShe wanted to clean the garden is incorrect because
+      the setting is indoors and no garden is mentioned.\nThe ladder was on sale is
+      incorrect because buying is not discussed.\nShe was repairing the roof is incorrect
+      because the purpose given is reaching a shelf.", "target_cefr": "B1", "target_difficulty":
+      "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q22 | cefr=B2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q22", "stem": "What can be inferred from the
+      statement?\n\nEven after the power cut, the shop completed every customer order
+      before closing time.", "options": ["The staff remained organised despite the
+      disruption", "The shop closed early", "All orders were cancelled", "The power
+      returned immediately"], "correct_answer": "The staff remained organised despite
+      the disruption", "explanation": "Correct answer: The staff remained organised
+      despite the disruption\n\nExplanation: Completing all orders despite a power
+      cut suggests effective organisation and adaptability.\n\nExplanation of each
+      option:\nThe staff remained organised despite the disruption is correct because
+      it best explains the successful outcome.\nThe shop closed early is incorrect
+      because it continued until closing time.\nAll orders were cancelled is incorrect
+      because every order was completed.\nThe power returned immediately is incorrect
+      because that detail is not provided.", "target_cefr": "B2", "target_difficulty":
+      "Medium", "language_variant": "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q23 | cefr=C1 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q23", "stem": "Choose the best interpretation
+      of the statement.\n\nHe says he wants honest feedback, yet he dismisses any
+      comment that challenges his preferred plan.", "options": ["He may want agreement
+      more than honest feedback", "He carefully evaluates every suggestion", "He changes
+      his plan whenever people disagree", "He receives no feedback from others"],
+      "correct_answer": "He may want agreement more than honest feedback", "explanation":
+      "Correct answer: He may want agreement more than honest feedback\n\nExplanation:
+      The sentence suggests that he claims to want honesty, but only accepts comments
+      that support him.\n\nExplanation of each option:\nHe may want agreement more
+      than honest feedback is correct because dismissing challenges shows limited
+      openness.\nHe carefully evaluates every suggestion is incorrect because he dismisses
+      challenging comments.\nHe changes his plan whenever people disagree is incorrect
+      because the statement suggests resistance, not flexibility.\nHe receives no
+      feedback from others is incorrect because comments are clearly being made.",
+      "target_cefr": "C1", "target_difficulty": "Hard", "language_variant": "British
+      English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'
+- description: Q24 | cefr=C2 expect=Pass
+  vars:
+    question_json: '[{"question_id": "Q24", "stem": "Choose the most accurate evaluation.\n\nThe
+      university introduced a digital system to reduce paperwork, but staff ended
+      up entering the same data into three separate platforms.", "options": ["The
+      reform increased inefficiency instead of reducing it", "The digital system removed
+      duplication completely", "The staff resisted a well-designed process", "Paperwork
+      disappeared across the university"], "correct_answer": "The reform increased
+      inefficiency instead of reducing it", "explanation": "Correct answer: The reform
+      increased inefficiency instead of reducing it\n\nExplanation: A system introduced
+      to simplify work actually created duplication, which means the reform failed
+      in practice.\n\nExplanation of each option:\nThe reform increased inefficiency
+      instead of reducing it is correct because repeated data entry is more inefficient.\nThe
+      digital system removed duplication completely is incorrect because the same
+      data had to be entered three times.\nThe staff resisted a well-designed process
+      is incorrect because resistance is not mentioned.\nPaperwork disappeared across
+      the university is incorrect because the outcome described was increased administrative
+      burden.", "target_cefr": "C2", "target_difficulty": "Hard", "language_variant":
+      "British English"}]'
+  assert:
+  - type: javascript
+    value: 'const results = JSON.parse(output); const p = Array.isArray(results) ?
+      results[0] : results; return p.overall_decision === "Pass";'

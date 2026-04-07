@@ -2,92 +2,21 @@
   "judge.predict": {
     "traces": [],
     "train": [],
-    "demos": [
-      {
-        "augmented": true,
-        "stem": "Farida packed a light sweater before leaving for the museum trip.\n\nWhat does this suggest about Farida?",
-        "options": "[\"She expected the weather or indoor temperature to be cool.\", \"She planned to buy clothes during the trip.\", \"She had forgotten where the museum was.\", \"She wanted to lend the sweater to the guide.\"]",
-        "correct_answer": "She expected the weather or indoor temperature to be cool.",
-        "explanation": "Packing a light sweater suggests she was preparing for cool conditions, either outside or inside the museum.",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "language_variant": "British English",
-        "reasoning": "The MCQ is clear and unambiguous. The stem provides enough context for the options to make sense. The correct answer is the most logical choice based on the information given. The explanation is accurate and concise. The target CEFR level and difficulty level are appropriate for the question.",
-        "output_json": "{\n  \"grammatical_accuracy\": \"✓\",\n  \"spelling\": \"✓\",\n  \"ambiguity\": \"✓\",\n  \"functionality_alignment\": \"✓\",\n  \"instruction_clarity_appropriateness\": \"✓\",\n  \"academic_language_exam_acceptability\": \"✓\",\n  \"option_explanation_consistency\": \"✓\",\n  \"readability\": \"✓\",\n  \"formatting_spacing\": \"✓\",\n  \"punctuation\": \"✓\",\n  \"british_american_english_consistency\": \"✓\",\n  \"overall_decision\": \"Pass\",\n  \"priority_reason\": \"No major issues found\",\n  \"revision_feedback\": \"None\"\n}"
-      },
-      {
-        "augmented": true,
-        "stem": "The health camp starts at 10 a.m. on the ground floor.\n\nWhich statement is correct?",
-        "options": "[\"It starts at night on the ground floor\", \"It starts in the evening on the ground floor\", \"It starts in the morning on the ground floor\", \"It is cancelled\"]",
-        "correct_answer": "It starts in the morning on the ground floor",
-        "explanation": "10 a.m. is in the morning, so the correct statement is that the camp starts in the morning on the ground floor.",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "language_variant": "British English",
-        "reasoning": "The MCQ is clear and unambiguous. The stem provides a specific time and location for the event, and the options are distinct and relevant to the question. The correct answer is directly supported by the information given in the stem. There are no spelling, grammatical, or formatting issues. The target CEFR level and difficulty level are appropriately matched to the question.",
-        "output_json": "{\n  \"grammatical_accuracy\": \"No issues found\",\n  \"spelling\": \"No issues found\",\n  \"ambiguity\": \"No ambiguity found\",\n  \"functionality_alignment\": \"The question and options are aligned with the stem\",\n  \"instruction_clarity_appropriateness\": \"The question is clear and easy to understand\",\n  \"academic_language_exam_acceptability\": \"Appropriate for an A2 level exam\",\n  \"option_explanation_consistency\": \"No issues found\",\n  \"readability\": \"Easy to read and understand\",\n  \"formatting_spacing\": \"No issues found\",\n  \"punctuation\": \"No issues found\",\n  \"british_american_english_consistency\": \"Consistent with British English\",\n  \"overall_decision\": \"Pass\",\n  \"priority_reason\": \"No major issues found\",\n  \"revision_feedback\": \"None\"\n}"
-      },
-      {
-        "augmented": true,
-        "stem": "The instructions were explicit.\n\nWhat does 'explicit' mean?",
-        "options": "[\"Vague and unclear\", \"Clearly stated\", \"Very long\", \"Confusing\"]",
-        "correct_answer": "Clearly stated",
-        "explanation": "'Explicit' means clearly expressed or clearly stated, which is the opposite of vague.",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "language_variant": "British English",
-        "reasoning": "The MCQ is clear and unambiguous. The stem provides a context for the question, and the options are distinct and relevant. The correct answer is clearly the one that matches the definition of 'explicit' given in the explanation. The target CEFR level of B1 is appropriate as it tests understanding of a common English word. The difficulty level is medium as it requires knowledge of a specific vocabulary word.",
-        "output_json": "{\n  \"grammatical_accuracy\": \"No issues found\",\n  \"spelling\": \"No issues found\",\n  \"ambiguity\": \"No ambiguity found\",\n  \"functionality_alignment\": \"No issues found\",\n  \"instruction_clarity_appropriateness\": \"Clear and appropriate\",\n  \"academic_language_exam_acceptability\": \"Acceptable for an academic language exam\",\n  \"option_explanation_consistency\": \"Consistent and relevant options\",\n  \"readability\": \"Easy to read and understand\",\n  \"formatting_spacing\": \"No issues found\",\n  \"punctuation\": \"No issues found\",\n  \"british_american_english_consistency\": \"Consistent with British English\",\n  \"overall_decision\": \"Pass\",\n  \"priority_reason\": \"No major issues found\",\n  \"revision_feedback\": \"None\"\n}"
-      },
-      {
-        "stem": "My name is Maria, and I love spending time in the park near my house. Every morning, I go there for a walk before school. On weekends, I take my dog, Max, and we play together.\n\nWhere does Maria go with her dog on weekends?",
-        "options": "[\"She sleeps at home.\", \"She meets her teacher.\", \"She goes to the park with her dog\", \"She studies at the park\"]",
-        "correct_answer": "She goes to the park with her dog",
-        "explanation": "Correct answer: She feels settled and happy. Olivia now feels comfortable in village life... (explanation is about a completely different question - mismatched explanation is a critical flaw)",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "expected_predicted_cefr": "A2",
-        "expected_overall_decision": "Fail"
-      }
-    ],
+    "demos": [],
     "signature": {
-      "instructions": "Evaluate the MCQ using the rubric.\n\nAmbiguity is the highest-priority criterion.\nIf ambiguity is a major issue, the item must not pass.\n\nReturn valid JSON with keys:\ngrammatical_accuracy, spelling, ambiguity, functionality_alignment,\ninstruction_clarity_appropriateness, academic_language_exam_acceptability,\noption_explanation_consistency, readability, formatting_spacing, punctuation,\nbritish_american_english_consistency, overall_decision, priority_reason,\nrevision_feedback.",
+      "instructions": "Based on the provided examples, here are the new instructions for the assistant:\n\n**Task Description:**\nYou are to evaluate a list of Multiple Choice Questions (MCQs) using a predefined rubric. Each MCQ consists of a stem (question), options (answers), a correct answer, an explanation, target CEFR (Common European Framework of Reference) level, target difficulty, and language variant (British or American English).\n\n**Input Format:**\nThe input will be a list of `RubricQuestion` objects, where each object has the following attributes:\n- `question_id` (str): Unique identifier for the question.\n- `stem` (str): The question itself.\n- `options` (List[str]): The answer choices.\n- `correct_answer` (str): The correct option.\n- `explanation` (str): The explanation for the correct answer and why other options are incorrect.\n- `target_cefr` (str): The target CEFR level for the question.\n- `target_difficulty` (str): The target difficulty level of the question.\n- `language_variant` (str): The variant of English used in the question ('British English' or 'American English').\n\n**Evaluation Criteria:**\nAssess each question based on the following 11 criteria:\n1. **Grammatical Accuracy**: Check for grammar correctness.\n2. **Spelling**: Identify any spelling errors.\n3. **Ambiguity**: This is the highest priority criterion. If there's a major issue with ambiguity, the overall decision must be 'Fail'. Minor issues should result in 'Revise'.\n4. **Functionality Alignment**: Ensure the question tests what it claims to test.\n5. **Instruction Clarity Appropriateness**: Verify that the instructions are suitable for the target CEFR level.\n6. **Academic Language Exam Acceptability**: Confirm the language used is suitable for a formal exam.\n7. **Option Explanation Consistency**: Ensure the explanation matches the correct option.\n8. **Readability**: Assess if the question is readable at the target CEFR level.\n9. **Formatting Spacing**: Check for any formatting or spacing issues.\n10. **Punctuation**: Identify any punctuation errors.\n11. **British American English Consistency**: Ensure the English variant is consistent throughout the question.\n\n**Decision Rules:**\n- If there's a 'Major Issue' in the 'Ambiguity' criterion, the overall decision is 'Fail'.\n- If there's a 'Major Issue' in any criterion, or 'Minor Issues' in multiple criteria, the overall decision is either 'Fail' or 'Revise'.\n- If there are only 'Minor Issues', the overall decision is 'Revise'.\n- If all criteria are clean, the overall decision is 'Pass'.\n\n**Output Format:**\nFor each question, return a `RubricResult` object with the following attributes:\n- `question_id` (str): The unique identifier for the question.\n- `grammatical_accuracy`, `spelling`, `ambiguity`, ..., `british_american_english_consistency` (str): The assessment for each criterion ('No Issues', 'Minor Issues', 'Major Issues', or 'Needs Improvement').\n- `overall_decision` (str): The overall decision based on the assessment ('Pass', 'Revise', or 'Fail').\n- `priority_reason` (str): A brief explanation for the overall decision.\n- `revision_feedback` (str): Suggestions for improvement if the overall decision is 'Revise'.\n\n**Generalizable Strategy:**\n- Read and understand the question and its options carefully.\n- Check each criterion systematically, starting with 'Ambiguity' due to its high priority.\n- Use the decision rules to determine the overall decision based on the assessments.\n- Provide clear and constructive feedback for 'Revise' decisions.",
       "fields": [
         {
-          "prefix": "Stem:",
-          "description": "${stem}"
-        },
-        {
-          "prefix": "Options:",
-          "description": "${options}"
-        },
-        {
-          "prefix": "Correct Answer:",
-          "description": "${correct_answer}"
-        },
-        {
-          "prefix": "Explanation:",
-          "description": "${explanation}"
-        },
-        {
-          "prefix": "Target Cefr:",
-          "description": "${target_cefr}"
-        },
-        {
-          "prefix": "Target Difficulty:",
-          "description": "${target_difficulty}"
-        },
-        {
-          "prefix": "Language Variant:",
-          "description": "${language_variant}"
+          "prefix": "Questions:",
+          "description": "List of MCQ questions to be evaluated by the rubric"
         },
         {
           "prefix": "Reasoning: Let's think step by step in order to",
           "description": "${reasoning}"
         },
         {
-          "prefix": "Output Json:",
-          "description": "${output_json}"
+          "prefix": "Output:",
+          "description": "Rubric evaluation results for all questions"
         }
       ]
     },
