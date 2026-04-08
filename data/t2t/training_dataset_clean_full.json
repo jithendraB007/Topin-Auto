@@ -1,0 +1,194 @@
+[
+  {
+    "question_id": "Q1",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe girl is reading beside the window.\n\nWhere is the girl reading?",
+    "expected_answer": "Beside the window",
+    "explanation": "The sentence clearly states that beside the window.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q2",
+    "stem": "Read the sentence carefully and answer the question.\n\nRavi is playing in the park.\n\nWhere is Ravi playing?",
+    "expected_answer": "In the park",
+    "explanation": "The sentence clearly states that in the park.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q3",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe cat is sleeping on the chair.\n\nWhere is the cat sleeping?",
+    "expected_answer": "On the chair",
+    "explanation": "The sentence clearly states that on the chair.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q4",
+    "stem": "Read the sentence carefully and answer the question.\n\nMeena is writing with a pen.\n\nWhat is Meena using?",
+    "expected_answer": "A pen",
+    "explanation": "The sentence clearly states that a pen.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q5",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe boy is eating an apple.\n\nWhat is the boy eating?",
+    "expected_answer": "An apple",
+    "explanation": "The sentence clearly states that an apple.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q6",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe teacher is speaking in the class.\n\nWhere is the teacher speaking?",
+    "expected_answer": "In the class",
+    "explanation": "The sentence clearly states that in the class.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q7",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe dog is running in the garden.\n\nWhere is the dog running?",
+    "expected_answer": "In the garden",
+    "explanation": "The sentence clearly states that in the garden.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q8",
+    "stem": "Read the sentence carefully and answer the question.\n\nAnita has a blue bag.\n\nWhat color is Anita's bag?",
+    "expected_answer": "Blue",
+    "explanation": "The sentence clearly states the color of Anita's bag.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q9",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe sun rises in the east.\n\nWhere does the sun rise?",
+    "expected_answer": "In the east",
+    "explanation": "The sentence clearly states that in the east.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q10",
+    "stem": "Read the sentence carefully and answer the question.\n\nRahul is drinking water.\n\nWhat is Rahul doing?",
+    "expected_answer": "Drinking water",
+    "explanation": "The sentence clearly states that drinking water.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q11",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe baby is crying loudly.\n\nWhat is the baby doing?",
+    "expected_answer": "Crying loudly",
+    "explanation": "The sentence clearly states that crying loudly.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q12",
+    "stem": "Read the sentence carefully and answer the question.\n\nSita is drawing a flower.\n\nWhat is Sita drawing?",
+    "expected_answer": "A flower",
+    "explanation": "The sentence clearly states that a flower.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q13",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe girl is reading beside the window.\n\nWhere the girl is reading?",
+    "expected_answer": "In the garden",
+    "explanation": "The girl is reading in the garden.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q14",
+    "stem": "Read the sentence carefully and answer the question.\n\nRavi is playing in the park.\n\nWhere is Ravi playing?",
+    "expected_answer": "At home",
+    "explanation": "Ravi is playing at home.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q15",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe cat is sleeping on the chair.\n\nWhere is the cat sleeping?",
+    "expected_answer": "On the table",
+    "explanation": "The cat is on the table.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q16",
+    "stem": "Read the sentence carefully and answer the question.\n\nMeena is writing with a pen.\n\nWhat is Meena using?",
+    "expected_answer": "A pencil",
+    "explanation": "She is using a pencil.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q17",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe boy is eating an apple.\n\nWhat is the boy eating?",
+    "expected_answer": "A banana",
+    "explanation": "The boy is eating a banana.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q18",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe teacher is speaking in the class.\n\nWhere is the teacher speaking?",
+    "expected_answer": "In the office",
+    "explanation": "The teacher is speaking in the office.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q19",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe dog is running in the garden.\n\nWhere is the dog running?",
+    "expected_answer": "On the road",
+    "explanation": "The dog is running on the road.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q20",
+    "stem": "Read the sentence carefully and answer the question.\n\nAnita has a blue bag.\n\nWhat color is Anita bag?",
+    "expected_answer": "Red",
+    "explanation": "Anita has a red bag.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q21",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe sun rises in the east.\n\nWhere does the sun rise?",
+    "expected_answer": "In the west",
+    "explanation": "The sun rises in the west.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q22",
+    "stem": "Read the sentence carefully and answer the question.\n\nRahul is drinking water.\n\nWhat Rahul is doing?",
+    "expected_answer": "Eating food",
+    "explanation": "Rahul is eating food.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q23",
+    "stem": "Read the sentence carefully and answer the question.\n\nThe baby is crying loudly.\n\nWhat is the baby doing?",
+    "expected_answer": "Sleeping",
+    "explanation": "The baby is sleeping.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q24",
+    "stem": "Read the sentence carefully and answer the question.\n\nSita is drawing a flower.\n\nWhat is Sita drawing?",
+    "expected_answer": "A tree",
+    "explanation": "Sita is drawing a tree.",
+    "target_cefr": "A1",
+    "target_difficulty": null
+  }
+]

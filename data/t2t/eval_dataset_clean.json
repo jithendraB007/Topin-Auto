@@ -1,0 +1,194 @@
+[
+  {
+    "question_id": "E1",
+    "stem": "Read the given notes carefully. Write a short paragraph of 35-45 words using the information provided. Organise your ideas clearly and form complete sentences. Ensure your response is relevant, coherent, and grammatically correct.\n\nNotes:\nlast Sunday: visited grandparents\nhelped in the garden\nate lunch together\nheard old stories\nfelt relaxed",
+    "expected_answer": "Last Sunday, I visited my grandparents and helped them in the garden. We ate lunch together and spent time talking. They told me some old stories, and I felt relaxed and happy throughout the day.",
+    "explanation": "The answer uses all the notes, forms a coherent paragraph, stays within the expected length, and maintains clear grammar.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E2",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\ncarefully / the / listened / students / teacher / to / the",
+    "expected_answer": "The students listened carefully to the teacher.",
+    "explanation": "The words are arranged into a grammatically correct sentence with proper capitalisation and punctuation.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E3",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: Your friend has invited you to a birthday party, but you already have an exam the next morning. You want to decline politely.\n\nMessage: 'Please come to my birthday party this evening.'",
+    "expected_answer": "Thank you for inviting me, but I cannot come to your birthday party this evening because I have an exam tomorrow morning.",
+    "explanation": "The expected answer politely declines the invitation in one sentence and gives a clear reason.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E4",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nthis morning: missed the bus\nwalked to school quickly\nreached a little late\napologised to teacher\npromised to wake up earlier",
+    "expected_answer": "This morning, I missed the bus, so I walked to school quickly. I reached a little late and apologised to my teacher. I promised myself that I would wake up earlier from tomorrow.",
+    "explanation": "The response uses all the notes, presents them in logical order, and forms a coherent paragraph.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E5",
+    "stem": "Read the given notes carefully. Write a short paragraph of 35-45 words using the information provided. Organise your ideas clearly and form complete sentences. Ensure your response is relevant, coherent, and grammatically correct.\n\nNotes:\njoined music club\nlearned guitar basics\npractised every evening\nperformed in assembly\nfelt confident",
+    "expected_answer": "I joined the music club and learned the basics of playing the guitar. I practised every evening and improved slowly. Later, I performed in the school assembly and felt confident and proud of my progress.",
+    "explanation": "The answer converts the notes into a relevant and grammatically correct paragraph with complete sentences.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E6",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\noften / my / reads / sister / before / bedtime",
+    "expected_answer": "My sister often reads before bedtime.",
+    "explanation": "The words are placed in correct order to form a meaningful sentence.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E7",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: You borrowed a book from your classmate and want to return it tomorrow. You want to inform your classmate politely.\n\nMessage: 'Do you still have my science book?'",
+    "expected_answer": "Yes, I still have your science book, and I will return it to you tomorrow.",
+    "explanation": "The reply answers the message politely in one sentence and clearly states when the book will be returned.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E8",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nFriday evening: community library visit\nborrowed two storybooks\nread quietly for an hour\nmet librarian\nwanted to visit again",
+    "expected_answer": "On Friday evening, I visited the community library and borrowed two storybooks. I sat quietly and read for an hour. I also met the librarian, who was very helpful. The visit was enjoyable, and I wanted to go there again.",
+    "explanation": "The paragraph includes all the points from the notes, uses complete sentences, and stays suitable for the task.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E9",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\nnotebook / forgot / his / at / home / Arjun",
+    "expected_answer": "Arjun forgot his notebook at home.",
+    "explanation": "The rearranged sentence is grammatically correct and meaningful.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E10",
+    "stem": "Read the given notes carefully. Write a short paragraph of 35-45 words using the information provided. Organise your ideas clearly and form complete sentences. Ensure your response is relevant, coherent, and grammatically correct.\n\nNotes:\nschool sports day\nran in 200-metre race\ncheered for friends\nwon a medal\ncelebrated happily",
+    "expected_answer": "On school sports day, I took part in the 200-metre race and did my best. I also cheered for my friends during their events. I was happy to win a medal, and we celebrated together after the competition.",
+    "explanation": "The answer is relevant to the notes, coherent, and written in complete sentences.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E11",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: You cannot join the online class because there is a power cut in your area. You want to inform your teacher politely.\n\nMessage: 'Please join the online class at 6 p.m.'",
+    "expected_answer": "I'm sorry, I cannot join the online class at 6 p.m. because there is a power cut in my area.",
+    "explanation": "The response politely explains the problem in one complete sentence and directly answers the situation.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E12",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nafter exams: visited cousin\nplayed indoor games\nwatched a funny film\nshared snacks\nreturned home late",
+    "expected_answer": "After my exams, I visited my cousin and spent the day happily. We played indoor games, watched a funny film, and shared snacks together. I enjoyed the visit a lot and returned home late in the evening.",
+    "explanation": "The paragraph uses all the notes clearly and presents them in a natural and coherent way.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E13",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: You cannot attend the workshop because you are ill. You want to inform your teacher politely.\n\nMessage: 'Please attend the workshop at 10 a.m. tomorrow.'",
+    "expected_answer": "I am sorry, but I cannot attend the workshop at 10 a.m. tomorrow because I am not well.",
+    "explanation": "The answer politely informs the teacher that the student is ill and cannot attend.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E14",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\nusually / on / Sundays / cricket / they / plays",
+    "expected_answer": "They usually play cricket on Sundays.",
+    "explanation": "The words are rearranged into a correct sentence.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E15",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nclass trip to museum\nsaw ancient coins\nguide explained history\nasked many questions\nfelt curious",
+    "expected_answer": "Our class went on a trip to the museum. We saw ancient coins and the guide explained their history clearly. I asked many questions and felt curious and excited to learn more about the past.",
+    "explanation": "The answer fully develops all the notes into a clear paragraph of the required length.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E16",
+    "stem": "Read the given notes carefully. Write a short paragraph of 35-45 words using the information provided. Organise your ideas clearly and form complete sentences.\n\nNotes:\nfirst day at art class\nmet new teacher\nlearned shading techniques\ndrew a flower\nfelt interested",
+    "expected_answer": "On my first day at art class, I met my new teacher and felt welcome. We learned shading techniques and I drew a flower. It was a wonderful experience and I felt very interested in learning more.",
+    "explanation": "The question clearly asks the learner to use the notes to describe the art class experience.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E17",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: Your neighbour helped you find your lost puppy. You want to thank him politely.\n\nMessage: 'I'm glad your puppy is safe now.'",
+    "expected_answer": "Thank you so much for helping me find my puppy; I am very grateful.",
+    "explanation": "The answer is polite and appropriate for thanking the neighbour.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E18",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\ncarefully / the / road / crossed / old / man / the",
+    "expected_answer": "The old man crossed the road carefully.",
+    "explanation": "The words are rearranged into a grammatically correct and meaningful sentence.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E19",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nweekend baking session\nmade chocolate cupcakes\nsister helped decorate them\nshared with neighbours\nfelt proud of result",
+    "expected_answer": "Last weekend, I made chocolate cupcakes with my sister. She helped me decorate them, and we shared them with our neighbours. Everyone enjoyed the cupcakes and I felt proud of the result.",
+    "explanation": "The response is complete, detailed, and within the required word limit.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E20",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: You reached home late because your bus broke down. You want to inform your mother politely.\n\nMessage: 'Why are you late today?'",
+    "expected_answer": "I am sorry for being late; the bus broke down on the way home and I had to wait for the next one.",
+    "explanation": "The response is polite, complete, and explains the reason clearly in one sentence.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E21",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\nlibrary / reading / quietly / in / was / he / the",
+    "expected_answer": "He was quietly reading in the library.",
+    "explanation": "The sentence is grammatically correct and meaningful.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E22",
+    "stem": "Write a short paragraph (35-45 words) using the notes. Use complete sentences.\n\nNotes:\nrainy afternoon\nstayed indoors\nfinished homework\ndrank hot tea\nwatched clouds from window",
+    "expected_answer": "On a rainy afternoon, I stayed indoors and finished my homework. After that, I drank hot tea and watched the clouds from the window. The quiet weather made me feel calm and comfortable.",
+    "explanation": "The notes are developed into a complete and coherent paragraph.",
+    "target_cefr": "B1",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E23",
+    "stem": "Read the situation. Write the reply in one sentence.\n\nSituation: You cannot bring your notebook today because you left it at home. You want to inform your teacher politely.\n\nMessage: 'Please bring your notebook to class.'",
+    "expected_answer": "I'm sorry, I cannot bring my notebook today because I left it at home.",
+    "explanation": "The answer politely explains to the teacher why the notebook cannot be brought.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  },
+  {
+    "question_id": "E24",
+    "stem": "Rearrange the words/phrases to form a correct sentence. Begin with a capital letter and end with a full stop.\n\nbecause / was / missed / she / train / late / the / she",
+    "expected_answer": "She missed the train because she was late.",
+    "explanation": "The words are correctly arranged to form a meaningful sentence.",
+    "target_cefr": "A2",
+    "target_difficulty": null
+  }
+]
