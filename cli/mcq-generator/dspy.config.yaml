@@ -1,0 +1,30 @@
+app_id: mcq-generator
+description: "Schema-driven MCQ question generator with difficulty and rubric judges."
+
+models:
+  default: mistral:nemo
+
+  registry:
+    mistral:nemo:
+      model: openai/open-mistral-nemo
+      api_base: https://api.mistral.ai/v1
+      env: MISTRAL_API_KEY
+      max_tokens: 4000
+      temperature: 0.2
+      model_type: chat
+
+    mistral:small:
+      model: openai/mistral-small-latest
+      api_base: https://api.mistral.ai/v1
+      env: MISTRAL_API_KEY
+      max_tokens: 4000
+      temperature: 0.2
+      model_type: chat
+
+    mistral:large:
+      model: openai/mistral-large-latest
+      api_base: https://api.mistral.ai/v1
+      env: MISTRAL_API_KEY
+      max_tokens: 8000
+      temperature: 0.2
+      model_type: chat

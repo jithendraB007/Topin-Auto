@@ -1,0 +1,32 @@
+{
+  "judge.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Based on the provided examples, here are the new instructions for the assistant:\n\n**Task Description:**\nYou are to evaluate a list of Multiple Choice Questions (MCQs) using a predefined rubric. Each MCQ consists of a stem (question), options (answers), a correct answer, an explanation, target CEFR (Common European Framework of Reference) level, target difficulty, and language variant (British or American English).\n\n**Input Format:**\nThe input will be a list of `RubricQuestion` objects, where each object has the following attributes:\n- `question_id` (str): Unique identifier for the question.\n- `stem` (str): The question itself.\n- `options` (List[str]): The answer choices.\n- `correct_answer` (str): The correct option.\n- `explanation` (str): The explanation for the correct answer and why other options are incorrect.\n- `target_cefr` (str): The target CEFR level for the question.\n- `target_difficulty` (str): The target difficulty level of the question.\n- `language_variant` (str): The variant of English used in the question ('British English' or 'American English').\n\n**Evaluation Criteria:**\nAssess each question based on the following 11 criteria:\n1. **Grammatical Accuracy**: Check for grammar correctness.\n2. **Spelling**: Identify any spelling errors.\n3. **Ambiguity**: This is the highest priority criterion. If there's a major issue with ambiguity, the overall decision must be 'Fail'. Minor issues should result in 'Revise'.\n4. **Functionality Alignment**: Ensure the question tests what it claims to test.\n5. **Instruction Clarity Appropriateness**: Verify that the instructions are suitable for the target CEFR level.\n6. **Academic Language Exam Acceptability**: Confirm the language used is suitable for a formal exam.\n7. **Option Explanation Consistency**: Ensure the explanation matches the correct option.\n8. **Readability**: Assess if the question is readable at the target CEFR level.\n9. **Formatting Spacing**: Check for any formatting or spacing issues.\n10. **Punctuation**: Identify any punctuation errors.\n11. **British American English Consistency**: Ensure the English variant is consistent throughout the question.\n\n**Decision Rules:**\n- If there's a 'Major Issue' in the 'Ambiguity' criterion, the overall decision is 'Fail'.\n- If there's a 'Major Issue' in any criterion, or 'Minor Issues' in multiple criteria, the overall decision is either 'Fail' or 'Revise'.\n- If there are only 'Minor Issues', the overall decision is 'Revise'.\n- If all criteria are clean, the overall decision is 'Pass'.\n\n**Output Format:**\nFor each question, return a `RubricResult` object with the following attributes:\n- `question_id` (str): The unique identifier for the question.\n- `grammatical_accuracy`, `spelling`, `ambiguity`, ..., `british_american_english_consistency` (str): The assessment for each criterion ('No Issues', 'Minor Issues', 'Major Issues', or 'Needs Improvement').\n- `overall_decision` (str): The overall decision based on the assessment ('Pass', 'Revise', or 'Fail').\n- `priority_reason` (str): A brief explanation for the overall decision.\n- `revision_feedback` (str): Suggestions for improvement if the overall decision is 'Revise'.\n\n**Generalizable Strategy:**\n- Read and understand the question and its options carefully.\n- Check each criterion systematically, starting with 'Ambiguity' due to its high priority.\n- Use the decision rules to determine the overall decision based on the assessments.\n- Provide clear and constructive feedback for 'Revise' decisions.",
+      "fields": [
+        {
+          "prefix": "Questions:",
+          "description": "List of MCQ questions to be evaluated by the rubric"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Output:",
+          "description": "Rubric evaluation results for all questions"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}
