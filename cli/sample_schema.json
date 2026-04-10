@@ -1,0 +1,19 @@
+{
+  "topic": "English Grammar",
+  "subtopics": [
+    {
+      "subtopic": "Present Tense",
+      "a1_count": 2,
+      "a2_count": 2,
+      "b1_count": 2,
+      "b2_count": 2,
+      "c1_count": 1,
+      "c2_count": 1
+    }
+  ],
+  "constraints": {
+    "questions_per_iteration": 5,
+    "max_iterations_per_difficulty": 10
+  },
+  "example_questions": []
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "question_id": "Q1",
+    "instruction": "Read the instructions and choose the correct answer.",
+    "image_content": "A classroom art notice tells students to clean their paint brushes after they finish using them.",
+    "question": "What should you wash after use?",
+    "options": [
+      "Your brushes.",
+      "Your shoes.",
+      "Your hands only.",
+      "Your gloves."
+    ],
+    "correct_answer": "Your brushes.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q2",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A pool safety sign says swimmers need to wear a swimming cap before entering.",
+    "question": "What should you wear?",
+    "options": [
+      "A jacket.",
+      "A swimming cap.",
+      "A scarf.",
+      "A pair of gloves."
+    ],
+    "correct_answer": "A swimming cap.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q3",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A bookshop notice explains that the author event has been postponed because the speaker is not well.",
+    "question": "Why was the author event postponed?",
+    "options": [
+      "The hall is closed.",
+      "The speaker is unwell.",
+      "The books have not arrived.",
+      "The event has been postponed."
+    ],
+    "correct_answer": "The speaker is unwell.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q4",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A notice in the park says the play area is closed while repair work is taking place.",
+    "question": "Why is the play area closed?",
+    "options": [
+      "Because of repair work.",
+      "Because of a music show.",
+      "Because of heavy rain.",
+      "Because of a power cut."
+    ],
+    "correct_answer": "Because of repair work.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q5",
+    "instruction": "Read the instructions and choose the correct answer.",
+    "image_content": "A photography studio sign warns visitors not to touch the camera lenses.",
+    "question": "What should you not touch?",
+    "options": [
+      "The camera stand",
+      "Photobooth",
+      "The lenses",
+      "The lights"
+    ],
+    "correct_answer": "The lenses.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q6",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A cycling safety instruction says every rider must wear a helmet.",
+    "question": "What must you wear?",
+    "options": [
+      "Gloves",
+      "A helmet",
+      "Shoes",
+      "Rope"
+    ],
+    "correct_answer": "A helmet.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q7",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A cinema notice says the show will start late due to technical adjustments.",
+    "question": "Why is the show delayed?",
+    "options": [
+      "Because of technical adjustments.",
+      "Because of rain.",
+      "Because of low audience.",
+      "Because of the weather."
+    ],
+    "correct_answer": "Because of technical adjustments.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q8",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A pottery class notice explains that the session is cancelled because the instructor is away travelling.",
+    "question": "Why is the session cancelled?",
+    "options": [
+      "Due to bad weather.",
+      "The room is unavailable.",
+      "The instructor is travelling.",
+      "There is a holiday."
+    ],
+    "correct_answer": "The instructor is travelling.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q9",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A museum sign tells visitors to read the labels near the displays.",
+    "question": "What should you read?",
+    "options": [
+      "The labels",
+      "The walls",
+      "The floor signs",
+      "The door"
+    ],
+    "correct_answer": "The labels.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q10",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A hiking safety notice advises people to carry enough water with them.",
+    "question": "What should you carry?",
+    "options": [
+      "A camera",
+      "Enough water",
+      "A map only",
+      "Water bottle"
+    ],
+    "correct_answer": "Enough water.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q11",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "An event notice says the session has been moved indoors because of strong winds outside.",
+    "question": "Why was the session moved indoors?",
+    "options": [
+      "Because of strong winds.",
+      "Because of rain.",
+      "Because of fewer people.",
+      "Because of the sun."
+    ],
+    "correct_answer": "Because of strong winds.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q12",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A shop notice says the store is closing early for inventory checking.",
+    "question": "Why will the shop close early?",
+    "options": [
+      "For cleaning",
+      "For special guest",
+      "For inventory checking",
+      "For renovation"
+    ],
+    "correct_answer": "For inventory checking.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q13",
+    "instruction": "Read the instructions and choose the correct answer.",
+    "image_content": "A bookshop notice explains that the author event has been postponed because the speaker is not well.",
+    "question": "What should you wash after use?",
+    "options": [
+      "Your brushes.",
+      "Your shoes.",
+      "Your hands only.",
+      "Your gloves."
+    ],
+    "correct_answer": "Your brushes.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q14",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A notice in the park says the play area is closed while repair work is taking place.",
+    "question": "What should you wear?",
+    "options": [
+      "A jacket.",
+      "A swimming cap.",
+      "A scarf.",
+      "A pair of gloves."
+    ],
+    "correct_answer": "A swimming cap.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q15",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A photography studio sign warns visitors not to touch the camera lenses.",
+    "question": "Why was the author event postponed?",
+    "options": [
+      "The hall is closed.",
+      "The speaker is unwell.",
+      "The books have not arrived.",
+      "The event has been postponed."
+    ],
+    "correct_answer": "The speaker is unwell.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q16",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A cycling safety instruction says every rider must wear a helmet.",
+    "question": "Why is the play area closed?",
+    "options": [
+      "Because of repair work.",
+      "Because of a music show.",
+      "Because of heavy rain.",
+      "Because of a power cut."
+    ],
+    "correct_answer": "Because of repair work.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q17",
+    "instruction": "Read the instructions and choose the correct answer.",
+    "image_content": "A cinema notice says the show will start late due to technical adjustments.",
+    "question": "What should you not touch?",
+    "options": [
+      "The camera stand",
+      "Photobooth",
+      "The lenses",
+      "The lights"
+    ],
+    "correct_answer": "The lenses.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q18",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A pottery class notice explains that the session is cancelled because the instructor is away travelling.",
+    "question": "What must you wear?",
+    "options": [
+      "Gloves",
+      "A helmet",
+      "Shoes",
+      "Rope"
+    ],
+    "correct_answer": "A helmet.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q19",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A museum sign tells visitors to read the labels near the displays.",
+    "question": "Why is the show delayed?",
+    "options": [
+      "Because of technical adjustments.",
+      "Because of rain.",
+      "Because of low audience.",
+      "Because of the weather."
+    ],
+    "correct_answer": "Because of technical adjustments.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q20",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A hiking safety notice advises people to carry enough water with them.",
+    "question": "Why is the session cancelled?",
+    "options": [
+      "Due to bad weather.",
+      "The room is unavailable.",
+      "The instructor is travelling.",
+      "There is a holiday."
+    ],
+    "correct_answer": "The instructor is travelling.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q21",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "An event notice says the session has been moved indoors because of strong winds outside.",
+    "question": "What should you read?",
+    "options": [
+      "The labels",
+      "The walls",
+      "The floor signs",
+      "The door"
+    ],
+    "correct_answer": "The labels.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q22",
+    "instruction": "Read the instructions carefully and choose the correct answer.",
+    "image_content": "A shop notice says the store is closing early for inventory checking.",
+    "question": "What should you carry?",
+    "options": [
+      "A camera",
+      "Enough water",
+      "A map only",
+      "Water bottle"
+    ],
+    "correct_answer": "Enough water.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q23",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A classroom art notice tells students to clean their paint brushes after they finish using them.",
+    "question": "Why was the session moved indoors?",
+    "options": [
+      "Because of strong winds.",
+      "Because of rain.",
+      "Because of fewer people.",
+      "Because of the sun."
+    ],
+    "correct_answer": "Because of strong winds.",
+    "target_cefr": null,
+    "target_difficulty": null
+  },
+  {
+    "question_id": "Q24",
+    "instruction": "Read the notice and choose the correct answer.",
+    "image_content": "A pool safety sign says swimmers need to wear a swimming cap before entering.",
+    "question": "Why will the shop close early?",
+    "options": [
+      "For cleaning",
+      "For special guest",
+      "For inventory checking",
+      "For renovation"
+    ],
+    "correct_answer": "For inventory checking.",
+    "target_cefr": null,
+    "target_difficulty": null
+  }
+]

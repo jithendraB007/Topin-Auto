@@ -1,583 +1,603 @@
 {
   "schema": {
-    "topic": "English Grammar",
+    "topic": "Articulation and Punctuation",
     "subtopics": [
       {
-        "subtopic": "Present Tense",
-        "a1_count": 5,
-        "a2_count": 10,
-        "b1_count": 2,
-        "b2_count": 3,
+        "subtopic": "NA",
+        "a1_count": 10,
+        "a2_count": 5,
+        "b1_count": 3,
+        "b2_count": 2,
         "c1_count": 6,
         "c2_count": 4
       }
     ],
     "constraints": {
-      "questions_per_iteration": 5,
-      "max_iterations_per_difficulty": 10
+      "questions_per_iteration": 6,
+      "max_iterations_per_difficulty": 3
     }
   },
   "summary": {
-    "easy": {
-      "accepted": 15,
-      "rejected": 1
-    },
-    "medium": {
-      "accepted": 5,
-      "rejected": 3
-    },
-    "hard": {
+    "A1": {
       "accepted": 10,
-      "rejected": 3
+      "target": 10
+    },
+    "A2": {
+      "accepted": 5,
+      "target": 5
+    },
+    "B1": {
+      "accepted": 3,
+      "target": 3
+    },
+    "B2": {
+      "accepted": 2,
+      "target": 2
+    },
+    "C1": {
+      "accepted": 6,
+      "target": 6
+    },
+    "C2": {
+      "accepted": 0,
+      "target": 4
     }
   },
   "questions": {
     "easy": [
       {
         "question_number": 1,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "He _______ to the store.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe girl is eating an apple.\n\nWhat is the girl eating?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "gone"
+          "A banana",
+          "An apple",
+          "A sandwich",
+          "A book"
         ],
-        "correct_answer": "goes",
-        "explanation": "Third-person singular subjects require -s/-es in simple present."
+        "correct_answer": "An apple",
+        "explanation": "Correct answer: An apple\n\nExplanation: The sentence clearly states that the girl is eating an apple.\n\nExplanation of each option:\nAn apple is correct because it exactly matches the information in the sentence.\nA banana is incorrect because the sentence does not mention a banana.\nA sandwich is incorrect because the sentence does not mention a sandwich.\nA book is incorrect because the sentence does not mention a book."
       },
       {
         "question_number": 2,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "They _______ to the park every Sunday.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe dog is sitting on the mat.\n\nWhere is the dog sitting?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "gone"
+          "On the bed",
+          "On the mat",
+          "On the floor",
+          "On the table"
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural subjects do not add -s/-es in simple present."
+        "correct_answer": "On the mat",
+        "explanation": "Correct answer: On the mat\n\nExplanation: The sentence clearly gives the dog's location.\n\nExplanation of each option:\nOn the mat is correct because it exactly matches the sentence.\nOn the bed is incorrect because that location is not mentioned.\nOn the floor is incorrect because it changes the place completely.\nOn the table is incorrect because the dog is said to be on the mat."
       },
       {
         "question_number": 3,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "She _______ to work by bus.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe children are playing in the garden.\n\nWhat are the children doing?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "gone"
+          "Playing in the garden",
+          "Reading books",
+          "Playing video games",
+          "Swimming in the pool"
         ],
-        "correct_answer": "goes",
-        "explanation": "Third-person singular subjects require -s/-es in simple present."
+        "correct_answer": "Playing in the garden",
+        "explanation": "Correct answer: Playing in the garden\n\nExplanation: The sentence directly tells us what the children are doing.\n\nExplanation of each option:\nPlaying in the garden is correct because it exactly matches the action in the sentence.\nReading books is incorrect because no reading activity is mentioned.\nPlaying video games is incorrect because the activity is outdoors and different.\nSwimming in the pool is incorrect because the children are described as playing in the garden."
       },
       {
         "question_number": 4,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "They _______ to the beach for vacation.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe car is parked in front of the house.\n\nWhere is the car?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "gone"
+          "In front of the house",
+          "In the garage",
+          "On the street",
+          "In the driveway"
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural subjects do not add -s/-es in simple present."
+        "correct_answer": "In front of the house",
+        "explanation": "Correct answer: In front of the house\n\nExplanation: The sentence directly provides the location of the car.\n\nExplanation of each option:\nIn front of the house is correct because it matches the statement exactly.\nIn the garage is incorrect because a car can be there but the sentence does not specify it.\nOn the street is incorrect because that location is not mentioned.\nIn the driveway is incorrect because the car is said to be in front of the house."
       },
       {
         "question_number": 5,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "They _______ to the movies every weekend.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe woman is wearing a blue hat.\n\nWhat color is the hat?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "gone"
+          "Red",
+          "Blue",
+          "Green",
+          "Yellow"
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural subjects do not require -s/-es in simple present."
+        "correct_answer": "Blue",
+        "explanation": "Correct answer: Blue\n\nExplanation: The sentence clearly states that the woman is wearing a blue hat.\n\nExplanation of each option:\nBlue is correct because it exactly matches the information in the sentence.\nRed is incorrect because the sentence does not mention a red hat.\nGreen is incorrect because the sentence does not mention a green hat.\nYellow is incorrect because the sentence does not mention a yellow hat."
       },
       {
         "question_number": 6,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "She _______ a book every night before going to bed.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe cat is looking at the bird.\n\nWhat is the cat doing?",
         "options": [
-          "reads",
-          "reading",
-          "read",
-          "readed"
+          "Looking at the bird",
+          "Chasing the bird",
+          "Sleeping",
+          "Eating"
         ],
-        "correct_answer": "reads",
-        "explanation": "Third-person singular 'she' requires the -s form."
+        "correct_answer": "Looking at the bird",
+        "explanation": "Correct answer: Looking at the bird\n\nExplanation: The sentence directly tells us what the cat is doing.\n\nExplanation of each option:\nLooking at the bird is correct because it exactly matches the action in the sentence.\nChasing the bird is incorrect because no chasing activity is mentioned.\nSleeping is incorrect because the sentence does not mention sleeping.\nEating is incorrect because the sentence does not mention eating."
       },
       {
         "question_number": 7,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "They _______ pizza every Friday for dinner.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe girl is holding a yellow umbrella.\n\nWhat is the girl holding?",
         "options": [
-          "eat",
-          "eating",
-          "eats",
-          "eated"
+          "A yellow umbrella",
+          "A red ball",
+          "A blue book",
+          "A green hat"
         ],
-        "correct_answer": "eat",
-        "explanation": "First-person plural 'they' does not require the -s form."
+        "correct_answer": "A yellow umbrella",
+        "explanation": "Correct answer: A yellow umbrella\n\nExplanation: The sentence clearly states that the girl is holding a yellow umbrella.\n\nExplanation of each option:\nA yellow umbrella is correct because it exactly matches the information in the sentence.\nA red ball is incorrect because neither a ball nor the colour red is mentioned.\nA blue book is incorrect because the object is identified as an umbrella.\nA green hat is incorrect because no hat is referred to in the sentence."
       },
       {
         "question_number": 8,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "He _______ his car every morning before work.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe dog is sitting next to the tree.\n\nWhere is the dog sitting?",
         "options": [
-          "washes",
-          "washing",
-          "washed",
-          "wash"
+          "Next to the tree",
+          "On the bench",
+          "Inside the house",
+          "Under the table"
         ],
-        "correct_answer": "washes",
-        "explanation": "Third-person singular 'he' requires the -s form."
+        "correct_answer": "Next to the tree",
+        "explanation": "Correct answer: Next to the tree\n\nExplanation: The sentence clearly gives the dog's location.\n\nExplanation of each option:\nNext to the tree is correct because it exactly matches the sentence.\nOn the bench is incorrect because that location is not mentioned.\nInside the house is incorrect because it changes the place completely.\nUnder the table is incorrect because the dog is said to be next to the tree."
       },
       {
         "question_number": 9,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "We _______ to the park every afternoon.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe children are playing with the toys in the room.\n\nWhat are the children doing?",
         "options": [
-          "go",
-          "going",
-          "went",
-          "gone"
+          "Playing with the toys",
+          "Reading books",
+          "Watching TV",
+          "Eating lunch"
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural 'we' does not require the -s form."
+        "correct_answer": "Playing with the toys",
+        "explanation": "Correct answer: Playing with the toys\n\nExplanation: The sentence directly tells us what the children are doing.\n\nExplanation of each option:\nPlaying with the toys is correct because it exactly matches the action in the sentence.\nReading books is incorrect because no reading activity is mentioned.\nWatching TV is incorrect because the activity is indoors and different.\nEating lunch is incorrect because the children are described as playing with toys."
       },
       {
         "question_number": 10,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "I _______ to school by bus every day.",
+        "stem": "Read the sentence carefully and answer the question.\n\nThe car is parked in front of the store.\n\nWhere is the car?",
         "options": [
-          "go",
-          "going",
-          "went",
-          "gone"
+          "In front of the store",
+          "Inside the garage",
+          "Next to the park",
+          "Under the bridge"
         ],
-        "correct_answer": "go",
-        "explanation": "First-person singular 'I' does not require the -s form."
-      },
-      {
-        "question_number": 11,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "stem": "She _______ to the library every day after school.",
-        "options": [
-          "goes",
-          "go",
-          "going",
-          "went"
-        ],
-        "correct_answer": "goes",
-        "explanation": "Third-person singular 'she' requires the -s form."
+        "correct_answer": "In front of the store",
+        "explanation": "Correct answer: In front of the store\n\nExplanation: The sentence directly provides the location of the car.\n\nExplanation of each option:\nIn front of the store is correct because it matches the statement exactly.\nInside the garage is incorrect because a car cannot be there according to the sentence.\nNext to the park is incorrect because that location is not mentioned.\nUnder the bridge is incorrect because the car is said to be in front of the store."
       },
       {
         "question_number": 12,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A2",
         "target_difficulty": "Easy",
-        "stem": "They _______ to the gym every morning.",
+        "stem": "Based on the information given, choose the option that is NOT true.\n\nA comma (,) is used to separate items in a list.\n\nWhich option is NOT true?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "went"
+          "A comma (,) is used to separate items in a list.",
+          "A comma (,) is used to separate independent clauses in a sentence.",
+          "A comma (,) is used to introduce a dependent clause.",
+          "A comma (,) is used to separate the items in a series."
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural 'they' does not require the -s form."
+        "correct_answer": "A comma (,) is used to introduce a dependent clause.",
+        "explanation": "Correct answer: A comma (,) is used to introduce a dependent clause.\n\nExplanation: The statement says that a comma (,) is used to separate items in a list, so introducing a dependent clause is not its function.\n\nExplanation of each option:\nA comma (,) is used to separate items in a list. is incorrect because it matches the statement.\nA comma (,) is used to separate independent clauses in a sentence. is incorrect because it is consistent with the information given.\nA comma (,) is used to introduce a dependent clause. is correct because it contradicts the statement.\nA comma (,) is used to separate the items in a series. is incorrect because it accurately restates the information given."
       },
       {
         "question_number": 13,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A2",
         "target_difficulty": "Easy",
-        "stem": "He _______ to work by car every day.",
+        "stem": "Choose the option that is NOT true according to the rule.\n\nA semicolon (;) is used to join two related independent clauses.\n\nWhich option is NOT true?",
         "options": [
-          "goes",
-          "go",
-          "going",
-          "went"
+          "A semicolon (;) is used to join two related independent clauses.",
+          "A semicolon (;) is used to separate items in a list.",
+          "A semicolon (;) is used to connect two independent clauses with a transitional phrase.",
+          "A semicolon (;) is used to separate items in a series."
         ],
-        "correct_answer": "goes",
-        "explanation": "Third-person singular 'he' requires the -s form."
+        "correct_answer": "A semicolon (;) is used to separate items in a list.",
+        "explanation": "Correct answer: A semicolon (;) is used to separate items in a list.\n\nExplanation: The rule states that a semicolon (;) is used to join two related independent clauses, so separating items in a list is not its function.\n\nExplanation of each option:\nA semicolon (;) is used to join two related independent clauses. is incorrect because it repeats the rule.\nA semicolon (;) is used to separate items in a list. is correct because it contradicts the rule.\nA semicolon (;) is used to connect two independent clauses with a transitional phrase. is incorrect because it is consistent with the rule.\nA semicolon (;) is used to separate items in a series. is incorrect because it accurately restates the information given."
       },
       {
         "question_number": 14,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A2",
         "target_difficulty": "Easy",
-        "stem": "We _______ to the park every evening.",
+        "stem": "Based on the information given, choose the option that is NOT true.\n\nA question mark (?) is used to indicate a direct question.\n\nWhich option is NOT true?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "went"
+          "A question mark (?) is used to indicate a direct question.",
+          "A question mark (?) is used to indicate an indirect question.",
+          "A question mark (?) is used to indicate an exclamation.",
+          "A question mark (?) is used to indicate a statement."
         ],
-        "correct_answer": "go",
-        "explanation": "First-person plural 'we' does not require the -s form."
+        "correct_answer": "A question mark (?) is used to indicate an indirect question.",
+        "explanation": "Correct answer: A question mark (?) is used to indicate an indirect question.\n\nExplanation: The statement says that a question mark (?) is used to indicate a direct question, so indicating an indirect question is not its function.\n\nExplanation of each option:\nA question mark (?) is used to indicate a direct question. is incorrect because it matches the statement.\nA question mark (?) is used to indicate an indirect question. is correct because it contradicts the statement.\nA question mark (?) is used to indicate an exclamation. is incorrect because it is consistent with the rule.\nA question mark (?) is used to indicate a statement. is incorrect because it accurately restates the information given."
       },
       {
         "question_number": 15,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "A2",
         "target_difficulty": "Easy",
-        "stem": "I _______ to the store by bike every weekend.",
+        "stem": "Choose the option that is NOT true according to the rule.\n\nAn exclamation mark (!) is used to express strong feelings or emphasis.\n\nWhich option is NOT true?",
         "options": [
-          "go",
-          "goes",
-          "going",
-          "went"
+          "An exclamation mark (!) is used to express strong feelings or emphasis.",
+          "An exclamation mark (!) is used to indicate a question.",
+          "An exclamation mark (!) is used to indicate a statement.",
+          "An exclamation mark (!) is used to indicate an indirect question."
         ],
-        "correct_answer": "go",
-        "explanation": "First-person singular 'I' does not require the -s form."
+        "correct_answer": "An exclamation mark (!) is used to indicate a question.",
+        "explanation": "Correct answer: An exclamation mark (!) is used to indicate a question.\n\nExplanation: The rule states that an exclamation mark (!) is used to express strong feelings or emphasis, so indicating a question is not its function.\n\nExplanation of each option:\nAn exclamation mark (!) is used to express strong feelings or emphasis. is incorrect because it repeats the rule.\nAn exclamation mark (!) is used to indicate a question. is correct because it contradicts the rule.\nAn exclamation mark (!) is used to indicate a statement. is incorrect because it is consistent with the rule.\nAn exclamation mark (!) is used to indicate an indirect question. is incorrect because it accurately restates the information given."
+      },
+      {
+        "question_number": 16,
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "A2",
+        "target_difficulty": "Easy",
+        "stem": "Choose the statement that is NOT correct according to the rule.\n\nA period (.) is used to indicate the end of a declarative sentence.\n\nWhich option is NOT true?",
+        "options": [
+          "A period is used to end a sentence",
+          "A period is used to indicate a full stop",
+          "A period is used to end a declarative sentence",
+          "A period is used to start a new paragraph"
+        ],
+        "correct_answer": "A period is used to start a new paragraph",
+        "explanation": "Correct answer: A period is used to start a new paragraph\n\nExplanation: A period is used to end a declarative sentence, not to start a new paragraph.\n\nExplanation of each option:\nA period is used to end a sentence is incorrect because it agrees with the statement.\nA period is used to indicate a full stop is incorrect because that is true according to the statement.\nA period is used to end a declarative sentence is incorrect because it accurately restates the information given.\nA period is used to start a new paragraph is correct because it contradicts the statement."
       }
     ],
     "medium": [
       {
         "question_number": 16,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "B1",
         "target_difficulty": "Medium",
-        "stem": "Spot the error: 'She don't like to play football.'",
+        "stem": "Read the statement and answer the question.\n\nLila brought an umbrella because it was raining heavily.\n\nWhy did Lila bring an umbrella?",
         "options": [
-          "don't -> doesn't",
-          "like -> likes",
-          "to -> -",
-          "play -> plays"
+          "She wanted to look stylish",
+          "It was raining heavily",
+          "She was going to a party",
+          "She had forgotten her keys"
         ],
-        "correct_answer": "don't -> doesn't",
-        "explanation": "With a singular subject 'she', use 'doesn't' in the present simple."
+        "correct_answer": "It was raining heavily",
+        "explanation": "Correct answer: It was raining heavily\n\nExplanation: The sentence directly gives the reason for Lila bringing an umbrella.\n\nExplanation of each option:\nIt was raining heavily is correct because it clearly explains why she brought an umbrella.\nShe wanted to look stylish is incorrect because appearance is not mentioned.\nShe was going to a party is incorrect because the sentence focuses on weather, not an event.\nShe had forgotten her keys is incorrect because keys are not discussed in the statement."
       },
       {
-        "question_number": 20,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "question_number": 17,
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "B1",
         "target_difficulty": "Medium",
-        "stem": "Spot the error: 'She don't like to play football.'",
+        "stem": "Read the statement and identify the reason.\n\nNina wore a coat because the weather was cold.\n\nWhy did Nina wear a coat?",
         "options": [
-          "She don't -> She doesn't",
-          "like -> likes",
-          "to play -> playing",
-          "football -> soccer"
+          "She wanted to look warm",
+          "The weather was cold",
+          "She was going to a concert",
+          "She had lost her scarf"
         ],
-        "correct_answer": "She don't -> She doesn't",
-        "explanation": "Negative contraction 'don't' is used with plural subjects or the verb 'be'. Here, 'she' is a singular subject, so 'doesn't' should be used."
+        "correct_answer": "The weather was cold",
+        "explanation": "Correct answer: The weather was cold\n\nExplanation: The sentence directly explains why Nina wore a coat.\n\nExplanation of each option:\nThe weather was cold is correct because it is the stated reason.\nShe wanted to look warm is incorrect because motivation of that kind is not mentioned.\nShe was going to a concert is incorrect because that situation is not given.\nShe had lost her scarf is incorrect because the sentence focuses on temperature, not lost items."
       },
       {
         "question_number": 18,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "B2",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
+        "target_cefr": "B1",
         "target_difficulty": "Medium",
-        "stem": "Which sentence correctly uses 'be going to' to express a future intention?",
+        "stem": "Read the statement and answer the question.\n\nMarco checked his notes because he had a test the next day.\n\nWhy did Marco check his notes?",
         "options": [
-          "She is going to the store.",
-          "She goes to the store.",
-          "She went to the store.",
-          "She will go to the store."
+          "He wanted to impress his teacher",
+          "He had a test the next day",
+          "He was going to a movie",
+          "He had lost his textbook"
         ],
-        "correct_answer": "She is going to the store.",
-        "explanation": "'Be going to' is used to express a future intention; 'is going to' is the correct form here."
+        "correct_answer": "He had a test the next day",
+        "explanation": "Correct answer: He had a test the next day\n\nExplanation: The sentence clearly gives the reason for Marco checking his notes.\n\nExplanation of each option:\nHe had a test the next day is correct because it directly explains his action.\nHe wanted to impress his teacher is incorrect because motivation of that kind is not mentioned.\nHe was going to a movie is incorrect because the sentence focuses on an upcoming test, not leisure.\nHe had lost his textbook is incorrect because no textbook problem is described."
       },
       {
         "question_number": 19,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "B2",
         "target_difficulty": "Medium",
-        "stem": "Which sentence correctly uses the present simple to express a habitual action?",
+        "stem": "What can be inferred from the statement?\n\nDespite the heavy traffic, the delivery driver arrived on time.",
         "options": [
-          "She works at the office.",
-          "She is working at the office.",
-          "She will work at the office.",
-          "She has worked at the office."
+          "The driver was inexperienced",
+          "The driver managed the situation well",
+          "The delivery was delayed",
+          "The traffic was light"
         ],
-        "correct_answer": "She works at the office.",
-        "explanation": "Present simple is used to express habitual actions; 'works' is the correct form here."
+        "correct_answer": "The driver managed the situation well",
+        "explanation": "Correct answer: The driver managed the situation well\n\nExplanation: The sentence contrasts heavy traffic with timely arrival, which suggests effective handling of the situation.\n\nExplanation of each option:\nThe driver managed the situation well is correct because it reflects the successful arrival despite difficult conditions.\nThe driver was inexperienced is incorrect because the driver arrived on time.\nThe delivery was delayed is incorrect because the driver arrived on time.\nThe traffic was light is incorrect because the statement mentions heavy traffic."
       },
       {
         "question_number": 20,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "B2",
         "target_difficulty": "Medium",
-        "stem": "Which sentence correctly uses 'used to' to express a past habit?",
+        "stem": "What can be inferred from the statement?\n\nAlthough the meeting started late, the attendees remained engaged throughout.",
         "options": [
-          "She used to live in London.",
-          "She lives in London.",
-          "She lived in London.",
-          "She will live in London."
+          "The meeting was poorly planned",
+          "The attendees were not interested",
+          "The meeting was well-organized",
+          "The meeting ended early"
         ],
-        "correct_answer": "She used to live in London.",
-        "explanation": "'Used to' is used to express a past habit; 'used to live' is the correct form here."
+        "correct_answer": "The meeting was well-organized",
+        "explanation": "Correct answer: The meeting was well-organized\n\nExplanation: The sentence contrasts a late start with sustained engagement, which suggests effective planning.\n\nExplanation of each option:\nThe meeting was well-organized is correct because it reflects the successful engagement despite a late start.\nThe meeting was poorly planned is incorrect because the attendees remained engaged.\nThe attendees were not interested is incorrect because the attendees remained engaged.\nThe meeting ended early is incorrect because the attendees remained engaged throughout."
       }
     ],
     "hard": [
       {
         "question_number": 21,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence demonstrates correct use of 'be going to' for a future intention?",
+        "stem": "Choose the best interpretation of the statement.\n\nHe often says he supports his team, but he never attends their games.",
         "options": [
-          "I go to the store later.",
-          "I am going to the store later.",
-          "I went to the store later.",
-          "I have gone to the store later."
+          "He is a dedicated fan",
+          "He prefers to watch games on TV",
+          "He expects his team to win without his presence",
+          "He is too busy to attend"
         ],
-        "correct_answer": "I am going to the store later.",
-        "explanation": "'Be going to' is used to express a future intention, so the correct answer is 'I am going to the store later'."
+        "correct_answer": "He expects his team to win without his presence",
+        "explanation": "Correct answer: He expects his team to win without his presence\n\nExplanation: The statement shows a contradiction between his claimed support and his lack of attendance.\n\nExplanation of each option:\nHe expects his team to win without his presence is correct because it captures the inconsistency in his behaviour.\nHe is a dedicated fan is incorrect because he never attends games.\nHe prefers to watch games on TV is incorrect because he claims to support his team.\nHe is too busy to attend is incorrect because he could still show support by watching games on TV."
       },
       {
         "question_number": 22,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence correctly uses the present simple to express a habitual action?",
+        "stem": "Select the option that best describes the behaviour.\n\nShe says she values punctuality, but she often arrives late to meetings.",
         "options": [
-          "I am eating breakfast every morning.",
-          "I eat breakfast every morning.",
-          "I will eat breakfast every morning.",
-          "I have eaten breakfast every morning."
+          "Her actions align with her values",
+          "She is always on time",
+          "She arrives early to meetings",
+          "She has a flexible definition of punctuality"
         ],
-        "correct_answer": "I eat breakfast every morning.",
-        "explanation": "The present simple is used to express habitual actions, so the correct answer is 'I eat breakfast every morning'."
+        "correct_answer": "She has a flexible definition of punctuality",
+        "explanation": "Correct answer: She has a flexible definition of punctuality\n\nExplanation: The statement presents a mismatch between what she claims to value and how she actually behaves.\n\nExplanation of each option:\nShe has a flexible definition of punctuality is correct because her actions contradict her stated value.\nHer actions align with her values is incorrect because she arrives late.\nShe is always on time is incorrect because the sentence says she often arrives late.\nShe arrives early to meetings is incorrect because punctuality is not mentioned."
       },
       {
         "question_number": 23,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence correctly uses 'used to' to express a past habit?",
+        "stem": "Choose the best interpretation.\n\nThe candidate answered every question, but hesitated before giving specific examples.",
         "options": [
-          "I used to live in London.",
-          "I live in London.",
-          "I will live in London.",
-          "I have lived in London."
+          "The candidate was completely prepared",
+          "The candidate may have lacked solid evidence for the claims",
+          "The interviewer asked only simple questions",
+          "The candidate provided detailed proof throughout"
         ],
-        "correct_answer": "I used to live in London.",
-        "explanation": "'Used to' is used to express a past habit, so the correct answer is 'I used to live in London'."
+        "correct_answer": "The candidate may have lacked solid evidence for the claims",
+        "explanation": "Correct answer: The candidate may have lacked solid evidence for the claims\n\nExplanation: Hesitation combined with giving specific examples suggests the answers may not have been well supported.\n\nExplanation of each option:\nThe candidate may have lacked solid evidence for the claims is correct because hesitation weakens credibility.\nThe candidate was completely prepared is incorrect because the candidate hesitated.\nThe interviewer asked only simple questions is incorrect because the candidate was challenged.\nThe candidate provided detailed proof throughout is incorrect because the sentence says the candidate hesitated."
       },
       {
         "question_number": 24,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence demonstrates correct subject-verb agreement with a collective noun?",
+        "stem": "Choose the best interpretation of the statement.\n\nHe says he welcomes feedback, yet he never implements any of the suggestions he receives.",
         "options": [
-          "The team are playing well.",
-          "The team is playing well.",
-          "The team have played well.",
-          "The team were playing well."
+          "He actively seeks improvement",
+          "He implements suggestions when possible",
+          "His attitude to feedback is more limited than he claims",
+          "He never receives feedback"
         ],
-        "correct_answer": "The team is playing well.",
-        "explanation": "Collective nouns like 'team' can be singular or plural, but in this context, it's singular, so the correct answer is 'The team is playing well'."
+        "correct_answer": "His attitude to feedback is more limited than he claims",
+        "explanation": "Correct answer: His attitude to feedback is more limited than he claims\n\nExplanation: The statement contrasts what he says with how he behaves, suggesting inconsistency.\n\nExplanation of each option:\nHis attitude to feedback is more limited than he claims is correct because his actions contradict his stated openness.\nHe actively seeks improvement is incorrect because he never implements suggestions.\nHe implements suggestions when possible is incorrect because the statement focuses on his lack of implementation.\nHe never receives feedback is incorrect because others do give him feedback."
       },
       {
         "question_number": 25,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence correctly uses 'do' as an auxiliary verb to form negatives and questions?",
+        "stem": "Choose the best interpretation of the statement.\n\nShe says she values honesty, but she often avoids answering questions directly.",
         "options": [
-          "Do you like to play football?",
-          "Like you to play football?",
-          "You like to play football?",
-          "You like playing football?"
+          "She is always truthful",
+          "She values honesty in others",
+          "Her attitude to honesty is more limited than she claims",
+          "She never receives questions"
         ],
-        "correct_answer": "Do you like to play football?",
-        "explanation": "'Do' is used as an auxiliary verb to form negatives and questions, so the correct answer is 'Do you like to play football?'"
+        "correct_answer": "Her attitude to honesty is more limited than she claims",
+        "explanation": "Correct answer: Her attitude to honesty is more limited than she claims\n\nExplanation: The statement contrasts what she says with how she behaves, suggesting inconsistency.\n\nExplanation of each option:\nHer attitude to honesty is more limited than she claims is correct because her avoidance of direct answers contradicts her stated value.\nShe is always truthful is incorrect because she avoids answering questions directly.\nShe values honesty in others is incorrect because the statement focuses on her own behaviour.\nShe never receives questions is incorrect because others do ask her questions."
       },
       {
         "question_number": 26,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
+        "topic": "Articulation and Punctuation",
+        "subtopic": "NA",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Which sentence demonstrates correct use of 'do' as an auxiliary verb to form negatives?",
+        "stem": "Choose the best interpretation of the statement.\n\nHe says he values teamwork, but he never collaborates with others on projects.",
         "options": [
-          "She don't like to play football.",
-          "She doesn't like to play football.",
-          "She doesn't likes to play football.",
-          "She don't likes to play football."
+          "He is a team player",
+          "He prefers to work alone",
+          "His attitude to teamwork is more limited than he claims",
+          "He never works on projects"
         ],
-        "correct_answer": "She doesn't like to play football.",
-        "explanation": "'Do' is used as an auxiliary verb to form negatives, and 'like' is a regular verb, so it takes 'doesn't'."
-      },
-      {
-        "question_number": 27,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "C2",
-        "target_difficulty": "Hard",
-        "stem": "In which sentence is the present tense used to convey a hypothetical situation with the highest degree of formality?",
-        "options": [
-          "If I were you, I would study harder.",
-          "If I was you, I would study harder.",
-          "If I am you, I would study harder.",
-          "If I am to be you, I would study harder."
-        ],
-        "correct_answer": "If I were you, I would study harder.",
-        "explanation": "The subjunctive 'were' is used for hypothetical situations in formal English."
-      },
-      {
-        "question_number": 31,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "C2",
-        "target_difficulty": "Hard",
-        "stem": "In which sentence is the present tense used to convey a habitual action with the highest degree of formality?",
-        "options": [
-          "They go to the park every afternoon.",
-          "They will go to the park every afternoon.",
-          "They are going to the park every afternoon.",
-          "They went to the park every afternoon."
-        ],
-        "correct_answer": "They go to the park every afternoon.",
-        "explanation": "Simple present is used to express habitual actions and is the most formal register for such contexts."
-      },
-      {
-        "question_number": 32,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "C2",
-        "target_difficulty": "Hard",
-        "stem": "Which sentence correctly uses 'be going to' to express a future intention with the highest degree of formality?",
-        "options": [
-          "They are going to the park tomorrow.",
-          "They will go to the park tomorrow.",
-          "They go to the park tomorrow.",
-          "They went to the park tomorrow."
-        ],
-        "correct_answer": "They are going to the park tomorrow.",
-        "explanation": "'Be going to' is used to express future intentions and is the most formal register for such contexts."
-      },
-      {
-        "question_number": 33,
-        "topic": "English Grammar",
-        "subtopic": "Present Tense",
-        "target_cefr": "C2",
-        "target_difficulty": "Hard",
-        "stem": "In which sentence is the present tense used to convey a hypothetical situation with the highest degree of formality?",
-        "options": [
-          "If she had more time, she would study harder.",
-          "If she has more time, she will study harder.",
-          "If she has more time, she studies harder.",
-          "If she had more time, she studies harder."
-        ],
-        "correct_answer": "If she has more time, she will study harder.",
-        "explanation": "Simple future 'will' is used to express hypothetical situations and is the most formal register for such contexts."
+        "correct_answer": "His attitude to teamwork is more limited than he claims",
+        "explanation": "Correct answer: His attitude to teamwork is more limited than he claims\n\nExplanation: The statement contrasts what he says with how he behaves, suggesting inconsistency.\n\nExplanation of each option:\nHis attitude to teamwork is more limited than he claims is correct because his lack of collaboration contradicts his stated value.\nHe is a team player is incorrect because he never collaborates with others.\nHe prefers to work alone is incorrect because the statement focuses on his lack of collaboration, not preference.\nHe never works on projects is incorrect because the statement focuses on his lack of collaboration, not participation in projects."
       }
     ]
   },
   "rejected": [
     {
-      "stage": "hard_validate",
-      "cefr": "A1",
+      "stage": "rubric",
+      "q": 11,
+      "cefr": "A2",
       "difficulty": "Easy",
+      "reason": "Major Issue with Ambiguity",
+      "stem": "Choose the statement that is NOT correct according to the ru"
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
       "iteration": 1,
-      "stem": "We _______ to the movies last night.",
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
       "errors": [
-        "correct_answer \"went\" not found in options"
+        "correct_answer \"Student absenteeism increased significantly\" not in options"
       ]
     },
     {
-      "stage": "difficulty",
-      "q": 17,
-      "cefr": "B1",
-      "difficulty": "Medium",
-      "reason": "predicted_cefr=A1 predicted_difficulty=Easy",
-      "stem": "Spot the error: 'They are going to the store.'"
-    },
-    {
-      "stage": "rubric",
-      "q": 18,
-      "cefr": "B1",
-      "difficulty": "Medium",
-      "reason": "Grammatical error in the use of 'don't' with a singular subject.",
-      "stem": "Spot the error: 'She don't like to play football.'"
-    },
-    {
-      "stage": "difficulty",
-      "q": 19,
-      "cefr": "B1",
-      "difficulty": "Medium",
-      "reason": "predicted_cefr=A1 predicted_difficulty=Easy",
-      "stem": "Spot the error: 'She don't like to play football.'"
-    },
-    {
-      "stage": "difficulty",
-      "q": 28,
+      "stage": "hard_validate",
       "cefr": "C2",
       "difficulty": "Hard",
-      "reason": "predicted_cefr=B2 predicted_difficulty=Medium",
-      "stem": "Which sentence correctly uses the present simple to convey a"
+      "iteration": 1,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Customer complaints about the product increased\" not in options"
+      ]
     },
     {
-      "stage": "difficulty",
-      "q": 29,
+      "stage": "hard_validate",
       "cefr": "C2",
       "difficulty": "Hard",
-      "reason": "predicted_cefr=A2 predicted_difficulty=Easy",
-      "stem": "In which sentence is the present tense used to convey a rout"
+      "iteration": 1,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
+      ]
     },
     {
-      "stage": "difficulty",
-      "q": 30,
+      "stage": "hard_validate",
       "cefr": "C2",
       "difficulty": "Hard",
-      "reason": "predicted_cefr=B2 predicted_difficulty=Medium",
-      "stem": "Which sentence correctly uses the present continuous to conv"
+      "iteration": 1,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 2,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Student absenteeism increased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 2,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Customer complaints about the product increased\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 2,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 2,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 3,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Student absenteeism increased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 3,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Customer complaints about the product increased\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 3,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "C2",
+      "difficulty": "Hard",
+      "iteration": 3,
+      "stem": "Choose the most accurate evaluation based on the statement.\n",
+      "errors": [
+        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
+      ]
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Hard/C2: max iterations (3) reached. Accepted 0/4."
+  ]
 }
