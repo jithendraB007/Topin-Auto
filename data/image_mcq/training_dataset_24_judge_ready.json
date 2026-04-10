@@ -1,0 +1,890 @@
+[
+  {
+    "question_id": "Q1",
+    "base_data": {
+      "instruction": "Read the instructions and choose the correct answer.",
+      "question": "What should you wash after use?",
+      "options": [
+        "Your brushes.",
+        "Your shoes.",
+        "Your hands only.",
+        "Your gloves."
+      ],
+      "correct_answer": "Your brushes.",
+      "image_content": "An art room instruction notice tells students to wash their brushes after use."
+    },
+    "image_expected_elements": [
+      "art room or classroom setting",
+      "instruction notice or sign",
+      "paint brushes visible",
+      "washing brushes after use message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q1_img_correct",
+        "label": "aligned",
+        "prompt": "Art classroom with a clear visible notice telling students to wash their brushes after use, paintbrushes near a sink, clean classroom, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q1_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Your brushes.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q1_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Art classroom with paintbrushes on desks and students ignoring them, no washing action, focus on washing shoes instead, realistic, readable classroom signage, centered composition, dataset style",
+        "generated_image": "images/Q1_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Your brushes.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q2",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you wear?",
+      "options": [
+        "A jacket.",
+        "A swimming cap.",
+        "A scarf.",
+        "A pair of gloves."
+      ],
+      "correct_answer": "A swimming cap.",
+      "image_content": "A swimming pool safety notice says swimmers must wear a swimming cap."
+    },
+    "image_expected_elements": [
+      "swimming pool setting",
+      "safety notice or sign",
+      "swimming cap mentioned",
+      "swimmers or poolside context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q2_img_correct",
+        "label": "aligned",
+        "prompt": "Swimming pool area with a clear safety sign saying swimmers must wear a swimming cap, swimmers wearing caps, clean pool environment, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q2_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'A swimming cap.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q2_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Swimming pool area with a safety sign about swimming caps, but swimmers are in the pool without wearing any caps, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q2_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'A swimming cap.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q3",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why was the author event postponed?",
+      "options": [
+        "The hall is closed.",
+        "The speaker is unwell.",
+        "The books have not arrived.",
+        "The event has been postponed."
+      ],
+      "correct_answer": "The speaker is unwell.",
+      "image_content": "A bookstore notice says the author event has been postponed because the speaker is unwell."
+    },
+    "image_expected_elements": [
+      "bookstore interior",
+      "notice board or sign",
+      "author event mentioned",
+      "speaker unwell or postponed message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q3_img_correct",
+        "label": "aligned",
+        "prompt": "Cozy bookstore interior with a readable notice board saying the author event has been postponed because the speaker is unwell, bookshelves visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q3_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The speaker is unwell.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q3_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Bookstore interior with an author event actively happening and a healthy speaker addressing an audience, no postponed context, realistic, centered composition, dataset style",
+        "generated_image": "images/Q3_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The speaker is unwell.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q4",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the play area closed?",
+      "options": [
+        "Because of repair work.",
+        "Because of a music show.",
+        "Because of heavy rain.",
+        "Because of a power cut."
+      ],
+      "correct_answer": "Because of repair work.",
+      "image_content": "A park notice says the play area is closed because repair work is being carried out."
+    },
+    "image_expected_elements": [
+      "park or playground setting",
+      "closure sign",
+      "repair work mentioned",
+      "barriers or maintenance context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q4_img_correct",
+        "label": "aligned",
+        "prompt": "Park playground with a readable sign saying the play area is closed because repair work is being carried out, repair tools and barriers visible, daytime, realistic, centered composition, dataset style",
+        "generated_image": "images/Q4_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of repair work.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q4_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Park playground open and busy with children playing freely, no repair work or barriers visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q4_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of repair work.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q5",
+    "base_data": {
+      "instruction": "Read the instructions and choose the correct answer.",
+      "question": "What should you not touch?",
+      "options": [
+        "The camera stand",
+        "Photobooth",
+        "The lenses",
+        "The lights"
+      ],
+      "correct_answer": "The lenses.",
+      "image_content": "A photography studio safety sign tells visitors not to touch the lenses."
+    },
+    "image_expected_elements": [
+      "photography studio",
+      "warning sign",
+      "camera or lenses visible",
+      "do not touch lenses message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q5_img_correct",
+        "label": "aligned",
+        "prompt": "Photography studio with cameras and a clear warning sign telling visitors not to touch the lenses, lenses visible, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q5_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The lenses.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q5_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Photography studio where a visitor is touching a camera lens directly, warning sign present but ignored, realistic, centered composition, dataset style",
+        "generated_image": "images/Q5_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The lenses.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q6",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What must you wear?",
+      "options": [
+        "Gloves",
+        "A helmet",
+        "Shoes",
+        "Rope"
+      ],
+      "correct_answer": "A helmet.",
+      "image_content": "A cycling safety notice says riders must wear a helmet."
+    },
+    "image_expected_elements": [
+      "cycling or road setting",
+      "safety notice",
+      "helmet requirement",
+      "cyclist visible"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q6_img_correct",
+        "label": "aligned",
+        "prompt": "Outdoor cycling setting with a readable safety sign saying riders must wear a helmet, cyclist wearing a helmet, realistic, centered composition, dataset style",
+        "generated_image": "images/Q6_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'A helmet.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q6_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Outdoor cycling setting with a rider cycling without a helmet, safety context visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q6_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'A helmet.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q7",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the show delayed?",
+      "options": [
+        "Because of technical adjustments.",
+        "Because of rain.",
+        "Because of low audience.",
+        "Because of the weather."
+      ],
+      "correct_answer": "Because of technical adjustments.",
+      "image_content": "A cinema notice says the show is delayed because of technical adjustments."
+    },
+    "image_expected_elements": [
+      "cinema or theatre entrance",
+      "display board or notice",
+      "show delayed message",
+      "technical adjustments mentioned"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q7_img_correct",
+        "label": "aligned",
+        "prompt": "Cinema entrance with a readable display board saying the show is delayed because of technical adjustments, people waiting, realistic, centered composition, dataset style",
+        "generated_image": "images/Q7_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of technical adjustments.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q7_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Cinema running normally with audience seated and the show starting on time, no delay context, realistic, centered composition, dataset style",
+        "generated_image": "images/Q7_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of technical adjustments.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q8",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the session cancelled?",
+      "options": [
+        "Due to bad weather.",
+        "The room is unavailable.",
+        "The instructor is travelling.",
+        "There is a holiday."
+      ],
+      "correct_answer": "The instructor is travelling.",
+      "image_content": "A pottery class notice says the session is cancelled because the instructor is travelling."
+    },
+    "image_expected_elements": [
+      "pottery classroom",
+      "notice or sign",
+      "session cancelled message",
+      "instructor travelling mentioned"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q8_img_correct",
+        "label": "aligned",
+        "prompt": "Pottery classroom with a readable notice saying the session is cancelled because the instructor is travelling, pottery tools visible, empty class, realistic, centered composition, dataset style",
+        "generated_image": "images/Q8_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The instructor is travelling.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q8_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Pottery classroom with instructor actively teaching students, normal session in progress, realistic, centered composition, dataset style",
+        "generated_image": "images/Q8_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The instructor is travelling.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q9",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you read?",
+      "options": [
+        "The labels",
+        "The walls",
+        "The floor signs",
+        "The door"
+      ],
+      "correct_answer": "The labels.",
+      "image_content": "A science museum instruction sign tells visitors to read the labels."
+    },
+    "image_expected_elements": [
+      "science museum setting",
+      "instruction sign",
+      "labels visible",
+      "visitors reading exhibits"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q9_img_correct",
+        "label": "aligned",
+        "prompt": "Science museum exhibit area with a clear instruction sign telling visitors to read the labels, display labels visible, visitors reading, realistic, centered composition, dataset style",
+        "generated_image": "images/Q9_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The labels.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q9_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Science museum exhibit area where visitors walk past displays without reading any labels, labels not being used, realistic, centered composition, dataset style",
+        "generated_image": "images/Q9_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The labels.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you carry?",
+      "options": [
+        "A camera",
+        "Enough water",
+        "A map only",
+        "Water bottle"
+      ],
+      "correct_answer": "Enough water.",
+      "image_content": "A hiking notice advises visitors to carry enough water."
+    },
+    "image_expected_elements": [
+      "hiking trail or outdoor path",
+      "advisory sign",
+      "water mentioned",
+      "hiker context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q10_img_correct",
+        "label": "aligned",
+        "prompt": "Hiking trail entrance with a readable advisory sign telling visitors to carry enough water, hikers carrying water bottles, scenic outdoor setting, realistic, centered composition, dataset style",
+        "generated_image": "images/Q10_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Enough water.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q10_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Hiking trail with visitors walking without water bottles or hydration packs, realistic, centered composition, dataset style",
+        "generated_image": "images/Q10_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Enough water.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q11",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why was the session moved indoors?",
+      "options": [
+        "Because of strong winds.",
+        "Because of rain.",
+        "Because of fewer people.",
+        "Because of the sun."
+      ],
+      "correct_answer": "Because of strong winds.",
+      "image_content": "An outdoor event notice says the session has been moved indoors because of strong winds."
+    },
+    "image_expected_elements": [
+      "outdoor event setting",
+      "notice or sign",
+      "moved indoors message",
+      "strong winds context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q11_img_correct",
+        "label": "aligned",
+        "prompt": "Outdoor event setting with a readable notice saying the session has been moved indoors because of strong winds, windy conditions visible, people moving inside, realistic, centered composition, dataset style",
+        "generated_image": "images/Q11_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of strong winds.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q11_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Outdoor event continuing outside despite windy conditions, audience staying outdoors, no move indoors visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q11_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of strong winds.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q12",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why will the shop close early?",
+      "options": [
+        "For cleaning",
+        "For special guest",
+        "For inventory checking",
+        "For renovation"
+      ],
+      "correct_answer": "For inventory checking.",
+      "image_content": "A shop notice says the store will close early for inventory checking."
+    },
+    "image_expected_elements": [
+      "retail shop interior",
+      "notice or sign",
+      "closing early message",
+      "inventory checking context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q12_img_correct",
+        "label": "aligned",
+        "prompt": "Retail shop interior with a readable notice saying the store will close early for inventory checking, staff counting stock, realistic, centered composition, dataset style",
+        "generated_image": "images/Q12_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'For inventory checking.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q12_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Retail shop operating normally with customers shopping and no inventory checking activity, realistic, centered composition, dataset style",
+        "generated_image": "images/Q12_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'For inventory checking.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q13",
+    "base_data": {
+      "instruction": "Read the instructions and choose the correct answer.",
+      "question": "What should you wash after use?",
+      "options": [
+        "Your brushes.",
+        "Your shoes.",
+        "Your hands only.",
+        "Your gloves."
+      ],
+      "correct_answer": "Your brushes.",
+      "image_content": "A swimming pool safety notice says swimmers must wear a swimming cap."
+    },
+    "image_expected_elements": [
+      "swimming pool setting",
+      "safety notice or sign",
+      "swimming cap mentioned",
+      "swimmers or poolside context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q13_img_correct",
+        "label": "aligned",
+        "prompt": "Swimming pool area with a clear safety sign saying swimmers must wear a swimming cap, swimmers wearing caps, clean pool environment, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q13_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Your brushes.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q13_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Swimming pool area with a safety sign about swimming caps, but swimmers are in the pool without wearing any caps, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q13_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Your brushes.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q14",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you wear?",
+      "options": [
+        "A jacket.",
+        "A swimming cap.",
+        "A scarf.",
+        "A pair of gloves."
+      ],
+      "correct_answer": "A swimming cap.",
+      "image_content": "A bookstore notice says the author event has been postponed because the speaker is unwell."
+    },
+    "image_expected_elements": [
+      "bookstore interior",
+      "notice board or sign",
+      "author event mentioned",
+      "speaker unwell or postponed message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q14_img_correct",
+        "label": "aligned",
+        "prompt": "Cozy bookstore interior with a readable notice board saying the author event has been postponed because the speaker is unwell, bookshelves visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q14_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'A swimming cap.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q14_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Bookstore interior with an author event actively happening and a healthy speaker addressing an audience, no postponed context, realistic, centered composition, dataset style",
+        "generated_image": "images/Q14_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'A swimming cap.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q15",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why was the author event postponed?",
+      "options": [
+        "The hall is closed.",
+        "The speaker is unwell.",
+        "The books have not arrived.",
+        "The event has been postponed."
+      ],
+      "correct_answer": "The speaker is unwell.",
+      "image_content": "A park notice says the play area is closed because repair work is being carried out."
+    },
+    "image_expected_elements": [
+      "park or playground setting",
+      "closure sign",
+      "repair work mentioned",
+      "barriers or maintenance context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q15_img_correct",
+        "label": "aligned",
+        "prompt": "Park playground with a readable sign saying the play area is closed because repair work is being carried out, repair tools and barriers visible, daytime, realistic, centered composition, dataset style",
+        "generated_image": "images/Q15_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The speaker is unwell.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q15_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Park playground open and busy with children playing freely, no repair work or barriers visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q15_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The speaker is unwell.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q16",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the play area closed?",
+      "options": [
+        "Because of repair work.",
+        "Because of a music show.",
+        "Because of heavy rain.",
+        "Because of a power cut."
+      ],
+      "correct_answer": "Because of repair work.",
+      "image_content": "A photography studio safety sign tells visitors not to touch the lenses."
+    },
+    "image_expected_elements": [
+      "photography studio",
+      "warning sign",
+      "camera or lenses visible",
+      "do not touch lenses message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q16_img_correct",
+        "label": "aligned",
+        "prompt": "Photography studio with cameras and a clear warning sign telling visitors not to touch the lenses, lenses visible, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q16_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of repair work.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q16_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Photography studio where a visitor is touching a camera lens directly, warning sign present but ignored, realistic, centered composition, dataset style",
+        "generated_image": "images/Q16_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of repair work.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q17",
+    "base_data": {
+      "instruction": "Read the instructions and choose the correct answer.",
+      "question": "What should you not touch?",
+      "options": [
+        "The camera stand",
+        "Photobooth",
+        "The lenses",
+        "The lights"
+      ],
+      "correct_answer": "The lenses.",
+      "image_content": "A cycling safety notice says riders must wear a helmet."
+    },
+    "image_expected_elements": [
+      "cycling or road setting",
+      "safety notice",
+      "helmet requirement",
+      "cyclist visible"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q17_img_correct",
+        "label": "aligned",
+        "prompt": "Outdoor cycling setting with a readable safety sign saying riders must wear a helmet, cyclist wearing a helmet, realistic, centered composition, dataset style",
+        "generated_image": "images/Q17_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The lenses.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q17_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Outdoor cycling setting with a rider cycling without a helmet, safety context visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q17_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The lenses.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q18",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What must you wear?",
+      "options": [
+        "Gloves",
+        "A helmet",
+        "Shoes",
+        "Rope"
+      ],
+      "correct_answer": "A helmet.",
+      "image_content": "A cinema notice says the show is delayed because of technical adjustments."
+    },
+    "image_expected_elements": [
+      "cinema or theatre entrance",
+      "display board or notice",
+      "show delayed message",
+      "technical adjustments mentioned"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q18_img_correct",
+        "label": "aligned",
+        "prompt": "Cinema entrance with a readable display board saying the show is delayed because of technical adjustments, people waiting, realistic, centered composition, dataset style",
+        "generated_image": "images/Q18_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'A helmet.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q18_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Cinema running normally with audience seated and the show starting on time, no delay context, realistic, centered composition, dataset style",
+        "generated_image": "images/Q18_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'A helmet.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q19",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the show delayed?",
+      "options": [
+        "Because of technical adjustments.",
+        "Because of rain.",
+        "Because of low audience.",
+        "Because of the weather."
+      ],
+      "correct_answer": "Because of technical adjustments.",
+      "image_content": "A pottery class notice says the session is cancelled because the instructor is travelling."
+    },
+    "image_expected_elements": [
+      "pottery classroom",
+      "notice or sign",
+      "session cancelled message",
+      "instructor travelling mentioned"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q19_img_correct",
+        "label": "aligned",
+        "prompt": "Pottery classroom with a readable notice saying the session is cancelled because the instructor is travelling, pottery tools visible, empty class, realistic, centered composition, dataset style",
+        "generated_image": "images/Q19_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of technical adjustments.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q19_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Pottery classroom with instructor actively teaching students, normal session in progress, realistic, centered composition, dataset style",
+        "generated_image": "images/Q19_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of technical adjustments.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q20",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why is the session cancelled?",
+      "options": [
+        "Due to bad weather.",
+        "The room is unavailable.",
+        "The instructor is travelling.",
+        "There is a holiday."
+      ],
+      "correct_answer": "The instructor is travelling.",
+      "image_content": "A science museum instruction sign tells visitors to read the labels."
+    },
+    "image_expected_elements": [
+      "science museum setting",
+      "instruction sign",
+      "labels visible",
+      "visitors reading exhibits"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q20_img_correct",
+        "label": "aligned",
+        "prompt": "Science museum exhibit area with a clear instruction sign telling visitors to read the labels, display labels visible, visitors reading, realistic, centered composition, dataset style",
+        "generated_image": "images/Q20_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The instructor is travelling.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q20_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Science museum exhibit area where visitors walk past displays without reading any labels, labels not being used, realistic, centered composition, dataset style",
+        "generated_image": "images/Q20_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The instructor is travelling.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q21",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you read?",
+      "options": [
+        "The labels",
+        "The walls",
+        "The floor signs",
+        "The door"
+      ],
+      "correct_answer": "The labels.",
+      "image_content": "A hiking notice advises visitors to carry enough water."
+    },
+    "image_expected_elements": [
+      "hiking trail or outdoor path",
+      "advisory sign",
+      "water mentioned",
+      "hiker context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q21_img_correct",
+        "label": "aligned",
+        "prompt": "Hiking trail entrance with a readable advisory sign telling visitors to carry enough water, hikers carrying water bottles, scenic outdoor setting, realistic, centered composition, dataset style",
+        "generated_image": "images/Q21_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'The labels.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q21_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Hiking trail with visitors walking without water bottles or hydration packs, realistic, centered composition, dataset style",
+        "generated_image": "images/Q21_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'The labels.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q22",
+    "base_data": {
+      "instruction": "Read the instructions carefully and choose the correct answer.",
+      "question": "What should you carry?",
+      "options": [
+        "A camera",
+        "Enough water",
+        "A map only",
+        "Water bottle"
+      ],
+      "correct_answer": "Enough water.",
+      "image_content": "An outdoor event notice says the session has been moved indoors because of strong winds."
+    },
+    "image_expected_elements": [
+      "outdoor event setting",
+      "notice or sign",
+      "moved indoors message",
+      "strong winds context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q22_img_correct",
+        "label": "aligned",
+        "prompt": "Outdoor event setting with a readable notice saying the session has been moved indoors because of strong winds, windy conditions visible, people moving inside, realistic, centered composition, dataset style",
+        "generated_image": "images/Q22_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Enough water.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q22_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Outdoor event continuing outside despite windy conditions, audience staying outdoors, no move indoors visible, realistic, centered composition, dataset style",
+        "generated_image": "images/Q22_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Enough water.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q23",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why was the session moved indoors?",
+      "options": [
+        "Because of strong winds.",
+        "Because of rain.",
+        "Because of fewer people.",
+        "Because of the sun."
+      ],
+      "correct_answer": "Because of strong winds.",
+      "image_content": "A shop notice says the store will close early for inventory checking."
+    },
+    "image_expected_elements": [
+      "retail shop interior",
+      "notice or sign",
+      "closing early message",
+      "inventory checking context"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q23_img_correct",
+        "label": "aligned",
+        "prompt": "Retail shop interior with a readable notice saying the store will close early for inventory checking, staff counting stock, realistic, centered composition, dataset style",
+        "generated_image": "images/Q23_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'Because of strong winds.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q23_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Retail shop operating normally with customers shopping and no inventory checking activity, realistic, centered composition, dataset style",
+        "generated_image": "images/Q23_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'Because of strong winds.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  },
+  {
+    "question_id": "Q24",
+    "base_data": {
+      "instruction": "Read the notice and choose the correct answer.",
+      "question": "Why will the shop close early?",
+      "options": [
+        "For cleaning",
+        "For special guest",
+        "For inventory checking",
+        "For renovation"
+      ],
+      "correct_answer": "For inventory checking.",
+      "image_content": "An art room instruction notice tells students to wash their brushes after use."
+    },
+    "image_expected_elements": [
+      "art room or classroom setting",
+      "instruction notice or sign",
+      "paint brushes visible",
+      "washing brushes after use message"
+    ],
+    "candidates": [
+      {
+        "candidate_id": "Q24_img_correct",
+        "label": "aligned",
+        "prompt": "Art classroom with a clear visible notice telling students to wash their brushes after use, paintbrushes near a sink, clean classroom, realistic, readable sign, centered composition, dataset style",
+        "generated_image": "images/Q24_img_correct.png",
+        "judge_reason": "The image supports the correct answer 'For inventory checking.' because it visually matches the notice described in image_content."
+      },
+      {
+        "candidate_id": "Q24_img_wrong",
+        "label": "not_aligned",
+        "prompt": "Art classroom with paintbrushes on desks and students ignoring them, no washing action, focus on washing shoes instead, realistic, readable classroom signage, centered composition, dataset style",
+        "generated_image": "images/Q24_img_wrong.png",
+        "judge_reason": "The image does not reliably support the correct answer 'For inventory checking.' because the key visual evidence from image_content is missing, contradicted, or ignored."
+      }
+    ]
+  }
+]
