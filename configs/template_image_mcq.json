@@ -1,0 +1,21 @@
+{
+  "_comment": "Image MCQ generator config. Copy this file, edit, then run: python generate.py --config this_file.json",
+  "_note": "No example_questions needed — they are loaded automatically from the training dataset inside the notebook.",
+  "type": "image_mcq",
+  "topic": "Reading Notices and Signs",
+  "subtopics": [
+    {
+      "subtopic": "Public Notices",
+      "a1_count": 5,
+      "a2_count": 5,
+      "b1_count": 3,
+      "b2_count": 3,
+      "c1_count": 2,
+      "c2_count": 0
+    }
+  ],
+  "constraints": {
+    "questions_per_iteration": 5,
+    "max_iterations_per_difficulty": 20
+  }
+}

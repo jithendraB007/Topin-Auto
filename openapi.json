@@ -1,0 +1,480 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "DSPy API",
+    "description": "Automatically generated API for DSPy programs",
+    "version": "0.1.0",
+    "x-dspy-config": {
+      "default_model": null,
+      "programs_count": 2
+    },
+    "x-dspy-programs": [
+      {
+        "name": "MCQGeneratorModule",
+        "module_path": "topin.modules.mcq_generator",
+        "is_forward_typed": true
+      },
+      {
+        "name": "T2TGeneratorModule",
+        "module_path": "topin.modules.t2t_generator",
+        "is_forward_typed": true
+      }
+    ],
+    "x-dspy-program-models": {
+      "MCQGeneratorModule": "mistral:mistral-small",
+      "T2TGeneratorModule": "mistral:mistral-small"
+    }
+  },
+  "paths": {
+    "/MCQGeneratorModule": {
+      "post": {
+        "summary": "Run Program",
+        "description": "Execute the DSPy program with given inputs.",
+        "operationId": "run_program_MCQGeneratorModule_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MCQGeneratorModuleRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Run Program Mcqgeneratormodule Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/T2TGeneratorModule": {
+      "post": {
+        "summary": "Run Program",
+        "description": "Execute the DSPy program with given inputs.",
+        "operationId": "run_program_T2TGeneratorModule_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/T2TGeneratorModuleRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Run Program T2Tgeneratormodule Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/live": {
+      "get": {
+        "summary": "Liveness",
+        "description": "Liveness probe -- returns 200 if the process is running.",
+        "operationId": "liveness_health_live_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/ready": {
+      "get": {
+        "summary": "Readiness",
+        "description": "Readiness probe -- returns 200 when all LM instances are initialized.",
+        "operationId": "readiness_health_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/programs": {
+      "get": {
+        "summary": "List Programs",
+        "description": "List all discovered programs and their schemas.",
+        "operationId": "list_programs_programs_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/metrics": {
+      "get": {
+        "summary": "List Metrics",
+        "description": "Get aggregated metrics for all programs.\n\nArgs:\n    sort_by: Sort key (name, calls, latency, cost, tokens, last_call)\n    order: Sort order (asc, desc)",
+        "operationId": "list_metrics_api_metrics_get",
+        "parameters": [
+          {
+            "name": "sort_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "calls",
+              "title": "Sort By"
+            }
+          },
+          {
+            "name": "order",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "desc",
+              "title": "Order"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/metrics/{program_name}": {
+      "get": {
+        "summary": "Program Metrics",
+        "description": "Get detailed metrics for a specific program.",
+        "operationId": "program_metrics_api_metrics__program_name__get",
+        "parameters": [
+          {
+            "name": "program_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Program Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Index",
+        "description": "Render the index page with a list of all programs.",
+        "operationId": "index__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ui/{program_name}": {
+      "get": {
+        "summary": "Program Page",
+        "description": "Render the program detail page.",
+        "operationId": "program_page_ui__program_name__get",
+        "parameters": [
+          {
+            "name": "program_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Program Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/logs/{program_name}": {
+      "get": {
+        "summary": "Get Logs",
+        "description": "Get recent logs for a program.",
+        "operationId": "get_logs_api_logs__program_name__get",
+        "parameters": [
+          {
+            "name": "program_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Program Name"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 50,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "MCQGeneratorModuleRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic"
+          },
+          "easy_count": {
+            "type": "integer",
+            "title": "Easy Count"
+          },
+          "medium_count": {
+            "type": "integer",
+            "title": "Medium Count"
+          },
+          "hard_count": {
+            "type": "integer",
+            "title": "Hard Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "subtopic",
+          "easy_count",
+          "medium_count",
+          "hard_count"
+        ],
+        "title": "MCQGeneratorModuleRequest"
+      },
+      "T2TGeneratorModuleRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic"
+          },
+          "easy_count": {
+            "type": "integer",
+            "title": "Easy Count"
+          },
+          "medium_count": {
+            "type": "integer",
+            "title": "Medium Count"
+          },
+          "hard_count": {
+            "type": "integer",
+            "title": "Hard Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "subtopic",
+          "easy_count",
+          "medium_count",
+          "hard_count"
+        ],
+        "title": "T2TGeneratorModuleRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

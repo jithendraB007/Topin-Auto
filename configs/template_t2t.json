@@ -1,0 +1,21 @@
+{
+  "_comment": "T2T (open-answer) generator config. Copy this file, edit, then run: python generate.py --config this_file.json",
+  "_note": "No example_questions needed — they are loaded automatically from the training dataset inside the notebook.",
+  "type": "t2t",
+  "topic": "English Language Skills",
+  "subtopics": [
+    {
+      "subtopic": "Reading and Writing",
+      "a1_count": 5,
+      "a2_count": 5,
+      "b1_count": 3,
+      "b2_count": 3,
+      "c1_count": 2,
+      "c2_count": 0
+    }
+  ],
+  "constraints": {
+    "questions_per_iteration": 5,
+    "max_iterations_per_difficulty": 20
+  }
+}

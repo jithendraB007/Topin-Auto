@@ -1,0 +1,282 @@
+[
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: Because the summary highlights the central argument and the supporting evidence without forcing the reader to search through every detail.",
+    "options": [
+      "Why should a research summary include both the main claim and the key evidence?",
+      "When should a research summary include both the main claim and the key evidence?",
+      "Where should a research summary include both the main claim and the key evidence?",
+      "Who should a research summary include both the main claim and the key evidence?"
+    ],
+    "correct_answer": "Why should a research summary include both the main claim and the key evidence?",
+    "explanation": "Person B gives a reason, so the question must ask for a reason; Why should matches the explanation.",
+    "difficulty": "Easy",
+    "cefr": "A1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: They verified the source, checked the publication date, and compared it with two other reliable reports before sharing it further.",
+    "options": [
+      "Where did they verify the source before sharing the news?",
+      "How did they confirm the information before sharing the news?",
+      "What did they verify the source before sharing the news?",
+      "Whose did they verify the source before sharing the news?"
+    ],
+    "correct_answer": "How did they confirm the information before sharing the news?",
+    "explanation": "Person B lists the method used, so a How did question is required.",
+    "difficulty": "Medium",
+    "cefr": "B1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: You can usually locate it in the university's placement portal under the internship announcements section, along with the eligibility criteria.",
+    "options": [
+      "Where can I find the official internship notice and the eligibility criteria for this semester?",
+      "Why can I find the official internship notice and the eligibility criteria for this semester?",
+      "What can I find the official internship notice and the eligibility criteria for this semester?",
+      "When can I find the official internship notice and the eligibility criteria for this semester?"
+    ],
+    "correct_answer": "Where can I find the official internship notice and the eligibility criteria for this semester?",
+    "explanation": "Person B provides a location/source, so Where can I find fits.",
+    "difficulty": "Easy",
+    "cefr": "A2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It happened after the client requested additional features, which increased both development time and testing requirements.",
+    "options": [
+      "When did the project timeline extend beyond the original estimate?",
+      "Why did the project timeline extend beyond the original estimate?",
+      "Where did the project timeline extend beyond the original estimate?",
+      "Which did the project timeline extend beyond the original estimate?"
+    ],
+    "correct_answer": "Why did the project timeline extend beyond the original estimate?",
+    "explanation": "Person B explains the cause, so the correct question must ask Why.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: The head of the finance team authorized it, because the expenditure had already been approved in last month's budget meeting.",
+    "options": [
+      "Who approved the urgent reimbursement request submitted by the interns?",
+      "Whom approved the urgent reimbursement request submitted by the interns?",
+      "Where approved the urgent reimbursement request submitted by the interns?",
+      "What approved the urgent reimbursement request submitted by the interns?"
+    ],
+    "correct_answer": "Who approved the urgent reimbursement request submitted by the interns?",
+    "explanation": "The answer identifies a person as the subject performing the action, so Who approved is correct.",
+    "difficulty": "Medium",
+    "cefr": "B1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: The report should be submitted to the academic coordinator, since that office officially forwards it to the examination committee.",
+    "options": [
+      "To whom should I submit the final project report so it reaches the examination committee properly?",
+      "Who should I submit the final project report so it reaches the examination committee properly?",
+      "Whose should I submit the final project report so it reaches the examination committee properly?",
+      "Where should I submit the final project report so it reaches the examination committee properly?"
+    ],
+    "correct_answer": "To whom should I submit the final project report so it reaches the examination committee properly?",
+    "explanation": "After the preposition to, the objective form is needed; To whom should I submit is formal and correct.",
+    "difficulty": "Hard",
+    "cefr": "C1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: The second option is more practical, because it reduces costs while still maintaining acceptable quality standards for most users.",
+    "options": [
+      "What of the two proposals should the team adopt to balance cost and quality?",
+      "Which of the two proposals should the team adopt to balance cost and quality?",
+      "Whose of the two proposals should the team adopt to balance cost and quality?",
+      "Where of the two proposals should the team adopt to balance cost and quality?"
+    ],
+    "correct_answer": "Which of the two proposals should the team adopt to balance cost and quality?",
+    "explanation": "Selection among two proposals requires Which of the two; Person B evaluates one option.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It was Dr. Meera's idea, since she noticed that students were struggling to organize long answers under time pressure.",
+    "options": [
+      "Who idea was it to introduce structured writing templates for examination answers?",
+      "Whose idea was it to introduce structured writing templates for examination answers?",
+      "Which idea was it to introduce structured writing templates for examination answers?",
+      "Whom idea was it to introduce structured writing templates for examination answers?"
+    ],
+    "correct_answer": "Whose idea was it to introduce structured writing templates for examination answers?",
+    "explanation": "Possession is required; Whose idea was it is correct and complete.",
+    "difficulty": "Medium",
+    "cefr": "B1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: Yes, the department has already circulated the updated guidelines, and they will be strictly followed for all submissions this year.",
+    "options": [
+      "Has the department released the updated guidelines for the final-year project report?",
+      "Have the department released the updated guidelines for the final-year project report?",
+      "Did the department released the updated guidelines for the final-year project report?",
+      "Are the department released the updated guidelines for the final-year project report?"
+    ],
+    "correct_answer": "Has the department released the updated guidelines for the final-year project report?",
+    "explanation": "Department is singular, so Has the department is correct in present perfect for a recent official action.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It might, especially if the speaker uses clear examples and explains each step slowly, rather than assuming the audience already knows the background.",
+    "options": [
+      "Will the workshop be useful for students who have never studied data analysis before?",
+      "Did the workshop be useful for students who have never studied data analysis before?",
+      "Are the workshop be useful for students who have never studied data analysis before?",
+      "Has the workshop be useful for students who have never studied data analysis before?"
+    ],
+    "correct_answer": "Will the workshop be useful for students who have never studied data analysis before?",
+    "explanation": "Person B predicts possibility; future modal will matches the evaluation of usefulness.",
+    "difficulty": "Hard",
+    "cefr": "C2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: Because the interviewer wants to understand not only what you did, but also how you made decisions when information was incomplete.",
+    "options": [
+      "Why do interviewers often ask candidates to describe a difficult decision they made at work or during a project?",
+      "Where do interviewers often ask candidates to describe a difficult decision they made at work or during a project?",
+      "When do interviewers often ask candidates to describe a difficult decision they made at work or during a project?",
+      "Whose do interviewers often ask candidates to describe a difficult decision they made at work or during a project?"
+    ],
+    "correct_answer": "Why do interviewers often ask candidates to describe a difficult decision they made at work or during a project?",
+    "explanation": "Person B gives a reason, so a Why question fits the response.",
+    "difficulty": "Easy",
+    "cefr": "A1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: She compared the invoice totals with the purchase order, checked the tax calculation, and then asked finance to confirm the payment status in writing.",
+    "options": [
+      "What did she verify whether the billing details were accurate before approving the payment?",
+      "Where did she verify whether the billing details were accurate before approving the payment?",
+      "How did she verify whether the billing details were accurate before approving the payment?",
+      "Whom did she verify whether the billing details were accurate before approving the payment?"
+    ],
+    "correct_answer": "How did she verify whether the billing details were accurate before approving the payment?",
+    "explanation": "Person B lists steps (method), so How did is correct.",
+    "difficulty": "Medium",
+    "cefr": "B1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It is usually on the course portal under Announcements, and the same document is also emailed to the class representative for quick circulation.",
+    "options": [
+      "Why can I access the updated assignment rubric that explains the marking criteria in detail?",
+      "When can I access the updated assignment rubric that explains the marking criteria in detail?",
+      "What can I access the updated assignment rubric that explains the marking criteria in detail?",
+      "Where can I access the updated assignment rubric that explains the marking criteria in detail?"
+    ],
+    "correct_answer": "Where can I access the updated assignment rubric that explains the marking criteria in detail?",
+    "explanation": "Person B provides the location, so Where can I access matches.",
+    "difficulty": "Easy",
+    "cefr": "A2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It happened after the vendor changed the delivery schedule twice, which forced the team to revise the installation plan at the last minute.",
+    "options": [
+      "Where did the equipment installation get delayed even though the team had prepared the site in advance?",
+      "Why did the equipment installation get delayed even though the team had prepared the site in advance?",
+      "Who did the equipment installation get delayed even though the team had prepared the site in advance?",
+      "When did the equipment installation get delayed even though the team had prepared the site in advance?"
+    ],
+    "correct_answer": "Why did the equipment installation get delayed even though the team had prepared the site in advance?",
+    "explanation": "Person B explains the cause, so Why is required.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: The senior editor approved it, because the article met the publication standards and the sources were properly cited.",
+    "options": [
+      "Who approved the article for publication after the final fact-check was completed?",
+      "Whom approved the article for publication after the final fact-check was completed?",
+      "What approved the article for publication after the final fact-check was completed?",
+      "Where approved the article for publication after the final fact-check was completed?"
+    ],
+    "correct_answer": "Who approved the article for publication after the final fact-check was completed?",
+    "explanation": "The answer identifies a person as the subject, so Who approved is correct.",
+    "difficulty": "Easy",
+    "cefr": "A1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: You should send it to the departmental review panel, because that panel formally forwards shortlisted proposals to the funding committee.",
+    "options": [
+      "To whom should I send the proposal so it is considered for internal research funding this semester?",
+      "Who should I send the proposal so it is considered for internal research funding this semester?",
+      "Whose should I send the proposal so it is considered for internal research funding this semester?",
+      "Where should I send the proposal so it is considered for internal research funding this semester?"
+    ],
+    "correct_answer": "To whom should I send the proposal so it is considered for internal research funding this semester?",
+    "explanation": "To whom is the correct formal structure after to.",
+    "difficulty": "Hard",
+    "cefr": "C1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: The second policy is more balanced, because it protects privacy while still allowing necessary access for academic audits.",
+    "options": [
+      "What of the two data policies is more suitable for a university that handles sensitive student information?",
+      "Which of the two data policies is more suitable for a university that handles sensitive student information?",
+      "Where of the two data policies is more suitable for a university that handles sensitive student information?",
+      "Whose of the two data policies is more suitable for a university that handles sensitive student information?"
+    ],
+    "correct_answer": "Which of the two data policies is more suitable for a university that handles sensitive student information?",
+    "explanation": "Choosing between two policies requires Which of the two.",
+    "difficulty": "Medium",
+    "cefr": "B1"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It was the training manager's idea, after noticing that new employees were repeating the same avoidable errors during client calls.",
+    "options": [
+      "Who idea was it to introduce mandatory role-play sessions for customer-service trainees?",
+      "Whose idea was it to introduce mandatory role-play sessions for customer-service trainees?",
+      "Whom idea was it to introduce mandatory role-play sessions for customer-service trainees?",
+      "Which idea was it to introduce mandatory role-play sessions for customer-service trainees?"
+    ],
+    "correct_answer": "Whose idea was it to introduce mandatory role-play sessions for customer-service trainees?",
+    "explanation": "Possession is required, so Whose idea is correct.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: Yes, the company has already launched the new onboarding portal, and employees are expected to use it for all compliance modules.",
+    "options": [
+      "Has the company launched the new onboarding portal for compliance training?",
+      "Have the company launched the new onboarding portal for compliance training?",
+      "Did the company has launched the new onboarding portal for compliance training?",
+      "Are the company launched the new onboarding portal for compliance training?"
+    ],
+    "correct_answer": "Has the company launched the new onboarding portal for compliance training?",
+    "explanation": "Singular subject company takes has in present perfect.",
+    "difficulty": "Medium",
+    "cefr": "B2"
+  },
+  {
+    "instruction": "Choose the correct option that completes the following conversation.",
+    "question": "Person A: _______________________<br>Person B: It could, especially if you schedule short, focused sessions and review mistakes immediately instead of postponing reflection until the end of the week.",
+    "options": [
+      "Will practicing for thirty minutes daily improve performance in complex problem-solving tasks?",
+      "Are practicing for thirty minutes daily improve performance in complex problem-solving tasks?",
+      "Has practicing for thirty minutes daily improve performance in complex problem-solving tasks?",
+      "Did practicing for thirty minutes daily improve performance in complex problem-solving tasks?"
+    ],
+    "correct_answer": "Will practicing for thirty minutes daily improve performance in complex problem-solving tasks?",
+    "explanation": "Person B gives a conditional prediction, so Will matches the meaning.",
+    "difficulty": "Hard",
+    "cefr": "C2"
+  }
+]

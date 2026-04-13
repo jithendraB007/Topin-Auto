@@ -1,0 +1,15 @@
+# dspy-cli project configuration
+# Run from d:/Topin:  dspy-cli serve --system
+
+project: topin
+
+models:
+  default: mistral:mistral-small
+  registry:
+    mistral:mistral-small:
+      model: openai/mistral-small-latest
+      api_base: https://api.mistral.ai/v1
+      env: MISTRAL_API_KEY
+      model_type: chat
+      max_tokens: 2000
+      temperature: 0.2

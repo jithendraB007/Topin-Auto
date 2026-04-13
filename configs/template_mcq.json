@@ -1,0 +1,226 @@
+{
+  "type": "mcq",
+  "topic": "English Grammar",
+  "subtopics": [
+    {
+      "subtopic": "Question Words and Question Verbs",
+      "easy_count": 5,
+      "medium_count": 10,
+      "hard_count": 5
+    }
+  ],
+  "questions": [
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ is your teacher?",
+      "options": ["Who", "What", "Where", "Why"],
+      "correct_answer": "Who",
+      "explanation": "Use 'Who' to ask about a person.",
+      "difficulty": "Easy",
+      "cefr": "A1"
+    },
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ do you eat breakfast?",
+      "options": ["When", "Where", "Who", "Which"],
+      "correct_answer": "When",
+      "explanation": "Use 'When' to ask about time.",
+      "difficulty": "Easy",
+      "cefr": "A1"
+    },
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ is your bag?",
+      "options": ["Where", "Why", "Who", "When"],
+      "correct_answer": "Where",
+      "explanation": "Use 'Where' to ask about place.",
+      "difficulty": "Easy",
+      "cefr": "A1"
+    },
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ are you late?",
+      "options": ["Why", "Who", "Where", "What"],
+      "correct_answer": "Why",
+      "explanation": "Use 'Why' to ask for a reason.",
+      "difficulty": "Easy",
+      "cefr": "A1"
+    },
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ is your favorite color?",
+      "options": ["What", "Who", "When", "Where"],
+      "correct_answer": "What",
+      "explanation": "Use 'What' to ask about things.",
+      "difficulty": "Easy",
+      "cefr": "A1"
+    },
+
+    {
+      "instruction": "Choose the correct verb.",
+      "question": "Where _______ he live?",
+      "options": ["do", "does", "is", "are"],
+      "correct_answer": "does",
+      "explanation": "Use 'does' with third-person singular subjects.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct verb.",
+      "question": "Why _______ they laughing?",
+      "options": ["is", "are", "does", "do"],
+      "correct_answer": "are",
+      "explanation": "Use 'are' with plural subjects in present continuous.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct sentence.",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Where does she goes?",
+        "Where do she go?",
+        "Where does she go?",
+        "Where she does go?"
+      ],
+      "correct_answer": "Where does she go?",
+      "explanation": "After 'does', the verb remains in base form.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct question.",
+      "question": "_______ do you prefer, tea or coffee?",
+      "options": ["Which", "Who", "Why", "Where"],
+      "correct_answer": "Which",
+      "explanation": "Use 'Which' when choosing between options.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct verb.",
+      "question": "What _______ she doing now?",
+      "options": ["is", "are", "does", "do"],
+      "correct_answer": "is",
+      "explanation": "Use 'is' with singular subject in present continuous.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Identify the correct question.",
+      "question": "_______ did you complete the assignment?",
+      "options": ["When", "Where", "Who", "Which"],
+      "correct_answer": "When",
+      "explanation": "Use 'When' to ask about time of completion.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct form.",
+      "question": "How many books _______ you read?",
+      "options": ["does", "do", "is", "are"],
+      "correct_answer": "do",
+      "explanation": "Use 'do' with subject 'you'.",
+      "difficulty": "Medium",
+      "cefr": "B1"
+    },
+    {
+      "instruction": "Choose the correct sentence.",
+      "question": "Which sentence is correct?",
+      "options": [
+        "Why did he went there?",
+        "Why did he go there?",
+        "Why he did go there?",
+        "Why did go he there?"
+      ],
+      "correct_answer": "Why did he go there?",
+      "explanation": "After 'did', use base verb.",
+      "difficulty": "Medium",
+      "cefr": "B2"
+    },
+    {
+      "instruction": "Choose the correct question word.",
+      "question": "_______ of these is yours?",
+      "options": ["Which", "Who", "Where", "Why"],
+      "correct_answer": "Which",
+      "explanation": "Use 'Which' for a limited set.",
+      "difficulty": "Medium",
+      "cefr": "B2"
+    },
+    {
+      "instruction": "Choose the correct verb.",
+      "question": "Where _______ they working?",
+      "options": ["is", "are", "does", "do"],
+      "correct_answer": "are",
+      "explanation": "Plural subject takes 'are'.",
+      "difficulty": "Medium",
+      "cefr": "B2"
+    },
+
+    {
+      "instruction": "Choose the correct sentence.",
+      "question": "Which is correct?",
+      "options": [
+        "What does she wants?",
+        "What does she want?",
+        "What she does want?",
+        "What want she does?"
+      ],
+      "correct_answer": "What does she want?",
+      "explanation": "Correct auxiliary usage and base verb form.",
+      "difficulty": "Hard",
+      "cefr": "C1"
+    },
+    {
+      "instruction": "Choose the correct structure.",
+      "question": "_______ of the candidates do you think _______ best fits the role?",
+      "options": [
+        "Which / does",
+        "Who / do",
+        "What / is",
+        "Where / does"
+      ],
+      "correct_answer": "Which / does",
+      "explanation": "Correct pairing of question word and verb.",
+      "difficulty": "Hard",
+      "cefr": "C1"
+    },
+    {
+      "instruction": "Choose the most formal sentence.",
+      "question": "Which sentence is most appropriate?",
+      "options": [
+        "Why did the team failed?",
+        "Why did the team fail?",
+        "Why the team did fail?",
+        "Why failed the team?"
+      ],
+      "correct_answer": "Why did the team fail?",
+      "explanation": "Formal and grammatically correct interrogative structure.",
+      "difficulty": "Hard",
+      "cefr": "C1"
+    },
+    {
+      "instruction": "Choose the correct structure.",
+      "question": "_______ did the committee decide to postpone the meeting?",
+      "options": ["Why", "Who", "Which", "Where"],
+      "correct_answer": "Why",
+      "explanation": "Asking for reason requires 'Why'.",
+      "difficulty": "Hard",
+      "cefr": "C2"
+    },
+    {
+      "instruction": "Choose the best option.",
+      "question": "Which sentence is grammatically accurate?",
+      "options": [
+        "How many students does attends?",
+        "How many students do attend?",
+        "How many students attends?",
+        "How many students attending?"
+      ],
+      "correct_answer": "How many students do attend?",
+      "explanation": "Plural subject takes 'do' + base verb.",
+      "difficulty": "Hard",
+      "cefr": "C2"
+    }
+  ]
+}
