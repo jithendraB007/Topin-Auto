@@ -15,12 +15,15 @@ Three generator types are supported: **MCQ**, **T2T** (open-answer), and **Image
 6. [Generator 1 — MCQ](#generator-1--mcq-multiple-choice-questions)
 7. [Generator 2 — T2T](#generator-2--t2t-text-to-text--open-answer)
 8. [Generator 3 — Image MCQ](#generator-3--image-mcq)
-9. [Output Format Reference](#output-format-reference)
-10. [CEFR to Difficulty Mapping](#cefr-to-difficulty-mapping)
-11. [Full Generation Pipeline](#full-generation-pipeline)
-12. [Judge Notebooks](#judge-notebooks-train-once-use-always)
-13. [Artifacts](#artifacts)
-14. [Troubleshooting](#troubleshooting)
+9. [Image Review Pipeline](#image-review-pipeline)
+10. [Output Format Reference](#output-format-reference)
+11. [CEFR to Difficulty Mapping](#cefr-to-difficulty-mapping)
+12. [Full Generation Pipeline](#full-generation-pipeline)
+13. [Judge Notebooks](#judge-notebooks-train-once-use-always)
+14. [Project Structure](#project-structure)
+15. [Artifacts](#artifacts)
+16. [Environment Variables](#environment-variables)
+17. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -28,12 +31,13 @@ Three generator types are supported: **MCQ**, **T2T** (open-answer), and **Image
 
 ```bash
 # 1. Install dependencies
-pip install dspy-ai pydantic python-dotenv openai google-genai Pillow jupyter nbconvert
+pip install dspy-ai pydantic python-dotenv openai google-genai Pillow jupyter nbconvert requests mistralai
 
 # 2. Create .env in the project root
 MISTRAL_API_KEY=your_mistral_key
 MISTRAL_MODEL=mistral-small-latest
 MISTRAL_API_BASE=https://api.mistral.ai/v1
+HF_TOKEN=hf_...        # free — for image generation (get at huggingface.co/settings/tokens)
 
 # 3. Open Jupyter
 cd d:/Topin
@@ -213,6 +217,14 @@ dspy-cli serve --system
 
 Open your browser at `http://localhost:8000`.
 
+### Available Modules in the Web UI
+
+| Module | Description |
+|--------|-------------|
+| **MCQ Generator** | Generates multiple-choice questions |
+| **T2T Generator** | Generates open-answer / writing questions |
+| **Image MCQ Generator** | Generates image-based MCQ questions (with `image_content` descriptions) |
+
 ### MCQ Generator — Web UI Fields
 
 | Field | Type | Example | Description |
@@ -223,8 +235,9 @@ Open your browser at `http://localhost:8000`.
 | `medium_count` | number | `10` | Total Medium questions (split B1 + B2) |
 | `hard_count` | number | `5` | Total Hard questions (split C1 + C2) |
 
-> Example questions are loaded automatically from `configs/example_questions_mcq.json` — no upload needed.
-> To change the example questions, edit that file directly.
+**Example questions** are loaded automatically from `configs/example_questions_mcq.json`.
+To use different example questions, edit that file **before** clicking Run.
+The file format is a JSON array — see [Example Questions File Format](#example-questions-file-format).
 
 ### T2T Generator — Web UI Fields
 
@@ -235,6 +248,18 @@ Open your browser at `http://localhost:8000`.
 | `easy_count` | number | `10` | Total Easy questions |
 | `medium_count` | number | `6` | Total Medium questions |
 | `hard_count` | number | `2` | Total Hard questions |
+
+### Image MCQ Generator — Web UI Fields
+
+| Field | Type | Example | Description |
+|-------|------|---------|-------------|
+| `topic` | text | `Reading Notices and Signs` | Topic name |
+| `subtopic` | text | `Public Notices` | Subtopic name |
+| `easy_count` | number | `2` | Total Easy questions (split A1 + A2) |
+| `medium_count` | number | `2` | Total Medium questions (split B1 + B2) |
+| `hard_count` | number | `1` | Total Hard questions (split C1 + C2) |
+
+After generation completes, run the [Image Review Pipeline](#image-review-pipeline) to generate actual images and quality scores.
 
 ---
 
@@ -293,7 +318,7 @@ subtopics=[
   "questions": {
     "easy": [
       {
-        "question_number": 1,
+        "question_number": "Q1",
         "topic": "English Grammar",
         "subtopic": "Present Tense",
         "target_cefr": "A1",
@@ -305,8 +330,8 @@ subtopics=[
         "explanation": "Third-person singular subjects require -s/-es in simple present."
       }
     ],
-    "medium": [ ... ],
-    "hard":   [ ... ]
+    "medium": [ { "question_number": "Q3", "...": "..." } ],
+    "hard":   [ { "question_number": "Q4", "...": "..." } ]
   },
   "rejected": [
     { "stage": "hard_validate", "errors": ["instruction is empty"] },
@@ -317,7 +342,7 @@ subtopics=[
 }
 ```
 
-**Summary keys:** `easy`, `medium`, `hard` — each has `accepted` and `rejected` counts.
+**Question numbering:** `Q1`, `Q2`, `Q3` … sequentially across all difficulty buckets (Easy first, then Medium, then Hard).
 
 ---
 
@@ -334,9 +359,9 @@ schema = InputSchema(
     subtopics=[
         SubtopicRequirement(
             subtopic='Reading and Writing',  # ← your subtopic
-            a1_count=5,   # short comprehension questions
-            a2_count=5,   # word-reorder / one-sentence replies
-            b1_count=3,   # paragraph from notes (35–45 words)
+            a1_count=5,
+            a2_count=5,
+            b1_count=3,
             b2_count=3,
             c1_count=2,
             c2_count=0,
@@ -370,7 +395,7 @@ schema = InputSchema(
   "questions": {
     "easy": [
       {
-        "question_number": 1,
+        "question_number": "Q1",
         "topic": "English Language Skills",
         "subtopic": "Reading and Writing",
         "target_cefr": "A1",
@@ -382,11 +407,9 @@ schema = InputSchema(
         "explanation": "The sentence clearly states beside the window."
       }
     ],
-    "medium": [ ... ],
-    "hard":   [ ... ]
-  },
-  "rejected": [ ... ],
-  "warnings": [ ... ]
+    "medium": [ { "question_number": "Q3", "...": "..." } ],
+    "hard":   [ { "question_number": "Q4", "...": "..." } ]
+  }
 }
 ```
 
@@ -429,23 +452,10 @@ schema = InputSchema(
 
 ```json
 {
-  "schema": {
-    "topic": "Reading Notices and Signs",
-    "subtopics": [
-      { "subtopic": "Public Notices", "a1_count": 5, "a2_count": 5, "b1_count": 3, "b2_count": 3, "c1_count": 2, "c2_count": 0 }
-    ]
-  },
-  "summary": {
-    "easy":           { "accepted": 10, "rejected": 3 },
-    "medium":         { "accepted": 6,  "rejected": 2 },
-    "hard":           { "accepted": 2,  "rejected": 1 },
-    "total_accepted": 18,
-    "total_rejected": 6
-  },
   "questions": {
     "easy": [
       {
-        "question_number": 1,
+        "question_number": "Q1",
         "topic": "Reading Notices and Signs",
         "subtopic": "Public Notices",
         "target_cefr": "A2",
@@ -458,17 +468,140 @@ schema = InputSchema(
         "explanation": "The notice states that swimmers must wear a swimming cap."
       }
     ],
-    "medium": [ ... ],
-    "hard":   [ ... ]
-  },
-  "rejected": [ ... ],
-  "warnings": [ ... ]
+    "medium": [ { "question_number": "Q3", "...": "..." } ],
+    "hard":   [ { "question_number": "Q4", "...": "..." } ]
+  }
 }
 ```
 
-> **Image MCQ differences from MCQ:**
-> - Has an extra `image_content` field — always a separate key, never merged into `question`
-> - Summary includes `total_accepted` and `total_rejected` (MCQ does not)
+> **Key field:** `image_content` — a text description of the real-world notice or sign.
+> Run [Image Review Pipeline](#image-review-pipeline) to turn these descriptions into actual images.
+
+---
+
+## Image Review Pipeline
+
+After generating Image MCQ questions, use these two scripts to generate actual images and evaluate their quality.
+
+### Step 1 — Generate Images
+
+```bash
+python generate_review_images.py
+```
+
+Reads `data/image_mcq/image_mcq_generator_output.json`, generates one image per question using **FLUX.1-schnell** (Hugging Face, free), and produces a browser-viewable HTML review page.
+
+**Outputs:**
+- `data/image_mcq/review_images/1.png`, `2.png`, … (one per question)
+- `data/image_mcq/review.html` — open in browser to review all questions with images
+
+**Requires:** `HF_TOKEN` in `.env` (free — get at [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens))
+
+**Options:**
+
+```bash
+python generate_review_images.py                          # auto-detect provider
+python generate_review_images.py --provider hf            # force Hugging Face (free)
+python generate_review_images.py --provider dalle         # force DALL-E 3 (paid, needs OPENAI_API_KEY)
+python generate_review_images.py --provider gemini        # force Gemini Imagen (paid, needs GOOGLE_API_KEY)
+python generate_review_images.py --input path/to/file.json  # custom input file
+```
+
+**Provider priority (auto mode):** Hugging Face → DALL-E 3 → Gemini Imagen
+
+Already-generated images are skipped automatically on re-runs.
+
+### Step 2 — Judge Image Quality
+
+```bash
+python judge_images.py
+```
+
+Sends each generated image to **Pixtral-12B** (Mistral vision model) for quality evaluation using your existing `MISTRAL_API_KEY`.
+
+**Outputs:**
+- `data/image_mcq/image_judge_output.json` — full rubric scores per question
+- `data/image_mcq/review_with_scores.html` — open in browser to see images with scores
+
+**Rubric (4 criteria, scored Excellent / Good / Poor):**
+
+| Criterion | What it checks |
+|-----------|---------------|
+| `relevance_to_description` | Does the image match the `image_content` description? |
+| `visual_quality` | Is the image realistic and well-rendered? |
+| `text_legibility` | Is any text in the image readable? |
+| `contextual_fit` | Does it look like a genuine real-world notice or sign? |
+
+Plus an `overall_score` (1–10) and brief `reasoning`.
+
+**Requires:** `MISTRAL_API_KEY` in `.env` (already configured for generation).
+
+### Full Image Workflow
+
+```
+dspy-cli / generate.py / Jupyter
+          │
+          ▼
+data/image_mcq/image_mcq_generator_output.json
+   (questions with image_content text descriptions)
+          │
+          ▼  python generate_review_images.py
+data/image_mcq/review_images/1.png, 2.png, ...
+data/image_mcq/review.html            ← open to review
+          │
+          ▼  python judge_images.py
+data/image_mcq/image_judge_output.json
+data/image_mcq/review_with_scores.html  ← open to review with scores
+```
+
+---
+
+## Example Questions File Format
+
+The file `configs/example_questions_mcq.json` guides the model on style, vocabulary level, and structure. Edit it before running the MCQ generator.
+
+The module accepts **two formats** — use whichever is easier for your team:
+
+**Format A — plain JSON array (minimal):**
+
+```json
+[
+  {
+    "instruction": "Choose the correct question word.",
+    "question": "_______ is your teacher?",
+    "options": ["Who", "What", "Where", "Why"],
+    "correct_answer": "Who",
+    "explanation": "Use 'Who' to ask about a person.",
+    "difficulty": "Easy",
+    "cefr": "A1"
+  }
+]
+```
+
+**Format B — full config object** (the module reads from the `"questions"` key automatically):
+
+```json
+{
+  "type": "mcq",
+  "topic": "English Grammar",
+  "subtopics": [ { "subtopic": "Conditional Sentences", "easy_count": 10, "medium_count": 8, "hard_count": 4 } ],
+  "questions": [
+    { "instruction": "...", "question": "...", "options": ["..."], "correct_answer": "...", "explanation": "...", "difficulty": "Easy", "cefr": "A1" }
+  ]
+}
+```
+
+**Field rules:**
+
+| Field | Rule |
+|-------|------|
+| `instruction` | Short task direction shown to the learner |
+| `question` | The MCQ question text (use `_______` for blanks) |
+| `options` | Exactly **4** items |
+| `correct_answer` | Copied **verbatim** from one of the options |
+| `explanation` | Why the correct answer is correct |
+| `difficulty` | `Easy`, `Medium`, or `Hard` only |
+| `cefr` | `A1`, `A2`, `B1`, `B2`, `C1`, or `C2` only |
 
 ---
 
@@ -478,7 +611,7 @@ schema = InputSchema(
 
 | Field | MCQ | T2T | Image MCQ | Description |
 |-------|:---:|:---:|:---------:|-------------|
-| `question_number` | ✓ | ✓ | ✓ | Auto-incrementing integer (not a string ID) |
+| `question_number` | ✓ | ✓ | ✓ | Sequential string ID: `"Q1"`, `"Q2"`, `"Q3"` … (Easy → Medium → Hard order) |
 | `topic` | ✓ | ✓ | ✓ | Carried from input schema |
 | `subtopic` | ✓ | ✓ | ✓ | Carried from input schema |
 | `target_cefr` | ✓ | ✓ | ✓ | `A1`, `A2`, `B1`, `B2`, `C1`, or `C2` |
@@ -499,37 +632,6 @@ schema = InputSchema(
 | MCQ | `easy.accepted`, `easy.rejected`, `medium.accepted`, `medium.rejected`, `hard.accepted`, `hard.rejected` |
 | T2T | `A1.accepted`, `A1.target`, `A2.accepted`, `A2.target`, ... `C2.accepted`, `C2.target` |
 | Image MCQ | Same as MCQ + `total_accepted`, `total_rejected` |
-
-### Rejected Item Format
-
-Each item in the `rejected` array has:
-
-```json
-{
-  "stage": "hard_validate",
-  "errors": ["instruction is empty", "correct_answer not in options"]
-}
-```
-
-or
-
-```json
-{
-  "stage": "difficulty",
-  "reason": "predicted Easy, expected Medium"
-}
-```
-
-or
-
-```json
-{
-  "stage": "rubric",
-  "reason": "ambiguity: Major Issue"
-}
-```
-
-Possible `stage` values: `hard_validate`, `difficulty`, `rubric`.
 
 ---
 
@@ -597,7 +699,10 @@ GenerationResult
   warnings      [ quota-not-met messages ]
         │
         ▼
-Save cell writes output JSON to data/<type>/<type>_generator_output.json
+generate.py reformats question_number → Q1, Q2, Q3 …
+        │
+        ▼
+Output JSON saved to data/<type>/<type>_generator_output.json
 ```
 
 ---
@@ -627,40 +732,7 @@ Fully self-contained. Run all cells top-to-bottom — no input to edit.
 
 ### Running `image_judge.ipynb`
 
-**Additional requirements:**
-
-```bash
-pip install google-genai Pillow
-```
-
-**Additional `.env` keys needed:**
-
-```
-OPENAI_API_KEY=your_openai_key
-GOOGLE_API_KEY=your_google_key
-```
-
-**What each cell does:**
-
-| Cell | Action |
-|------|--------|
-| 1    | Setup — paths, venv injection |
-| 2    | Configure DSPy (Pixtral LM) + DALL-E + Gemini clients |
-| 3    | Define Pydantic models + DSPy signature + agent |
-| 4    | Define metric (`aligned`=1.0, `not_aligned`=0.0) |
-| 5    | Load `training_dataset_24_judge_ready.json` (24 questions, Q1–Q24) |
-| 6    | **Generate 96 training images** — 48 DALL-E + 48 Gemini (skips existing files) |
-| 7    | Build DSPy examples from generated images |
-| 8    | Baseline evaluation (before optimization) |
-| 9    | Run GEPA optimizer → BootstrapFewShot fallback → save artifact |
-| 10   | Load optimized agent + post-optimization evaluation |
-| 11   | Write Promptfoo provider |
-| 12   | Build Promptfoo test cases (Q21–Q24) |
-| 13   | Write Promptfoo config YAML |
-| 14   | Run Promptfoo eval |
-| 15   | Display results |
-
-> Cell 6 makes ~96 API calls. Run it once — it skips files that already exist on re-runs.
+Fully self-contained. Run all cells top-to-bottom — no input to edit.
 
 ---
 
@@ -709,18 +781,15 @@ Topin/
 │   └── example_questions_mcq.json    # Example questions auto-loaded by MCQ generator
 ├── data/
 │   ├── mcq/
-│   │   ├── mcq_generator_output.json         ← generated output
-│   │   ├── training_dataset_standard.json
-│   │   └── eval_dataset_standard.json
+│   │   └── mcq_generator_output.json
 │   ├── t2t/
-│   │   ├── t2t_generator_output.json         ← generated output
-│   │   ├── training_dataset_clean_full.json
-│   │   └── eval_dataset_clean.json
+│   │   └── t2t_generator_output.json
 │   └── image_mcq/
-│       ├── image_mcq_generator_output.json   ← generated output
-│       ├── training_dataset_24_clean.json
-│       ├── eval_dataset_24_clean.json
-│       └── training_dataset_24_judge_ready.json
+│       ├── image_mcq_generator_output.json   ← question generator output
+│       ├── review_images/                    ← generated PNGs (1.png, 2.png, …)
+│       ├── review.html                       ← open in browser (images + questions)
+│       ├── image_judge_output.json           ← Pixtral quality scores
+│       └── review_with_scores.html           ← open in browser (images + scores)
 ├── artifacts/
 │   ├── simple_difficulty_optimized.json
 │   ├── rubric_agent_optimized.json
@@ -728,10 +797,13 @@ Topin/
 ├── src/
 │   └── topin/
 │       └── modules/
-│           ├── mcq_generator.py      # dspy-cli MCQ module
-│           └── t2t_generator.py      # dspy-cli T2T module
-├── generate.py                       # CLI runner
-├── dspy.config.yaml                  # dspy-cli configuration
+│           ├── mcq_generator.py        # dspy-cli MCQ module
+│           ├── t2t_generator.py        # dspy-cli T2T module
+│           └── image_mcq_generator.py  # dspy-cli Image MCQ module
+├── generate.py                         # CLI runner (all 3 generators)
+├── generate_review_images.py           # Image generation script (HF / DALL-E / Gemini)
+├── judge_images.py                     # Image quality judge (Pixtral)
+├── dspy.config.yaml                    # dspy-cli configuration
 ├── utils.py
 └── .env
 ```
@@ -753,13 +825,23 @@ Topin/
 Create a `.env` file in `d:/Topin/`:
 
 ```
-MISTRAL_API_KEY=your_mistral_key       # required for all generators
+# Required — all generators use Mistral AI
+MISTRAL_API_KEY=your_mistral_key
 MISTRAL_MODEL=mistral-small-latest
 MISTRAL_API_BASE=https://api.mistral.ai/v1
 
-OPENAI_API_KEY=your_openai_key         # required for image_judge.ipynb (DALL-E 3)
-GOOGLE_API_KEY=your_google_key         # required for image_judge.ipynb (Gemini Imagen 3)
+# Required for image generation (free)
+HF_TOKEN=hf_...              # get at https://huggingface.co/settings/tokens
+
+# Optional — alternative image generation providers (paid)
+OPENAI_API_KEY=your_openai_key    # for DALL-E 3
+GOOGLE_API_KEY=your_google_key    # for Gemini Imagen
 ```
+
+**Image provider priority** (auto mode in `generate_review_images.py`):
+1. `HF_TOKEN` → FLUX.1-schnell (Hugging Face, **free**)
+2. `OPENAI_API_KEY` → DALL-E 3 (paid)
+3. `GOOGLE_API_KEY` → Gemini Imagen (paid)
 
 ---
 
@@ -773,7 +855,11 @@ GOOGLE_API_KEY=your_google_key         # required for image_judge.ipynb (Gemini 
 | `dspy-cli is not installed in your project virtual environment` | Use `dspy-cli serve --system` (bypasses the venv check) |
 | `Not a valid DSPy project directory` | Run from `d:/Topin/` — the directory must contain `dspy.config.yaml` and `src/` |
 | `Configuration must contain 'models' section` | Check `dspy.config.yaml` has a `models.registry` block |
+| `HF FAILED: HTTP 410` | Old HF endpoint — update URL to `router.huggingface.co` in `generate_review_images.py` |
+| `HF FAILED: HTTP 503` | Model is loading on HF servers — the script retries automatically; wait ~1 min and re-run |
+| Gemini image generation: `limit: 0` quota error | Gemini image models require billing. Use `--provider hf` (free) instead |
+| `cannot import name 'Mistral' from 'mistralai'` | Use `from mistralai.client import Mistral` — the installed SDK version uses this path |
 | Questions rejected at difficulty stage | Improve the example questions in `configs/example_questions_mcq.json` or increase `max_iterations_per_difficulty` |
 | Questions rejected at rubric stage | Run `rubric_judge.ipynb` to optimise the rubric judge first |
-| Cell 6 in `image_judge.ipynb` fails for Gemini | Check `GOOGLE_API_KEY` in `.env`; run `pip install google-genai` |
 | Output has warnings about quota not met | Increase `max_iterations_per_difficulty` or decrease question counts |
+| `review_with_scores.html` shows "No image" | Run `generate_review_images.py` first before `judge_images.py` |

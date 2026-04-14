@@ -19,10 +19,17 @@ How it works
 Config format: see configs/template_mcq.json (or template_t2t.json / template_image_mcq.json).
 """
 import argparse
+import asyncio
 import json
-import subprocess
 import sys
 from pathlib import Path
+
+import nbformat
+from nbclient import NotebookClient  # pip install nbclient (bundled with jupyter)
+
+# Windows: ZMQ requires the selector event loop, not the default Proactor loop
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 PROJECT_ROOT = Path(__file__).parent
 
@@ -31,6 +38,26 @@ NOTEBOOK_MAP = {
     "t2t":       PROJECT_ROOT / "notebooks" / "text_to_text_generator.ipynb",
     "image_mcq": PROJECT_ROOT / "notebooks" / "image_mcq_generator.ipynb",
 }
+
+OUTPUT_MAP = {
+    "mcq":       PROJECT_ROOT / "data" / "mcq"       / "mcq_generator_output.json",
+    "t2t":       PROJECT_ROOT / "data" / "t2t"       / "t2t_generator_output.json",
+    "image_mcq": PROJECT_ROOT / "data" / "image_mcq" / "image_mcq_generator_output.json",
+}
+
+
+def _reformat_question_numbers(output_path: Path) -> None:
+    """Reformat question_number from int (1, 2, 3) to Q-string (Q1, Q2, Q3)."""
+    if not output_path.exists():
+        return
+    data = json.loads(output_path.read_text(encoding="utf-8"))
+    counter = 1
+    for bucket in ("easy", "medium", "hard"):
+        for q in data.get("questions", {}).get(bucket, []):
+            q["question_number"] = f"Q{counter}"
+            counter += 1
+    output_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
 
 # ── Schema code builders ───────────────────────────────────────────────────────
 
@@ -199,6 +226,16 @@ def inject_and_run(config_path: str) -> int:
         print(f"ERROR: Could not find input cell in {nb_path.name}")
         return 1
 
+    # Fix forward-reference NameErrors: make all annotations lazy in the fresh kernel.
+    # MCQGeneratorAgent (cell 10) references DifficultyJudgeWrapper (defined later in cell 12).
+    # This is safe — from __future__ import annotations must be the first statement.
+    for cell in nb["cells"]:
+        if cell.get("cell_type") == "code":
+            src = "".join(cell["source"]) if isinstance(cell["source"], list) else cell["source"]
+            if src.strip() and "from __future__ import annotations" not in src:
+                cell["source"] = "from __future__ import annotations\n" + src
+            break
+
     # Write modified notebook to a temp file (never overwrites original)
     tmp_nb = PROJECT_ROOT / f"_tmp_generate_{gen_type}.ipynb"
     tmp_nb.write_text(json.dumps(nb, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -214,24 +251,24 @@ def inject_and_run(config_path: str) -> int:
     print()
 
     try:
-        result = subprocess.run(
-            [
-                sys.executable, "-m", "jupyter", "nbconvert",
-                "--to", "notebook",
-                "--execute",
-                "--ExecutePreprocessor.timeout=600",
-                "--inplace",
-                str(tmp_nb),
-            ],
-            cwd=str(PROJECT_ROOT),
+        nb_obj = nbformat.read(str(tmp_nb), as_version=4)
+        client = NotebookClient(
+            nb_obj,
+            timeout=600,
+            kernel_name="python3",
+            resources={"metadata": {"path": str(PROJECT_ROOT)}},
         )
-        if result.returncode == 0:
-            print()
-            print("Done. Output saved to data/")
-        else:
-            print()
-            print(f"nbconvert exited with code {result.returncode}")
-        return result.returncode
+        client.execute()
+        # Reformat question_number: 1 → Q1, 2 → Q2, ...
+        _reformat_question_numbers(OUTPUT_MAP[gen_type])
+        print()
+        print("Done. Output saved to data/")
+        return 0
+    except Exception as e:
+        print()
+        msg = str(e).encode("ascii", errors="replace").decode("ascii")
+        print(f"Notebook execution failed: {msg}")
+        return 1
     finally:
         if tmp_nb.exists():
             tmp_nb.unlink()

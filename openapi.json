@@ -6,9 +6,14 @@
     "version": "0.1.0",
     "x-dspy-config": {
       "default_model": null,
-      "programs_count": 2
+      "programs_count": 3
     },
     "x-dspy-programs": [
+      {
+        "name": "ImageMCQGeneratorModule",
+        "module_path": "topin.modules.image_mcq_generator",
+        "is_forward_typed": true
+      },
       {
         "name": "MCQGeneratorModule",
         "module_path": "topin.modules.mcq_generator",
@@ -21,11 +26,53 @@
       }
     ],
     "x-dspy-program-models": {
+      "ImageMCQGeneratorModule": "mistral:mistral-small",
       "MCQGeneratorModule": "mistral:mistral-small",
       "T2TGeneratorModule": "mistral:mistral-small"
     }
   },
   "paths": {
+    "/ImageMCQGeneratorModule": {
+      "post": {
+        "summary": "Run Program",
+        "description": "Execute the DSPy program with given inputs.",
+        "operationId": "run_program_ImageMCQGeneratorModule_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImageMCQGeneratorModuleRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Run Program Imagemcqgeneratormodule Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/MCQGeneratorModule": {
       "post": {
         "summary": "Run Program",
@@ -368,6 +415,39 @@
         },
         "type": "object",
         "title": "HTTPValidationError"
+      },
+      "ImageMCQGeneratorModuleRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic"
+          },
+          "easy_count": {
+            "type": "integer",
+            "title": "Easy Count"
+          },
+          "medium_count": {
+            "type": "integer",
+            "title": "Medium Count"
+          },
+          "hard_count": {
+            "type": "integer",
+            "title": "Hard Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "subtopic",
+          "easy_count",
+          "medium_count",
+          "hard_count"
+        ],
+        "title": "ImageMCQGeneratorModuleRequest"
       },
       "MCQGeneratorModuleRequest": {
         "properties": {

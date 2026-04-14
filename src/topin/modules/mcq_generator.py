@@ -112,7 +112,11 @@ class MCQGeneratorModule(dspy.Module):
 
     Produces CEFR-levelled MCQ questions validated by difficulty and rubric judges.
     Output is saved to data/mcq/mcq_generator_output.json.
-    Example questions are loaded automatically from configs/example_questions_mcq.json.
+
+    To change example questions: edit configs/example_questions_mcq.json
+    before running. The file must be a JSON array — see configs/template_mcq.json
+    for the required format (instruction, question, options, correct_answer,
+    explanation, difficulty, cefr fields).
     """
 
     def __init__(self):
@@ -132,14 +136,31 @@ class MCQGeneratorModule(dspy.Module):
         easy_count   : Total Easy questions (split across A1 + A2)
         medium_count : Total Medium questions (split across B1 + B2)
         hard_count   : Total Hard questions (split across C1 + C2)
+
+        Example questions are loaded automatically from:
+            configs/example_questions_mcq.json
+        Edit that file to change your example questions before running.
         """
         examples_path = PROJECT_ROOT / "configs" / "example_questions_mcq.json"
         try:
-            examples = json.loads(examples_path.read_text(encoding="utf-8"))
+            raw = json.loads(examples_path.read_text(encoding="utf-8"))
+            # Accept both a plain array and a full config object
+            if isinstance(raw, list):
+                examples = raw
+            elif isinstance(raw, dict):
+                examples = (
+                    raw.get("questions")
+                    or raw.get("example_questions")
+                    or []
+                )
+            else:
+                examples = []
+            if not examples:
+                raise ValueError("No questions found in file")
             for ex in examples:
                 if not ex.get("subtopic"):
                     ex["subtopic"] = subtopic
-        except (json.JSONDecodeError, FileNotFoundError) as e:
+        except (json.JSONDecodeError, FileNotFoundError, ValueError):
             examples = json.loads(_DEFAULT_EXAMPLES)
             for ex in examples:
                 if not ex.get("subtopic"):

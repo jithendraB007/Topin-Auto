@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "total_questions": 5,
+    "judge_model": "pixtral-12b-2409",
+    "generator": "FLUX.1-schnell (HuggingFace)",
+    "rubric_criteria": [
+      "relevance_to_description",
+      "visual_quality",
+      "text_legibility",
+      "contextual_fit"
+    ]
+  },
+  "results": [
+    {
+      "question_number": 1,
+      "difficulty": "easy",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A library notice says the building will be closed for maintenance tomorrow.",
+      "question": "Why will the library be closed tomorrow?",
+      "options": [
+        "For a holiday",
+        "For maintenance",
+        "For a special event",
+        "For a meeting"
+      ],
+      "correct_answer": "For maintenance",
+      "explanation": "The notice clearly states that the library will be closed for maintenance.",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy",
+      "image_path": "1.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Good",
+        "overall_score": 4,
+        "reasoning": "The text content does not match the intended notice about a library closure for maintenance, making it irrelevant to the description. The visual quality and legibility are acceptable, and the image fits the context of a real-world notice, but the incorrect text significantly detracts from its accuracy."
+      },
+      "error": null
+    },
+    {
+      "question_number": 2,
+      "difficulty": "easy",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A gym notice says the swimming pool is closed for cleaning today.",
+      "question": "Why is the swimming pool closed today?",
+      "options": [
+        "For a swimming competition",
+        "For cleaning",
+        "For a private event",
+        "For a public holiday"
+      ],
+      "correct_answer": "For cleaning",
+      "explanation": "The notice indicates that the swimming pool is closed for cleaning.",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy",
+      "image_path": "2.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Excellent",
+        "text_legibility": "Excellent",
+        "contextual_fit": "Excellent",
+        "overall_score": 9,
+        "reasoning": "The image accurately conveys the intended message with a minor typographical error ('cining' instead of 'cleaning'), making it 'Good' in relevance. The visual quality, text legibility, and contextual fit are all excellent, as the sign appears realistic and professional."
+      },
+      "error": null
+    },
+    {
+      "question_number": 3,
+      "difficulty": "medium",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A library notice says the building will be closed for renovation next week.",
+      "question": "Why will the library be closed next week?",
+      "options": [
+        "For maintenance",
+        "For renovation",
+        "For a special event",
+        "For cleaning"
+      ],
+      "correct_answer": "For renovation",
+      "explanation": "The notice clearly states that the library will be closed for renovation.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium",
+      "image_path": "3.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 5,
+        "reasoning": "The image correctly indicates a library closure but the text is garbled and unreadable, which significantly detracts from its effectiveness. The visual quality and framing are realistic, but the gibberish text undermines the intended message and realism."
+      },
+      "error": null
+    },
+    {
+      "question_number": 4,
+      "difficulty": "medium",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A gym notice says the fitness class has been cancelled due to the instructor's illness.",
+      "question": "Why has the fitness class been cancelled?",
+      "options": [
+        "Due to heavy rain",
+        "Due to the instructor's illness",
+        "Due to a power cut",
+        "Due to maintenance"
+      ],
+      "correct_answer": "Due to the instructor's illness",
+      "explanation": "The notice states that the class has been cancelled due to the instructor's illness.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium",
+      "image_path": "4.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Good",
+        "overall_score": 4,
+        "reasoning": "The text in the image does not match the intended notice content about a fitness class cancellation due to instructor illness; instead, it contains nonsensical text. The visual quality and legibility are acceptable, and the sign appears realistic, but the content is irrelevant."
+      },
+      "error": null
+    },
+    {
+      "question_number": 5,
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A museum notice says the exhibition has been extended due to high demand.",
+      "question": "Why has the exhibition been extended?",
+      "options": [
+        "Due to low attendance.",
+        "Due to high demand.",
+        "Due to a change in theme.",
+        "Due to a power outage."
+      ],
+      "correct_answer": "Due to high demand.",
+      "explanation": "The notice states that the exhibition has been extended due to high demand, so the correct answer is 'Due to high demand'.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "5.png",
+      "rubric": {
+        "relevance_to_description": "Excellent",
+        "visual_quality": "Good",
+        "text_legibility": "Excellent",
+        "contextual_fit": "Excellent",
+        "overall_score": 9,
+        "reasoning": "The image perfectly matches the intended notice content, with clear and legible text. The visual quality is high, and the sign appears realistic and well-rendered, fitting seamlessly into a real-world museum setting."
+      },
+      "error": null
+    }
+  ]
+}

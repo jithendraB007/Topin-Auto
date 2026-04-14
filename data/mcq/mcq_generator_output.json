@@ -1,603 +1,502 @@
 {
   "schema": {
-    "topic": "Articulation and Punctuation",
+    "topic": "English Grammar\n",
     "subtopics": [
       {
-        "subtopic": "NA",
-        "a1_count": 10,
-        "a2_count": 5,
-        "b1_count": 3,
-        "b2_count": 2,
-        "c1_count": 6,
-        "c2_count": 4
+        "subtopic": "Conditioansl",
+        "a1_count": 1,
+        "a2_count": 1,
+        "b1_count": 6,
+        "b2_count": 7,
+        "c1_count": 5,
+        "c2_count": 5
       }
     ],
     "constraints": {
-      "questions_per_iteration": 6,
-      "max_iterations_per_difficulty": 3
+      "questions_per_iteration": 5,
+      "max_iterations_per_difficulty": 20
     }
   },
   "summary": {
-    "A1": {
-      "accepted": 10,
-      "target": 10
-    },
-    "A2": {
-      "accepted": 5,
-      "target": 5
-    },
-    "B1": {
-      "accepted": 3,
-      "target": 3
-    },
-    "B2": {
+    "easy": {
       "accepted": 2,
-      "target": 2
+      "rejected": 2
     },
-    "C1": {
-      "accepted": 6,
-      "target": 6
+    "medium": {
+      "accepted": 13,
+      "rejected": 1
     },
-    "C2": {
-      "accepted": 0,
-      "target": 4
+    "hard": {
+      "accepted": 10,
+      "rejected": 1
     }
   },
   "questions": {
     "easy": [
       {
         "question_number": 1,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
         "target_cefr": "A1",
         "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe girl is eating an apple.\n\nWhat is the girl eating?",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: I can help you with that if you ask me now.",
         "options": [
-          "A banana",
-          "An apple",
-          "A sandwich",
-          "A book"
+          "Can you help me if I ask you now?",
+          "Did you help me if I asked you now?",
+          "Are you helping me if I ask you now?",
+          "Had you helped me if I asked you now?"
         ],
-        "correct_answer": "An apple",
-        "explanation": "Correct answer: An apple\n\nExplanation: The sentence clearly states that the girl is eating an apple.\n\nExplanation of each option:\nAn apple is correct because it exactly matches the information in the sentence.\nA banana is incorrect because the sentence does not mention a banana.\nA sandwich is incorrect because the sentence does not mention a sandwich.\nA book is incorrect because the sentence does not mention a book."
-      },
-      {
-        "question_number": 2,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe dog is sitting on the mat.\n\nWhere is the dog sitting?",
-        "options": [
-          "On the bed",
-          "On the mat",
-          "On the floor",
-          "On the table"
-        ],
-        "correct_answer": "On the mat",
-        "explanation": "Correct answer: On the mat\n\nExplanation: The sentence clearly gives the dog's location.\n\nExplanation of each option:\nOn the mat is correct because it exactly matches the sentence.\nOn the bed is incorrect because that location is not mentioned.\nOn the floor is incorrect because it changes the place completely.\nOn the table is incorrect because the dog is said to be on the mat."
+        "correct_answer": "Can you help me if I ask you now?",
+        "explanation": "Person B offers immediate help using 'can help,' so Person A's question must use a first conditional structure with present simple in the if-clause. 'Can you help…if I ask' correctly signals a real and possible condition."
       },
       {
         "question_number": 3,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe children are playing in the garden.\n\nWhat are the children doing?",
-        "options": [
-          "Playing in the garden",
-          "Reading books",
-          "Playing video games",
-          "Swimming in the pool"
-        ],
-        "correct_answer": "Playing in the garden",
-        "explanation": "Correct answer: Playing in the garden\n\nExplanation: The sentence directly tells us what the children are doing.\n\nExplanation of each option:\nPlaying in the garden is correct because it exactly matches the action in the sentence.\nReading books is incorrect because no reading activity is mentioned.\nPlaying video games is incorrect because the activity is outdoors and different.\nSwimming in the pool is incorrect because the children are described as playing in the garden."
-      },
-      {
-        "question_number": 4,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe car is parked in front of the house.\n\nWhere is the car?",
-        "options": [
-          "In front of the house",
-          "In the garage",
-          "On the street",
-          "In the driveway"
-        ],
-        "correct_answer": "In front of the house",
-        "explanation": "Correct answer: In front of the house\n\nExplanation: The sentence directly provides the location of the car.\n\nExplanation of each option:\nIn front of the house is correct because it matches the statement exactly.\nIn the garage is incorrect because a car can be there but the sentence does not specify it.\nOn the street is incorrect because that location is not mentioned.\nIn the driveway is incorrect because the car is said to be in front of the house."
-      },
-      {
-        "question_number": 5,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe woman is wearing a blue hat.\n\nWhat color is the hat?",
-        "options": [
-          "Red",
-          "Blue",
-          "Green",
-          "Yellow"
-        ],
-        "correct_answer": "Blue",
-        "explanation": "Correct answer: Blue\n\nExplanation: The sentence clearly states that the woman is wearing a blue hat.\n\nExplanation of each option:\nBlue is correct because it exactly matches the information in the sentence.\nRed is incorrect because the sentence does not mention a red hat.\nGreen is incorrect because the sentence does not mention a green hat.\nYellow is incorrect because the sentence does not mention a yellow hat."
-      },
-      {
-        "question_number": 6,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe cat is looking at the bird.\n\nWhat is the cat doing?",
-        "options": [
-          "Looking at the bird",
-          "Chasing the bird",
-          "Sleeping",
-          "Eating"
-        ],
-        "correct_answer": "Looking at the bird",
-        "explanation": "Correct answer: Looking at the bird\n\nExplanation: The sentence directly tells us what the cat is doing.\n\nExplanation of each option:\nLooking at the bird is correct because it exactly matches the action in the sentence.\nChasing the bird is incorrect because no chasing activity is mentioned.\nSleeping is incorrect because the sentence does not mention sleeping.\nEating is incorrect because the sentence does not mention eating."
-      },
-      {
-        "question_number": 7,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe girl is holding a yellow umbrella.\n\nWhat is the girl holding?",
-        "options": [
-          "A yellow umbrella",
-          "A red ball",
-          "A blue book",
-          "A green hat"
-        ],
-        "correct_answer": "A yellow umbrella",
-        "explanation": "Correct answer: A yellow umbrella\n\nExplanation: The sentence clearly states that the girl is holding a yellow umbrella.\n\nExplanation of each option:\nA yellow umbrella is correct because it exactly matches the information in the sentence.\nA red ball is incorrect because neither a ball nor the colour red is mentioned.\nA blue book is incorrect because the object is identified as an umbrella.\nA green hat is incorrect because no hat is referred to in the sentence."
-      },
-      {
-        "question_number": 8,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe dog is sitting next to the tree.\n\nWhere is the dog sitting?",
-        "options": [
-          "Next to the tree",
-          "On the bench",
-          "Inside the house",
-          "Under the table"
-        ],
-        "correct_answer": "Next to the tree",
-        "explanation": "Correct answer: Next to the tree\n\nExplanation: The sentence clearly gives the dog's location.\n\nExplanation of each option:\nNext to the tree is correct because it exactly matches the sentence.\nOn the bench is incorrect because that location is not mentioned.\nInside the house is incorrect because it changes the place completely.\nUnder the table is incorrect because the dog is said to be next to the tree."
-      },
-      {
-        "question_number": 9,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe children are playing with the toys in the room.\n\nWhat are the children doing?",
-        "options": [
-          "Playing with the toys",
-          "Reading books",
-          "Watching TV",
-          "Eating lunch"
-        ],
-        "correct_answer": "Playing with the toys",
-        "explanation": "Correct answer: Playing with the toys\n\nExplanation: The sentence directly tells us what the children are doing.\n\nExplanation of each option:\nPlaying with the toys is correct because it exactly matches the action in the sentence.\nReading books is incorrect because no reading activity is mentioned.\nWatching TV is incorrect because the activity is indoors and different.\nEating lunch is incorrect because the children are described as playing with toys."
-      },
-      {
-        "question_number": 10,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A1",
-        "target_difficulty": "Easy",
-        "stem": "Read the sentence carefully and answer the question.\n\nThe car is parked in front of the store.\n\nWhere is the car?",
-        "options": [
-          "In front of the store",
-          "Inside the garage",
-          "Next to the park",
-          "Under the bridge"
-        ],
-        "correct_answer": "In front of the store",
-        "explanation": "Correct answer: In front of the store\n\nExplanation: The sentence directly provides the location of the car.\n\nExplanation of each option:\nIn front of the store is correct because it matches the statement exactly.\nInside the garage is incorrect because a car cannot be there according to the sentence.\nNext to the park is incorrect because that location is not mentioned.\nUnder the bridge is incorrect because the car is said to be in front of the store."
-      },
-      {
-        "question_number": 12,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
         "target_cefr": "A2",
         "target_difficulty": "Easy",
-        "stem": "Based on the information given, choose the option that is NOT true.\n\nA comma (,) is used to separate items in a list.\n\nWhich option is NOT true?",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________\nPerson B: Generally, yes. If people don't exercise regularly, their health tends to suffer.",
         "options": [
-          "A comma (,) is used to separate items in a list.",
-          "A comma (,) is used to separate independent clauses in a sentence.",
-          "A comma (,) is used to introduce a dependent clause.",
-          "A comma (,) is used to separate the items in a series."
+          "Does lack of exercise affect people's health?",
+          "Will lack of exercise affect people's health?",
+          "Would lack of exercise affect people's health?",
+          "Had lack of exercise affected people's health?"
         ],
-        "correct_answer": "A comma (,) is used to introduce a dependent clause.",
-        "explanation": "Correct answer: A comma (,) is used to introduce a dependent clause.\n\nExplanation: The statement says that a comma (,) is used to separate items in a list, so introducing a dependent clause is not its function.\n\nExplanation of each option:\nA comma (,) is used to separate items in a list. is incorrect because it matches the statement.\nA comma (,) is used to separate independent clauses in a sentence. is incorrect because it is consistent with the information given.\nA comma (,) is used to introduce a dependent clause. is correct because it contradicts the statement.\nA comma (,) is used to separate the items in a series. is incorrect because it accurately restates the information given."
-      },
-      {
-        "question_number": 13,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "stem": "Choose the option that is NOT true according to the rule.\n\nA semicolon (;) is used to join two related independent clauses.\n\nWhich option is NOT true?",
-        "options": [
-          "A semicolon (;) is used to join two related independent clauses.",
-          "A semicolon (;) is used to separate items in a list.",
-          "A semicolon (;) is used to connect two independent clauses with a transitional phrase.",
-          "A semicolon (;) is used to separate items in a series."
-        ],
-        "correct_answer": "A semicolon (;) is used to separate items in a list.",
-        "explanation": "Correct answer: A semicolon (;) is used to separate items in a list.\n\nExplanation: The rule states that a semicolon (;) is used to join two related independent clauses, so separating items in a list is not its function.\n\nExplanation of each option:\nA semicolon (;) is used to join two related independent clauses. is incorrect because it repeats the rule.\nA semicolon (;) is used to separate items in a list. is correct because it contradicts the rule.\nA semicolon (;) is used to connect two independent clauses with a transitional phrase. is incorrect because it is consistent with the rule.\nA semicolon (;) is used to separate items in a series. is incorrect because it accurately restates the information given."
-      },
-      {
-        "question_number": 14,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "stem": "Based on the information given, choose the option that is NOT true.\n\nA question mark (?) is used to indicate a direct question.\n\nWhich option is NOT true?",
-        "options": [
-          "A question mark (?) is used to indicate a direct question.",
-          "A question mark (?) is used to indicate an indirect question.",
-          "A question mark (?) is used to indicate an exclamation.",
-          "A question mark (?) is used to indicate a statement."
-        ],
-        "correct_answer": "A question mark (?) is used to indicate an indirect question.",
-        "explanation": "Correct answer: A question mark (?) is used to indicate an indirect question.\n\nExplanation: The statement says that a question mark (?) is used to indicate a direct question, so indicating an indirect question is not its function.\n\nExplanation of each option:\nA question mark (?) is used to indicate a direct question. is incorrect because it matches the statement.\nA question mark (?) is used to indicate an indirect question. is correct because it contradicts the statement.\nA question mark (?) is used to indicate an exclamation. is incorrect because it is consistent with the rule.\nA question mark (?) is used to indicate a statement. is incorrect because it accurately restates the information given."
-      },
-      {
-        "question_number": 15,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "stem": "Choose the option that is NOT true according to the rule.\n\nAn exclamation mark (!) is used to express strong feelings or emphasis.\n\nWhich option is NOT true?",
-        "options": [
-          "An exclamation mark (!) is used to express strong feelings or emphasis.",
-          "An exclamation mark (!) is used to indicate a question.",
-          "An exclamation mark (!) is used to indicate a statement.",
-          "An exclamation mark (!) is used to indicate an indirect question."
-        ],
-        "correct_answer": "An exclamation mark (!) is used to indicate a question.",
-        "explanation": "Correct answer: An exclamation mark (!) is used to indicate a question.\n\nExplanation: The rule states that an exclamation mark (!) is used to express strong feelings or emphasis, so indicating a question is not its function.\n\nExplanation of each option:\nAn exclamation mark (!) is used to express strong feelings or emphasis. is incorrect because it repeats the rule.\nAn exclamation mark (!) is used to indicate a question. is correct because it contradicts the rule.\nAn exclamation mark (!) is used to indicate a statement. is incorrect because it is consistent with the rule.\nAn exclamation mark (!) is used to indicate an indirect question. is incorrect because it accurately restates the information given."
-      },
-      {
-        "question_number": 16,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "stem": "Choose the statement that is NOT correct according to the rule.\n\nA period (.) is used to indicate the end of a declarative sentence.\n\nWhich option is NOT true?",
-        "options": [
-          "A period is used to end a sentence",
-          "A period is used to indicate a full stop",
-          "A period is used to end a declarative sentence",
-          "A period is used to start a new paragraph"
-        ],
-        "correct_answer": "A period is used to start a new paragraph",
-        "explanation": "Correct answer: A period is used to start a new paragraph\n\nExplanation: A period is used to end a declarative sentence, not to start a new paragraph.\n\nExplanation of each option:\nA period is used to end a sentence is incorrect because it agrees with the statement.\nA period is used to indicate a full stop is incorrect because that is true according to the statement.\nA period is used to end a declarative sentence is incorrect because it accurately restates the information given.\nA period is used to start a new paragraph is correct because it contradicts the statement."
+        "correct_answer": "Does lack of exercise affect people's health?",
+        "explanation": "Person B states a general truth using zero conditional (present simple in both clauses). Person A's question must therefore ask about a general fact."
       }
     ],
     "medium": [
       {
+        "question_number": 3,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If I had more time, I would read more books.",
+        "options": [
+          "What would you read if you had more time?",
+          "What will you read if you have more time?",
+          "What did you read if you had more time?",
+          "What would you have read if you had had more time?"
+        ],
+        "correct_answer": "What would you read if you had more time?",
+        "explanation": "Person B uses a second conditional (If I had…I would read), indicating a hypothetical situation. Person A's question must match with 'What would you read if you had more time' to invite this type of imagined scenario."
+      },
+      {
+        "question_number": 4,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If she studied more regularly, she might improve her grades.",
+        "options": [
+          "Do you think she will improve her grades if she studies more regularly?",
+          "Do you think she would improve her grades if she studied more regularly?",
+          "Do you think she would have improved her grades if she had studied more regularly?",
+          "Do you think she improved her grades if she studied more regularly?"
+        ],
+        "correct_answer": "Do you think she would improve her grades if she studied more regularly?",
+        "explanation": "Person B uses a second conditional (If she studied…she might improve), indicating a hypothetical present situation. Person A's question must also use second conditional: 'would improve if she studied more regularly.'"
+      },
+      {
+        "question_number": 5,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If he worked harder, he could get a promotion.",
+        "options": [
+          "Do you think he will get a promotion if he works harder?",
+          "Do you think he would get a promotion if he worked harder?",
+          "Do you think he would have got a promotion if he had worked harder?",
+          "Do you think he got a promotion if he worked harder?"
+        ],
+        "correct_answer": "Do you think he would get a promotion if he worked harder?",
+        "explanation": "Person B uses a first conditional (If he worked…he could get), describing a real future possibility. Person A's question must use 'would get if he worked harder' to match this real conditional meaning."
+      },
+      {
+        "question_number": 6,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If I were you, I would apologize to her immediately.",
+        "options": [
+          "What would you do if you were me?",
+          "What will you do if you are me?",
+          "What did you do if you were me?",
+          "What would you have done if you had been me?"
+        ],
+        "correct_answer": "What would you do if you were me?",
+        "explanation": "Person B uses a second conditional (If I were…I would apologize), indicating a hypothetical situation. Person A's question must match with 'What would you do if you were me' to invite this type of imagined advice."
+      },
+      {
+        "question_number": 7,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If she had asked me earlier, I could have helped her.",
+        "options": [
+          "What could you have done if she had asked you earlier?",
+          "What could you do if she asks you earlier?",
+          "What would you do if she had asked you earlier?",
+          "What did you do if she had asked you earlier?"
+        ],
+        "correct_answer": "What could you have done if she had asked you earlier?",
+        "explanation": "Person B uses a third conditional (If she had asked…I could have helped), describing an unreal past situation. Person A's question must use 'What could you have done if she had asked earlier' to match this unreal conditional meaning."
+      },
+      {
+        "question_number": 8,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B1",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If I had known you were coming, I would have prepared something special for you.",
+        "options": [
+          "What would you have prepared if you had known I was coming?",
+          "What will you prepare if you know I am coming?",
+          "What did you prepare if you knew I was coming?",
+          "What would you prepare if you know I am coming?"
+        ],
+        "correct_answer": "What would you have prepared if you had known I was coming?",
+        "explanation": "Person B uses a third conditional (If I had known…I would have prepared), indicating a past hypothetical situation. Person A's question must also use third conditional: 'What would you have prepared if you had known…'"
+      },
+      {
+        "question_number": 9,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If the meeting had started on time, we would have finished earlier.",
+        "options": [
+          "Would we have finished earlier if the meeting had started on time?",
+          "Will we finish earlier if the meeting starts on time?",
+          "Did we finish earlier if the meeting had started on time?",
+          "Would we finish earlier if the meeting were on time?"
+        ],
+        "correct_answer": "Would we have finished earlier if the meeting had started on time?",
+        "explanation": "Person B uses a third conditional (If the meeting had started…we would have finished), referring to an unreal past event. Person A's question must match with 'Would we have finished…if the meeting had started,' the standard third conditional question form."
+      },
+      {
+        "question_number": 10,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If the client had provided the information earlier, we could have started the project sooner.",
+        "options": [
+          "Could we have started the project sooner if the client had provided the information earlier?",
+          "Can we start the project sooner if the client provides the information earlier?",
+          "Would we start the project sooner if the client provided the information earlier?",
+          "Did we start the project sooner if the client had provided the information earlier?"
+        ],
+        "correct_answer": "Could we have started the project sooner if the client had provided the information earlier?",
+        "explanation": "Person B uses a third conditional (If the client had provided…we could have started), an unreal past situation. Person A's question must use 'Could we have started…if the client had provided,' the correct third conditional interrogative form."
+      },
+      {
+        "question_number": 11,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: Had the project been managed properly, the deadline wouldn't have been missed.",
+        "options": [
+          "Would the deadline have been missed if the project had been managed properly?",
+          "Will the deadline be missed if the project is not managed properly?",
+          "Would the deadline be missed if the project were not managed properly?",
+          "Was the deadline missed if the project had been managed properly?"
+        ],
+        "correct_answer": "Would the deadline have been missed if the project had been managed properly?",
+        "explanation": "Person B uses a third conditional inversion (Had the project been managed…the deadline wouldn't have been missed). Person A's question must use the third conditional interrogative: 'Would the deadline have been missed if the project had been managed.'"
+      },
+      {
+        "question_number": 12,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If the teacher had explained the concept earlier, the students would have understood it better.",
+        "options": [
+          "Could the students have understood the concept better if the teacher had explained it earlier?",
+          "Can the students understand the concept better if the teacher explains it earlier?",
+          "Would the students understand the concept better if the teacher explained it earlier?",
+          "Did the students understand the concept better if the teacher had explained it earlier?"
+        ],
+        "correct_answer": "Could the students have understood the concept better if the teacher had explained it earlier?",
+        "explanation": "Person B uses a third conditional inversion to describe an unreal past outcome. Person A's question uses the matching third conditional interrogative: 'Could the students have understood the concept better if the teacher had explained.'"
+      },
+      {
+        "question_number": 13,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: Should you encounter any difficulties, please don't hesitate to contact us.",
+        "options": [
+          "What should I do if I encounter difficulties with this process?",
+          "What would I do if I encountered difficulties with this process?",
+          "What did I do if I had encountered difficulties with this process?",
+          "What could I do if I had encountered difficulties with this process?"
+        ],
+        "correct_answer": "What should I do if I encounter difficulties with this process?",
+        "explanation": "Person B uses a formal first conditional inversion (Should you encounter…please don't hesitate), advising on a real possible situation. Person A's question uses 'What should I do if I encounter,' which correctly matches this formal first conditional context."
+      },
+      {
+        "question_number": 14,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "B2",
+        "target_difficulty": "Medium",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If the customer had placed the order earlier, we could have delivered it on time.",
+        "options": [
+          "Could we have delivered it on time if the customer had placed the order earlier?",
+          "Will we deliver it on time if the customer places the order earlier?",
+          "Would we deliver it on time if the customer placed the order earlier?",
+          "Did we deliver it on time if the customer had placed the order earlier?"
+        ],
+        "correct_answer": "Could we have delivered it on time if the customer had placed the order earlier?",
+        "explanation": "Person B uses a third conditional (If the customer had placed…we could have delivered), referring to an unreal past event. Person A's question must match with 'Could we have delivered…if the customer had placed,' the standard third conditional question form."
+      },
+      {
         "question_number": 16,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "stem": "Read the statement and answer the question.\n\nLila brought an umbrella because it was raining heavily.\n\nWhy did Lila bring an umbrella?",
-        "options": [
-          "She wanted to look stylish",
-          "It was raining heavily",
-          "She was going to a party",
-          "She had forgotten her keys"
-        ],
-        "correct_answer": "It was raining heavily",
-        "explanation": "Correct answer: It was raining heavily\n\nExplanation: The sentence directly gives the reason for Lila bringing an umbrella.\n\nExplanation of each option:\nIt was raining heavily is correct because it clearly explains why she brought an umbrella.\nShe wanted to look stylish is incorrect because appearance is not mentioned.\nShe was going to a party is incorrect because the sentence focuses on weather, not an event.\nShe had forgotten her keys is incorrect because keys are not discussed in the statement."
-      },
-      {
-        "question_number": 17,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "stem": "Read the statement and identify the reason.\n\nNina wore a coat because the weather was cold.\n\nWhy did Nina wear a coat?",
-        "options": [
-          "She wanted to look warm",
-          "The weather was cold",
-          "She was going to a concert",
-          "She had lost her scarf"
-        ],
-        "correct_answer": "The weather was cold",
-        "explanation": "Correct answer: The weather was cold\n\nExplanation: The sentence directly explains why Nina wore a coat.\n\nExplanation of each option:\nThe weather was cold is correct because it is the stated reason.\nShe wanted to look warm is incorrect because motivation of that kind is not mentioned.\nShe was going to a concert is incorrect because that situation is not given.\nShe had lost her scarf is incorrect because the sentence focuses on temperature, not lost items."
-      },
-      {
-        "question_number": 18,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "stem": "Read the statement and answer the question.\n\nMarco checked his notes because he had a test the next day.\n\nWhy did Marco check his notes?",
-        "options": [
-          "He wanted to impress his teacher",
-          "He had a test the next day",
-          "He was going to a movie",
-          "He had lost his textbook"
-        ],
-        "correct_answer": "He had a test the next day",
-        "explanation": "Correct answer: He had a test the next day\n\nExplanation: The sentence clearly gives the reason for Marco checking his notes.\n\nExplanation of each option:\nHe had a test the next day is correct because it directly explains his action.\nHe wanted to impress his teacher is incorrect because motivation of that kind is not mentioned.\nHe was going to a movie is incorrect because the sentence focuses on an upcoming test, not leisure.\nHe had lost his textbook is incorrect because no textbook problem is described."
-      },
-      {
-        "question_number": 19,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
         "target_cefr": "B2",
         "target_difficulty": "Medium",
-        "stem": "What can be inferred from the statement?\n\nDespite the heavy traffic, the delivery driver arrived on time.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If the teacher had explained the concept earlier, the students would have understood it better.",
         "options": [
-          "The driver was inexperienced",
-          "The driver managed the situation well",
-          "The delivery was delayed",
-          "The traffic was light"
+          "Could the students have understood the concept better if the teacher had explained it earlier?",
+          "Can the students understand the concept better if the teacher explains it earlier?",
+          "Would the students understand the concept better if the teacher explains it earlier?",
+          "Did the students understand the concept better if the teacher had explained it earlier?"
         ],
-        "correct_answer": "The driver managed the situation well",
-        "explanation": "Correct answer: The driver managed the situation well\n\nExplanation: The sentence contrasts heavy traffic with timely arrival, which suggests effective handling of the situation.\n\nExplanation of each option:\nThe driver managed the situation well is correct because it reflects the successful arrival despite difficult conditions.\nThe driver was inexperienced is incorrect because the driver arrived on time.\nThe delivery was delayed is incorrect because the driver arrived on time.\nThe traffic was light is incorrect because the statement mentions heavy traffic."
-      },
-      {
-        "question_number": 20,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "B2",
-        "target_difficulty": "Medium",
-        "stem": "What can be inferred from the statement?\n\nAlthough the meeting started late, the attendees remained engaged throughout.",
-        "options": [
-          "The meeting was poorly planned",
-          "The attendees were not interested",
-          "The meeting was well-organized",
-          "The meeting ended early"
-        ],
-        "correct_answer": "The meeting was well-organized",
-        "explanation": "Correct answer: The meeting was well-organized\n\nExplanation: The sentence contrasts a late start with sustained engagement, which suggests effective planning.\n\nExplanation of each option:\nThe meeting was well-organized is correct because it reflects the successful engagement despite a late start.\nThe meeting was poorly planned is incorrect because the attendees remained engaged.\nThe attendees were not interested is incorrect because the attendees remained engaged.\nThe meeting ended early is incorrect because the attendees remained engaged throughout."
+        "correct_answer": "Could the students have understood the concept better if the teacher had explained it earlier?",
+        "explanation": "Person B uses a third conditional (if the teacher had explained…the students would have understood), referring to an unreal past event. Person A's question must match with 'Could the students have understood…if the teacher had explained,' the standard third conditional question form."
       }
     ],
     "hard": [
       {
-        "question_number": 21,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
+        "question_number": 16,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
-        "stem": "Choose the best interpretation of the statement.\n\nHe often says he supports his team, but he never attends their games.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: Had the project been managed more efficiently, the team would have met the deadline.",
         "options": [
-          "He is a dedicated fan",
-          "He prefers to watch games on TV",
-          "He expects his team to win without his presence",
-          "He is too busy to attend"
+          "What would have happened if the project had been managed more efficiently?",
+          "What will happen if the project is managed more efficiently?",
+          "What would happen if the project is managed more efficiently now?",
+          "What happened when the project was managed more efficiently?"
         ],
-        "correct_answer": "He expects his team to win without his presence",
-        "explanation": "Correct answer: He expects his team to win without his presence\n\nExplanation: The statement shows a contradiction between his claimed support and his lack of attendance.\n\nExplanation of each option:\nHe expects his team to win without his presence is correct because it captures the inconsistency in his behaviour.\nHe is a dedicated fan is incorrect because he never attends games.\nHe prefers to watch games on TV is incorrect because he claims to support his team.\nHe is too busy to attend is incorrect because he could still show support by watching games on TV."
+        "correct_answer": "What would have happened if the project had been managed more efficiently?",
+        "explanation": "Person B uses a third conditional (Had the project been…the team would have). Person A's question must use 'What would have happened if the project had been,' which matches this third conditional structure."
+      },
+      {
+        "question_number": 17,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If I were you, I would apologize to her immediately and make amends.",
+        "options": [
+          "What would you do if you were me?",
+          "What will you do if you are me?",
+          "What would you have done if you were me?",
+          "What did you do when you were me?"
+        ],
+        "correct_answer": "What would you do if you were me?",
+        "explanation": "Person B uses a first conditional inversion (If I were you…I would apologize). Person A's question must use 'What would you do if you were me,' which correctly matches the first conditional structure."
+      },
+      {
+        "question_number": 18,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: Were the company to invest more in research and development, it would likely increase its market share.",
+        "options": [
+          "What would happen to the company's market share if it were to invest more in R&D?",
+          "What will happen to the company's market share if it invests more in R&D?",
+          "What would have happened to the company's market share if it had invested more in R&D?",
+          "What happened to the company's market share when it invested more in R&D?"
+        ],
+        "correct_answer": "What would happen to the company's market share if it were to invest more in R&D?",
+        "explanation": "Person B uses a formal second conditional inversion (Were the company to invest…would likely increase). Person A's question must use 'What would happen to the company's market share if it were to invest more in R&D,' which correctly matches the hypothetical second conditional."
+      },
+      {
+        "question_number": 19,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: If she had studied harder for the exam, she would have passed with flying colors.",
+        "options": [
+          "Would she have passed the exam if she had studied harder?",
+          "Will she pass the exam if she studies harder?",
+          "Would she pass the exam if she studies harder now?",
+          "Did she pass the exam when she studied harder?"
+        ],
+        "correct_answer": "Would she have passed the exam if she had studied harder?",
+        "explanation": "Person B uses a mixed conditional (If she had studied harder…she would have passed). Person A's question must use 'Would she have passed the exam if she had studied harder,' which is the correct mixed conditional interrogative."
+      },
+      {
+        "question_number": 21,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: Were the company to invest more in research and development, it would likely increase its market share.",
+        "options": [
+          "What would happen to the company's market share if it invested more in R&D?",
+          "What will happen to the company's market share if it invests more in R&D?",
+          "What would have happened to the company's market share if it had invested more in R&D?",
+          "What happened to the company's market share when it invested more in R&D?"
+        ],
+        "correct_answer": "What would happen to the company's market share if it invested more in R&D?",
+        "explanation": "Person B uses a formal second conditional inversion (Were the company to invest…would increase). Person A's question must use 'What would happen if the company invested more,' which correctly matches the hypothetical second conditional."
+      },
+      {
+        "question_number": 21,
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: It might, especially if the speaker uses clear examples and avoids jargon.",
+        "options": [
+          "Will the lecture be accessible to students who are new to the subject?",
+          "Would the lecture be accessible to students who had been new to the subject?",
+          "Was the lecture accessible to students who had been new to the subject?",
+          "Has the lecture been accessible to students who were new to the subject?"
+        ],
+        "correct_answer": "Will the lecture be accessible to students who are new to the subject?",
+        "explanation": "Person B predicts a future possibility using 'might,' responding to a forward-looking question. Person A's question uses 'Will…be accessible,' which correctly invites this kind of conditional future evaluation."
       },
       {
         "question_number": 22,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "C1",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C2",
         "target_difficulty": "Hard",
-        "stem": "Select the option that best describes the behaviour.\n\nShe says she values punctuality, but she often arrives late to meetings.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: It could, especially if you allocate sufficient time for practice and review.",
         "options": [
-          "Her actions align with her values",
-          "She is always on time",
-          "She arrives early to meetings",
-          "She has a flexible definition of punctuality"
+          "Will studying for two hours daily improve vocabulary acquisition?",
+          "Did studying for two hours daily improve vocabulary acquisition?",
+          "Has studying for two hours daily improved vocabulary acquisition?",
+          "Is studying for two hours daily improving vocabulary acquisition?"
         ],
-        "correct_answer": "She has a flexible definition of punctuality",
-        "explanation": "Correct answer: She has a flexible definition of punctuality\n\nExplanation: The statement presents a mismatch between what she claims to value and how she actually behaves.\n\nExplanation of each option:\nShe has a flexible definition of punctuality is correct because her actions contradict her stated value.\nHer actions align with her values is incorrect because she arrives late.\nShe is always on time is incorrect because the sentence says she often arrives late.\nShe arrives early to meetings is incorrect because punctuality is not mentioned."
+        "correct_answer": "Will studying for two hours daily improve vocabulary acquisition?",
+        "explanation": "Person B gives a conditional future prediction using 'could,' responding to a forward-looking question about potential improvement. Person A's question uses 'Will…improve,' which correctly invites this kind of evaluative conditional response."
       },
       {
         "question_number": 23,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "C1",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C2",
         "target_difficulty": "Hard",
-        "stem": "Choose the best interpretation.\n\nThe candidate answered every question, but hesitated before giving specific examples.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: It may, especially if the participants actively engage in discussions.",
         "options": [
-          "The candidate was completely prepared",
-          "The candidate may have lacked solid evidence for the claims",
-          "The interviewer asked only simple questions",
-          "The candidate provided detailed proof throughout"
+          "Will the workshop enhance critical thinking skills?",
+          "Would the workshop enhance critical thinking skills?",
+          "Did the workshop enhance critical thinking skills?",
+          "Has the workshop enhanced critical thinking skills?"
         ],
-        "correct_answer": "The candidate may have lacked solid evidence for the claims",
-        "explanation": "Correct answer: The candidate may have lacked solid evidence for the claims\n\nExplanation: Hesitation combined with giving specific examples suggests the answers may not have been well supported.\n\nExplanation of each option:\nThe candidate may have lacked solid evidence for the claims is correct because hesitation weakens credibility.\nThe candidate was completely prepared is incorrect because the candidate hesitated.\nThe interviewer asked only simple questions is incorrect because the candidate was challenged.\nThe candidate provided detailed proof throughout is incorrect because the sentence says the candidate hesitated."
+        "correct_answer": "Will the workshop enhance critical thinking skills?",
+        "explanation": "Person B predicts a future possibility using 'may,' responding to a forward-looking question. Person A's question uses 'Will…enhance,' which correctly invites this kind of conditional future evaluation."
       },
       {
         "question_number": 24,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "C1",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C2",
         "target_difficulty": "Hard",
-        "stem": "Choose the best interpretation of the statement.\n\nHe says he welcomes feedback, yet he never implements any of the suggestions he receives.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: It should, especially if the instructor provides clear learning objectives.",
         "options": [
-          "He actively seeks improvement",
-          "He implements suggestions when possible",
-          "His attitude to feedback is more limited than he claims",
-          "He never receives feedback"
+          "Will the course improve learning outcomes?",
+          "Would the course improve learning outcomes?",
+          "Did the course improve learning outcomes?",
+          "Has the course improved learning outcomes?"
         ],
-        "correct_answer": "His attitude to feedback is more limited than he claims",
-        "explanation": "Correct answer: His attitude to feedback is more limited than he claims\n\nExplanation: The statement contrasts what he says with how he behaves, suggesting inconsistency.\n\nExplanation of each option:\nHis attitude to feedback is more limited than he claims is correct because his actions contradict his stated openness.\nHe actively seeks improvement is incorrect because he never implements suggestions.\nHe implements suggestions when possible is incorrect because the statement focuses on his lack of implementation.\nHe never receives feedback is incorrect because others do give him feedback."
+        "correct_answer": "Will the course improve learning outcomes?",
+        "explanation": "Person B gives a strong recommendation using 'should,' responding to a forward-looking question. Person A's question uses 'Will…improve,' which correctly invites this kind of evaluative conditional response."
       },
       {
         "question_number": 25,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "C1",
+        "topic": "English Grammar\n",
+        "subtopic": "Conditioansl",
+        "target_cefr": "C2",
         "target_difficulty": "Hard",
-        "stem": "Choose the best interpretation of the statement.\n\nShe says she values honesty, but she often avoids answering questions directly.",
+        "instruction": "Choose the correct option that completes the following conversation.",
+        "question": "Person A: _______________________<br>Person B: It would, especially if the team members collaborate effectively.",
         "options": [
-          "She is always truthful",
-          "She values honesty in others",
-          "Her attitude to honesty is more limited than she claims",
-          "She never receives questions"
+          "Will the project succeed?",
+          "Would the project succeed?",
+          "Did the project succeed?",
+          "Has the project succeeded?"
         ],
-        "correct_answer": "Her attitude to honesty is more limited than she claims",
-        "explanation": "Correct answer: Her attitude to honesty is more limited than she claims\n\nExplanation: The statement contrasts what she says with how she behaves, suggesting inconsistency.\n\nExplanation of each option:\nHer attitude to honesty is more limited than she claims is correct because her avoidance of direct answers contradicts her stated value.\nShe is always truthful is incorrect because she avoids answering questions directly.\nShe values honesty in others is incorrect because the statement focuses on her own behaviour.\nShe never receives questions is incorrect because others do ask her questions."
-      },
-      {
-        "question_number": 26,
-        "topic": "Articulation and Punctuation",
-        "subtopic": "NA",
-        "target_cefr": "C1",
-        "target_difficulty": "Hard",
-        "stem": "Choose the best interpretation of the statement.\n\nHe says he values teamwork, but he never collaborates with others on projects.",
-        "options": [
-          "He is a team player",
-          "He prefers to work alone",
-          "His attitude to teamwork is more limited than he claims",
-          "He never works on projects"
-        ],
-        "correct_answer": "His attitude to teamwork is more limited than he claims",
-        "explanation": "Correct answer: His attitude to teamwork is more limited than he claims\n\nExplanation: The statement contrasts what he says with how he behaves, suggesting inconsistency.\n\nExplanation of each option:\nHis attitude to teamwork is more limited than he claims is correct because his lack of collaboration contradicts his stated value.\nHe is a team player is incorrect because he never collaborates with others.\nHe prefers to work alone is incorrect because the statement focuses on his lack of collaboration, not preference.\nHe never works on projects is incorrect because the statement focuses on his lack of collaboration, not participation in projects."
+        "correct_answer": "Will the project succeed?",
+        "explanation": "Person B gives a hypothetical prediction using 'would,' responding to a forward-looking question. Person A's question uses 'Will…succeed,' which correctly invites this kind of conditional future evaluation."
       }
     ]
   },
   "rejected": [
     {
-      "stage": "rubric",
-      "q": 11,
+      "stage": "difficulty",
+      "q": 2,
       "cefr": "A2",
       "difficulty": "Easy",
-      "reason": "Major Issue with Ambiguity",
-      "stem": "Choose the statement that is NOT correct according to the ru"
+      "reason": "predicted_cefr=B1 predicted_difficulty=Medium",
+      "question": "Person A: _______________________\nPerson B: I can help you w"
     },
     {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 1,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student absenteeism increased significantly\" not in options"
-      ]
+      "stage": "difficulty",
+      "q": 5,
+      "cefr": "A2",
+      "difficulty": "Easy",
+      "reason": "predicted_cefr=B1 predicted_difficulty=Medium",
+      "question": "Person A: _______________________\nPerson B: Yes, if the proj"
     },
     {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 1,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Customer complaints about the product increased\" not in options"
-      ]
+      "stage": "difficulty",
+      "q": 15,
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "reason": "predicted_cefr=B2 predicted_difficulty=Easy",
+      "question": "Person A: _______________________<br>Person B: Should the se"
     },
     {
-      "stage": "hard_validate",
-      "cefr": "C2",
+      "stage": "difficulty",
+      "q": 20,
+      "cefr": "C1",
       "difficulty": "Hard",
-      "iteration": 1,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 1,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 2,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student absenteeism increased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 2,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Customer complaints about the product increased\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 2,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 2,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 3,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student absenteeism increased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 3,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Customer complaints about the product increased\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 3,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Traffic jams in other areas increased significantly\" not in options"
-      ]
-    },
-    {
-      "stage": "hard_validate",
-      "cefr": "C2",
-      "difficulty": "Hard",
-      "iteration": 3,
-      "stem": "Choose the most accurate evaluation based on the statement.\n",
-      "errors": [
-        "correct_answer \"Student participation in academic courses decreased significantly\" not in options"
-      ]
+      "reason": "predicted_cefr=B2 predicted_difficulty=Medium",
+      "question": "Person A: _______________________<br>Person B: To whom shoul"
     }
   ],
-  "warnings": [
-    "Hard/C2: max iterations (3) reached. Accepted 0/4."
-  ]
+  "warnings": []
 }
