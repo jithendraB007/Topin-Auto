@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_questions": 5,
+    "total_questions": 11,
     "judge_model": "pixtral-12b-2409",
     "generator": "FLUX.1-schnell (HuggingFace)",
     "rubric_criteria": [
@@ -12,137 +12,299 @@
   },
   "results": [
     {
-      "question_number": 1,
+      "question_number": "Q1",
       "difficulty": "easy",
       "instruction": "Read the notice and choose the correct answer.",
-      "image_content": "A library notice says the building will be closed for maintenance tomorrow.",
-      "question": "Why will the library be closed tomorrow?",
+      "image_content": "A notice in a library says that the building will be closed for renovation starting next week.",
+      "question": "Why will the library be closed?",
       "options": [
-        "For a holiday",
-        "For maintenance",
         "For a special event",
-        "For a meeting"
-      ],
-      "correct_answer": "For maintenance",
-      "explanation": "The notice clearly states that the library will be closed for maintenance.",
-      "target_cefr": "A2",
-      "target_difficulty": "Easy",
-      "image_path": "1.png",
-      "rubric": {
-        "relevance_to_description": "Poor",
-        "visual_quality": "Good",
-        "text_legibility": "Good",
-        "contextual_fit": "Good",
-        "overall_score": 4,
-        "reasoning": "The text content does not match the intended notice about a library closure for maintenance, making it irrelevant to the description. The visual quality and legibility are acceptable, and the image fits the context of a real-world notice, but the incorrect text significantly detracts from its accuracy."
-      },
-      "error": null
-    },
-    {
-      "question_number": 2,
-      "difficulty": "easy",
-      "instruction": "Read the notice and choose the correct answer.",
-      "image_content": "A gym notice says the swimming pool is closed for cleaning today.",
-      "question": "Why is the swimming pool closed today?",
-      "options": [
-        "For a swimming competition",
         "For cleaning",
-        "For a private event",
-        "For a public holiday"
-      ],
-      "correct_answer": "For cleaning",
-      "explanation": "The notice indicates that the swimming pool is closed for cleaning.",
-      "target_cefr": "A2",
-      "target_difficulty": "Easy",
-      "image_path": "2.png",
-      "rubric": {
-        "relevance_to_description": "Good",
-        "visual_quality": "Excellent",
-        "text_legibility": "Excellent",
-        "contextual_fit": "Excellent",
-        "overall_score": 9,
-        "reasoning": "The image accurately conveys the intended message with a minor typographical error ('cining' instead of 'cleaning'), making it 'Good' in relevance. The visual quality, text legibility, and contextual fit are all excellent, as the sign appears realistic and professional."
-      },
-      "error": null
-    },
-    {
-      "question_number": 3,
-      "difficulty": "medium",
-      "instruction": "Read the notice and choose the correct answer.",
-      "image_content": "A library notice says the building will be closed for renovation next week.",
-      "question": "Why will the library be closed next week?",
-      "options": [
-        "For maintenance",
         "For renovation",
-        "For a special event",
-        "For cleaning"
+        "For inventory checking"
       ],
       "correct_answer": "For renovation",
       "explanation": "The notice clearly states that the library will be closed for renovation.",
-      "target_cefr": "B1",
-      "target_difficulty": "Medium",
-      "image_path": "3.png",
-      "rubric": {
-        "relevance_to_description": "Good",
-        "visual_quality": "Good",
-        "text_legibility": "Poor",
-        "contextual_fit": "Good",
-        "overall_score": 5,
-        "reasoning": "The image correctly indicates a library closure but the text is garbled and unreadable, which significantly detracts from its effectiveness. The visual quality and framing are realistic, but the gibberish text undermines the intended message and realism."
-      },
-      "error": null
-    },
-    {
-      "question_number": 4,
-      "difficulty": "medium",
-      "instruction": "Read the notice and choose the correct answer.",
-      "image_content": "A gym notice says the fitness class has been cancelled due to the instructor's illness.",
-      "question": "Why has the fitness class been cancelled?",
-      "options": [
-        "Due to heavy rain",
-        "Due to the instructor's illness",
-        "Due to a power cut",
-        "Due to maintenance"
-      ],
-      "correct_answer": "Due to the instructor's illness",
-      "explanation": "The notice states that the class has been cancelled due to the instructor's illness.",
-      "target_cefr": "B1",
-      "target_difficulty": "Medium",
-      "image_path": "4.png",
-      "rubric": {
-        "relevance_to_description": "Poor",
-        "visual_quality": "Good",
-        "text_legibility": "Good",
-        "contextual_fit": "Good",
-        "overall_score": 4,
-        "reasoning": "The text in the image does not match the intended notice content about a fitness class cancellation due to instructor illness; instead, it contains nonsensical text. The visual quality and legibility are acceptable, and the sign appears realistic, but the content is irrelevant."
-      },
-      "error": null
-    },
-    {
-      "question_number": 5,
-      "difficulty": "hard",
-      "instruction": "Read the notice and choose the correct answer.",
-      "image_content": "A museum notice says the exhibition has been extended due to high demand.",
-      "question": "Why has the exhibition been extended?",
-      "options": [
-        "Due to low attendance.",
-        "Due to high demand.",
-        "Due to a change in theme.",
-        "Due to a power outage."
-      ],
-      "correct_answer": "Due to high demand.",
-      "explanation": "The notice states that the exhibition has been extended due to high demand, so the correct answer is 'Due to high demand'.",
-      "target_cefr": "C1",
-      "target_difficulty": "Hard",
-      "image_path": "5.png",
+      "target_cefr": "A1",
+      "target_difficulty": "Easy",
+      "image_path": "Q1.png",
       "rubric": {
         "relevance_to_description": "Excellent",
         "visual_quality": "Good",
         "text_legibility": "Excellent",
         "contextual_fit": "Excellent",
         "overall_score": 9,
-        "reasoning": "The image perfectly matches the intended notice content, with clear and legible text. The visual quality is high, and the sign appears realistic and well-rendered, fitting seamlessly into a real-world museum setting."
+        "reasoning": "The image perfectly matches the described notice content, with clear and legible text. The visual quality is realistic and well-rendered, fitting seamlessly into a real-world library setting."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q2",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a museum says that the exhibition has been extended due to high demand.",
+      "question": "Why has the exhibition been extended?",
+      "options": [
+        "Due to high demand.",
+        "Because of low attendance.",
+        "For maintenance.",
+        "For a special event."
+      ],
+      "correct_answer": "Due to high demand.",
+      "explanation": "The notice states that the exhibition has been extended due to high demand.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "Q2.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Good",
+        "overall_score": 8,
+        "reasoning": "The image effectively communicates the intended message about the exhibition extension due to high demand, though the text contains a minor typographical error ('restes teime teia' instead of a coherent phrase). The visual quality is clear and realistic, and the text is legible. The sign design fits the context of a museum notice well."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q3",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a gym says that the swimming pool is closed for maintenance today.",
+      "question": "Why is the swimming pool closed today?",
+      "options": [
+        "For maintenance.",
+        "Due to overcrowding.",
+        "Because of a power cut.",
+        "For a special event."
+      ],
+      "correct_answer": "For maintenance.",
+      "explanation": "The notice clearly states that the swimming pool is closed for maintenance.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "Q3.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Excellent",
+        "contextual_fit": "Good",
+        "overall_score": 4,
+        "reasoning": "The image does not match the described notice content about a gym swimming pool closure; instead, it shows a notice about 'nanistenance,' which is nonsensical and unrelated. The visual quality and text legibility are high, and the sign appears realistic, but the content is irrelevant."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q4",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a library says that the reference section is temporarily closed for reorganization.",
+      "question": "Why is the reference section temporarily closed?",
+      "options": [
+        "For reorganization.",
+        "Due to a lack of staff.",
+        "Because of a power outage.",
+        "For a special event."
+      ],
+      "correct_answer": "For reorganization.",
+      "explanation": "The notice indicates that the reference section is closed for reorganization.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "Q4.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 6,
+        "reasoning": "The image correctly conveys the idea of a notice about the reference section being temporarily closed, but the text contains multiple spelling errors ('refernce,' 'temporarly,' 'onposally,' 'reorganizatio'), which detract from legibility and accuracy. The visual quality and contextual fit are realistic, but the errors significantly impact the overall effectiveness and realism."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q5",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a park says that the playground is closed due to wet conditions.",
+      "question": "Why is the playground closed?",
+      "options": [
+        "Due to wet conditions.",
+        "For maintenance.",
+        "Because of a power cut.",
+        "For a special event."
+      ],
+      "correct_answer": "Due to wet conditions.",
+      "explanation": "The notice specifies that the playground is closed due to wet conditions.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "Q5.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 6,
+        "reasoning": "The image correctly indicates a closure notice for a playground, matching the described intent. However, the text legibility is poor due to the nonsensical and misspelled words, which detract from the realism. The visual quality and contextual fit are decent, but the text errors significantly impact the overall score."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q6",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a cinema says that the 7 PM show of the latest movie has been cancelled due to technical issues.",
+      "question": "Why has the 7 PM show been cancelled?",
+      "options": [
+        "Due to technical issues.",
+        "Because of low attendance.",
+        "For maintenance.",
+        "For a special event."
+      ],
+      "correct_answer": "Due to technical issues.",
+      "explanation": "The notice informs that the 7 PM show has been cancelled due to technical issues.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard",
+      "image_path": "Q6.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 3,
+        "reasoning": "The image does not match the intended notice content, as the text is garbled and does not convey the cancellation message. While the visual quality is decent and the sign looks realistic, the illegible text and incorrect message significantly detract from its relevance and accuracy."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q7",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a university says that the upcoming exam has been rescheduled due to the instructor's illness.",
+      "question": "Why has the exam been rescheduled?",
+      "options": [
+        "Due to heavy rain.",
+        "Due to the instructor's illness.",
+        "Due to a power outage.",
+        "Due to a student protest."
+      ],
+      "correct_answer": "Due to the instructor's illness.",
+      "explanation": "The notice clearly states that the exam has been rescheduled due to the instructor's illness.",
+      "target_cefr": "C2",
+      "target_difficulty": "Hard",
+      "image_path": "Q7.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 3,
+        "reasoning": "The text in the image is not legible and does not accurately reflect the intended notice content about an exam rescheduling due to the instructor's illness. While the visual quality and contextual fit are decent, the gibberish text and lack of relevance severely undermine the image's effectiveness."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q8",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a restaurant says that the lunch buffet has been cancelled due to a sudden shortage of ingredients.",
+      "question": "Why has the lunch buffet been cancelled?",
+      "options": [
+        "Due to a sudden shortage of ingredients.",
+        "Due to a power outage.",
+        "Due to a lack of staff.",
+        "Due to a fire drill."
+      ],
+      "correct_answer": "Due to a sudden shortage of ingredients.",
+      "explanation": "The notice explicitly mentions that the lunch buffet has been cancelled due to a sudden shortage of ingredients.",
+      "target_cefr": "C2",
+      "target_difficulty": "Hard",
+      "image_path": "Q8.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Good",
+        "overall_score": 4,
+        "reasoning": "The text in the image does not match the described notice content about a lunch buffet cancellation due to ingredient shortage; instead, it contains nonsensical and incorrect text. The visual quality and legibility are acceptable, and the sign looks realistic, but the content is irrelevant."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q9",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a museum says that the guided tour has been postponed until further notice due to the guide's unexpected absence.",
+      "question": "Why has the guided tour been postponed?",
+      "options": [
+        "Due to the guide's unexpected absence.",
+        "Due to a lack of visitors.",
+        "Due to a power outage.",
+        "Due to a fire drill."
+      ],
+      "correct_answer": "Due to the guide's unexpected absence.",
+      "explanation": "The notice indicates that the guided tour has been postponed due to the guide's unexpected absence.",
+      "target_cefr": "C2",
+      "target_difficulty": "Hard",
+      "image_path": "Q9.png",
+      "rubric": {
+        "relevance_to_description": "Poor",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Poor",
+        "overall_score": 3,
+        "reasoning": "The text in the image is not relevant to the intended notice about a postponed guided tour due to a guide's absence; instead, it contains nonsensical, gibberish words. While the visual quality and text legibility are acceptable, the content and context do not fit the description of a genuine real-world notice."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q10",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a library says that the study room has been temporarily closed for renovation starting next week.",
+      "question": "Why has the study room been temporarily closed?",
+      "options": [
+        "For renovation starting next week.",
+        "Due to a lack of books.",
+        "Due to a power outage.",
+        "Due to a fire drill."
+      ],
+      "correct_answer": "For renovation starting next week.",
+      "explanation": "The notice states that the study room has been temporarily closed for renovation starting next week.",
+      "target_cefr": "C2",
+      "target_difficulty": "Hard",
+      "image_path": "Q10.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Poor",
+        "contextual_fit": "Good",
+        "overall_score": 6,
+        "reasoning": "The image is relevant to the intended notice content but contains typographical errors in the text, making it unclear. The visual quality is decent, and the sign looks realistic, but the text legibility is poor due to the errors. The contextual fit is good as it resembles a genuine notice."
+      },
+      "error": null
+    },
+    {
+      "question_number": "Q11",
+      "difficulty": "hard",
+      "instruction": "Read the notice and choose the correct answer.",
+      "image_content": "A notice in a park says that the public restrooms are closed due to a plumbing issue.",
+      "question": "Why are the public restrooms closed?",
+      "options": [
+        "Due to a plumbing issue.",
+        "Due to a lack of maintenance.",
+        "Due to a power outage.",
+        "Due to a fire drill."
+      ],
+      "correct_answer": "Due to a plumbing issue.",
+      "explanation": "The notice clearly states that the public restrooms are closed due to a plumbing issue.",
+      "target_cefr": "C2",
+      "target_difficulty": "Hard",
+      "image_path": "Q11.png",
+      "rubric": {
+        "relevance_to_description": "Good",
+        "visual_quality": "Good",
+        "text_legibility": "Good",
+        "contextual_fit": "Good",
+        "overall_score": 7,
+        "reasoning": "The image correctly indicates that public restrooms are closed, matching the intended notice content. The visual quality is clear and realistic, though the text legibility is slightly compromised by the gibberish in the second line, which detracts from the realism. The sign looks like a genuine notice, but the nonsensical text undermines its contextual fit slightly."
       },
       "error": null
     }

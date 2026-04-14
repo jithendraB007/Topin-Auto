@@ -1,15 +1,15 @@
 {
   "schema": {
-    "topic": "Reading Notices and Signs",
+    "topic": "Consitionals",
     "subtopics": [
       {
-        "subtopic": "Public Notices",
-        "a1_count": 2,
+        "subtopic": "Conditionals",
+        "a1_count": 1,
         "a2_count": 2,
-        "b1_count": 2,
-        "b2_count": 2,
-        "c1_count": 1,
-        "c2_count": 0
+        "b1_count": 6,
+        "b2_count": 6,
+        "c1_count": 5,
+        "c2_count": 5
       }
     ],
     "constraints": {
@@ -19,515 +19,1630 @@
   },
   "summary": {
     "easy": {
-      "accepted": 2,
-      "rejected": 40
+      "accepted": 1,
+      "rejected": 41
     },
     "medium": {
-      "accepted": 2,
-      "rejected": 40
+      "accepted": 0,
+      "rejected": 200
     },
     "hard": {
-      "accepted": 1,
+      "accepted": 10,
       "rejected": 0
     },
-    "total_accepted": 5,
-    "total_rejected": 80
+    "total_accepted": 11,
+    "total_rejected": 241
   },
   "questions": {
     "easy": [
       {
-        "question_number": 1,
-        "topic": "Reading Notices and Signs",
-        "subtopic": "Public Notices",
-        "target_cefr": "A2",
+        "question_number": "Q1",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "A1",
         "target_difficulty": "Easy",
         "instruction": "Read the notice and choose the correct answer.",
-        "image_content": "A library notice says the building will be closed for maintenance tomorrow.",
-        "question": "Why will the library be closed tomorrow?",
+        "image_content": "A notice in a library says that the building will be closed for renovation starting next week.",
+        "question": "Why will the library be closed?",
         "options": [
-          "For a holiday",
-          "For maintenance",
           "For a special event",
-          "For a meeting"
-        ],
-        "correct_answer": "For maintenance",
-        "explanation": "The notice clearly states that the library will be closed for maintenance."
-      },
-      {
-        "question_number": 2,
-        "topic": "Reading Notices and Signs",
-        "subtopic": "Public Notices",
-        "target_cefr": "A2",
-        "target_difficulty": "Easy",
-        "instruction": "Read the notice and choose the correct answer.",
-        "image_content": "A gym notice says the swimming pool is closed for cleaning today.",
-        "question": "Why is the swimming pool closed today?",
-        "options": [
-          "For a swimming competition",
           "For cleaning",
-          "For a private event",
-          "For a public holiday"
-        ],
-        "correct_answer": "For cleaning",
-        "explanation": "The notice indicates that the swimming pool is closed for cleaning."
-      }
-    ],
-    "medium": [
-      {
-        "question_number": 3,
-        "topic": "Reading Notices and Signs",
-        "subtopic": "Public Notices",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "instruction": "Read the notice and choose the correct answer.",
-        "image_content": "A library notice says the building will be closed for renovation next week.",
-        "question": "Why will the library be closed next week?",
-        "options": [
-          "For maintenance",
           "For renovation",
-          "For a special event",
-          "For cleaning"
+          "For inventory checking"
         ],
         "correct_answer": "For renovation",
         "explanation": "The notice clearly states that the library will be closed for renovation."
-      },
-      {
-        "question_number": 4,
-        "topic": "Reading Notices and Signs",
-        "subtopic": "Public Notices",
-        "target_cefr": "B1",
-        "target_difficulty": "Medium",
-        "instruction": "Read the notice and choose the correct answer.",
-        "image_content": "A gym notice says the fitness class has been cancelled due to the instructor's illness.",
-        "question": "Why has the fitness class been cancelled?",
-        "options": [
-          "Due to heavy rain",
-          "Due to the instructor's illness",
-          "Due to a power cut",
-          "Due to maintenance"
-        ],
-        "correct_answer": "Due to the instructor's illness",
-        "explanation": "The notice states that the class has been cancelled due to the instructor's illness."
       }
     ],
+    "medium": [],
     "hard": [
       {
-        "question_number": 5,
-        "topic": "Reading Notices and Signs",
-        "subtopic": "Public Notices",
+        "question_number": "Q2",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
         "target_cefr": "C1",
         "target_difficulty": "Hard",
         "instruction": "Read the notice and choose the correct answer.",
-        "image_content": "A museum notice says the exhibition has been extended due to high demand.",
+        "image_content": "A notice in a museum says that the exhibition has been extended due to high demand.",
         "question": "Why has the exhibition been extended?",
         "options": [
-          "Due to low attendance.",
           "Due to high demand.",
-          "Due to a change in theme.",
-          "Due to a power outage."
+          "Because of low attendance.",
+          "For maintenance.",
+          "For a special event."
         ],
         "correct_answer": "Due to high demand.",
-        "explanation": "The notice states that the exhibition has been extended due to high demand, so the correct answer is 'Due to high demand'."
+        "explanation": "The notice states that the exhibition has been extended due to high demand."
+      },
+      {
+        "question_number": "Q3",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a gym says that the swimming pool is closed for maintenance today.",
+        "question": "Why is the swimming pool closed today?",
+        "options": [
+          "For maintenance.",
+          "Due to overcrowding.",
+          "Because of a power cut.",
+          "For a special event."
+        ],
+        "correct_answer": "For maintenance.",
+        "explanation": "The notice clearly states that the swimming pool is closed for maintenance."
+      },
+      {
+        "question_number": "Q4",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a library says that the reference section is temporarily closed for reorganization.",
+        "question": "Why is the reference section temporarily closed?",
+        "options": [
+          "For reorganization.",
+          "Due to a lack of staff.",
+          "Because of a power outage.",
+          "For a special event."
+        ],
+        "correct_answer": "For reorganization.",
+        "explanation": "The notice indicates that the reference section is closed for reorganization."
+      },
+      {
+        "question_number": "Q5",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a park says that the playground is closed due to wet conditions.",
+        "question": "Why is the playground closed?",
+        "options": [
+          "Due to wet conditions.",
+          "For maintenance.",
+          "Because of a power cut.",
+          "For a special event."
+        ],
+        "correct_answer": "Due to wet conditions.",
+        "explanation": "The notice specifies that the playground is closed due to wet conditions."
+      },
+      {
+        "question_number": "Q6",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C1",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a cinema says that the 7 PM show of the latest movie has been cancelled due to technical issues.",
+        "question": "Why has the 7 PM show been cancelled?",
+        "options": [
+          "Due to technical issues.",
+          "Because of low attendance.",
+          "For maintenance.",
+          "For a special event."
+        ],
+        "correct_answer": "Due to technical issues.",
+        "explanation": "The notice informs that the 7 PM show has been cancelled due to technical issues."
+      },
+      {
+        "question_number": "Q7",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a university says that the upcoming exam has been rescheduled due to the instructor's illness.",
+        "question": "Why has the exam been rescheduled?",
+        "options": [
+          "Due to heavy rain.",
+          "Due to the instructor's illness.",
+          "Due to a power outage.",
+          "Due to a student protest."
+        ],
+        "correct_answer": "Due to the instructor's illness.",
+        "explanation": "The notice clearly states that the exam has been rescheduled due to the instructor's illness."
+      },
+      {
+        "question_number": "Q8",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a restaurant says that the lunch buffet has been cancelled due to a sudden shortage of ingredients.",
+        "question": "Why has the lunch buffet been cancelled?",
+        "options": [
+          "Due to a sudden shortage of ingredients.",
+          "Due to a power outage.",
+          "Due to a lack of staff.",
+          "Due to a fire drill."
+        ],
+        "correct_answer": "Due to a sudden shortage of ingredients.",
+        "explanation": "The notice explicitly mentions that the lunch buffet has been cancelled due to a sudden shortage of ingredients."
+      },
+      {
+        "question_number": "Q9",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a museum says that the guided tour has been postponed until further notice due to the guide's unexpected absence.",
+        "question": "Why has the guided tour been postponed?",
+        "options": [
+          "Due to the guide's unexpected absence.",
+          "Due to a lack of visitors.",
+          "Due to a power outage.",
+          "Due to a fire drill."
+        ],
+        "correct_answer": "Due to the guide's unexpected absence.",
+        "explanation": "The notice indicates that the guided tour has been postponed due to the guide's unexpected absence."
+      },
+      {
+        "question_number": "Q10",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a library says that the study room has been temporarily closed for renovation starting next week.",
+        "question": "Why has the study room been temporarily closed?",
+        "options": [
+          "For renovation starting next week.",
+          "Due to a lack of books.",
+          "Due to a power outage.",
+          "Due to a fire drill."
+        ],
+        "correct_answer": "For renovation starting next week.",
+        "explanation": "The notice states that the study room has been temporarily closed for renovation starting next week."
+      },
+      {
+        "question_number": "Q11",
+        "topic": "Consitionals",
+        "subtopic": "Conditionals",
+        "target_cefr": "C2",
+        "target_difficulty": "Hard",
+        "instruction": "Read the notice and choose the correct answer.",
+        "image_content": "A notice in a park says that the public restrooms are closed due to a plumbing issue.",
+        "question": "Why are the public restrooms closed?",
+        "options": [
+          "Due to a plumbing issue.",
+          "Due to a lack of maintenance.",
+          "Due to a power outage.",
+          "Due to a fire drill."
+        ],
+        "correct_answer": "Due to a plumbing issue.",
+        "explanation": "The notice clearly states that the public restrooms are closed due to a plumbing issue."
       }
     ]
   },
   "rejected": [
     {
-      "stage": "hard_validate",
+      "stage": "difficulty",
+      "q": 4,
       "cefr": "A1",
+      "difficulty": "Easy",
+      "reason": "predicted_cefr=B1 predicted_difficulty=Medium",
+      "image_content": "A notice in a museum says that the exhibition will be extend"
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 1,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 1,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 2,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 2,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 3,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 3,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 4,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 4,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 5,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 5,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 6,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 6,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 7,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 7,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 8,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 8,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 9,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 9,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 10,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 10,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 11,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 11,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 12,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 12,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 13,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 13,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 14,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 14,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 15,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 15,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 16,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 16,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 17,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 17,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 18,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 18,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 19,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 19,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 20,
-      "image_content": "A library notice says the building will be closed for renova",
+      "image_content": "A restaurant notice says that the kitchen will close early f",
       "errors": [
         "explanation is empty"
       ]
     },
     {
       "stage": "hard_validate",
-      "cefr": "A1",
+      "cefr": "A2",
       "difficulty": "Easy",
       "iteration": 20,
-      "image_content": "A gym notice says the swimming pool is closed for maintenanc",
+      "image_content": "A gym notice says that the swimming pool is closed for maint",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a library says that the building will be closed ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a park says that the walking trail is closed due",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a restaurant says that the kitchen is closed for",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a museum says that the exhibit is closed until f",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a gym says that the swimming pool is closed for ",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B1",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -537,7 +1652,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 1,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -547,7 +1662,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 1,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 1,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -557,7 +1702,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 2,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -567,7 +1712,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 2,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 2,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -577,7 +1752,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 3,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -587,7 +1762,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 3,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 3,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -597,7 +1802,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 4,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -607,7 +1812,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 4,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 4,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -617,7 +1852,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 5,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -627,7 +1862,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 5,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 5,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -637,7 +1902,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 6,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -647,7 +1912,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 6,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 6,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -657,7 +1952,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 7,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -667,7 +1962,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 7,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 7,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -677,7 +2002,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 8,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -687,7 +2012,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 8,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 8,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -697,7 +2052,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 9,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -707,7 +2062,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 9,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 9,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -717,7 +2102,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 10,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -727,7 +2112,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 10,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 10,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -737,7 +2152,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 11,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -747,7 +2162,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 11,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 11,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -757,7 +2202,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 12,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -767,7 +2212,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 12,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 12,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -777,7 +2252,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 13,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -787,7 +2262,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 13,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 13,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -797,7 +2302,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 14,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -807,7 +2312,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 14,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 14,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -817,7 +2352,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 15,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -827,7 +2362,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 15,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 15,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -837,7 +2402,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 16,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -847,7 +2412,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 16,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 16,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -857,7 +2452,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 17,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -867,7 +2462,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 17,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 17,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -877,7 +2502,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 18,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -887,7 +2512,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 18,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 18,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -897,7 +2552,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 19,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -907,7 +2562,37 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 19,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 19,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
@@ -917,7 +2602,7 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 20,
-      "image_content": "A museum notice says the exhibition is closed today due to a",
+      "image_content": "A notice in a park says that the playground is closed due to",
       "errors": [
         "explanation is empty"
       ]
@@ -927,14 +2612,45 @@
       "cefr": "B2",
       "difficulty": "Medium",
       "iteration": 20,
-      "image_content": "A restaurant notice says the kitchen is closed for lunch due",
+      "image_content": "A notice in a gym says that visitors must wear appropriate s",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a museum says that the exhibition has been postp",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a swimming pool says that diving is prohibited d",
+      "errors": [
+        "explanation is empty"
+      ]
+    },
+    {
+      "stage": "hard_validate",
+      "cefr": "B2",
+      "difficulty": "Medium",
+      "iteration": 20,
+      "image_content": "A notice in a library says that the building will be closed ",
       "errors": [
         "explanation is empty"
       ]
     }
   ],
   "warnings": [
-    "Easy/A1: max iterations (20) reached. Accepted 0/2.",
-    "Medium/B2: max iterations (20) reached. Accepted 0/2."
+    "Easy/A2: max iterations (20) reached. Accepted 0/2.",
+    "Medium/B1: max iterations (20) reached. Accepted 0/6.",
+    "Medium/B2: max iterations (20) reached. Accepted 0/6."
   ]
 }
