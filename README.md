@@ -612,9 +612,10 @@ python generate_review_images.py
 python generate_review_images.py --input data/image_mcq/image_mcq_generator_output.json
 
 # Force a specific image provider
-python generate_review_images.py --provider hf        # Hugging Face FLUX.1-schnell (free)
-python generate_review_images.py --provider dalle     # DALL-E 3 (needs OPENAI_API_KEY, paid)
-python generate_review_images.py --provider gemini    # Gemini Imagen (needs GOOGLE_API_KEY, paid)
+python generate_review_images.py --provider hf          # Hugging Face FLUX.1-schnell (free)
+python generate_review_images.py --provider gptimage    # GPT Image 1 — best quality (paid)
+python generate_review_images.py --provider dalle       # DALL-E 3 (needs OPENAI_API_KEY, paid)
+python generate_review_images.py --provider gemini      # Gemini Imagen (needs GOOGLE_API_KEY, paid)
 ```
 
 #### Provider comparison
@@ -622,6 +623,7 @@ python generate_review_images.py --provider gemini    # Gemini Imagen (needs GOO
 | Provider | Key needed | Cost | Model | Quality |
 |----------|-----------|------|-------|---------|
 | `hf` (default) | `HF_TOKEN` | **Free** | FLUX.1-schnell | Good |
+| `gptimage` | `OPENAI_API_KEY` | Paid | GPT Image 1 (`gpt-image-1`) | **Best** |
 | `dalle` | `OPENAI_API_KEY` | Paid | DALL-E 3 | Excellent |
 | `gemini` | `GOOGLE_API_KEY` | Paid | Gemini Imagen | Excellent |
 
