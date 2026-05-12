@@ -5,5 +5,3 @@ python-dotenv>=1.0.1
 pyyaml>=6.0.2
 
 
-#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
-#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
