@@ -1,0 +1,162 @@
+[
+  {
+    "question_id": "Q1",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "Rahul carried an umbrella before leaving for college.<br><br>What does this suggest about Rahul?",
+    "options": [
+      "He expected it might rain.",
+      "He forgot his books at home.",
+      "He planned to visit a library.",
+      "He wanted to buy a new bag."
+    ],
+    "correct_answer": "He expected it might rain.",
+    "explanation": "Carrying an umbrella suggests Rahul expected rainy weather.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q2",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The workshop begins at 9 a.m. in the seminar hall.<br><br>Which statement is correct?",
+    "options": [
+      "It starts in the afternoon.",
+      "It starts in the morning in the seminar hall.",
+      "It starts at midnight.",
+      "It has been cancelled."
+    ],
+    "correct_answer": "It starts in the morning in the seminar hall.",
+    "explanation": "9 a.m. is in the morning, so the workshop starts in the morning in the seminar hall.",
+    "error_type": "Valid",
+    "target_cefr": "A1",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q3",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The manager was furious about the delay.<br><br>What does 'furious' mean?",
+    "options": [
+      "Very angry",
+      "Very happy",
+      "Very calm",
+      "Very tired"
+    ],
+    "correct_answer": "Very angry",
+    "explanation": "The word 'furious' means extremely angry.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q4",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "Anita packed snacks before starting the road trip.<br><br>What does this suggest about Anita?",
+    "options": [
+      "She expected a long journey.",
+      "She was afraid of driving.",
+      "She lost her ticket.",
+      "She planned to stay home."
+    ],
+    "correct_answer": "She expected a long journey.",
+    "explanation": "Packing snacks usually suggests preparation for a long trip.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q5",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The library remains open until 8 p.m.<br><br>Which statement is correct?",
+    "options": [
+      "The library closes in the morning.",
+      "The library stays open in the evening.",
+      "The library is permanently closed.",
+      "The library opens at midnight."
+    ],
+    "correct_answer": "The library stays open in the evening.",
+    "explanation": "8 p.m. is in the evening, so the library stays open until evening.",
+    "error_type": "Valid",
+    "target_cefr": "A1",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q6",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The scientist gave a brief explanation.<br><br>What does 'brief' mean?",
+    "options": [
+      "Short",
+      "Confusing",
+      "Detailed",
+      "Incorrect"
+    ],
+    "correct_answer": "Short",
+    "explanation": "The word 'brief' means short or concise.",
+    "error_type": "Valid",
+    "target_cefr": "A1",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q7",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "Kiran charged his laptop before the meeting.<br><br>What does this suggest about Kiran?",
+    "options": [
+      "He expected to use the laptop during the meeting.",
+      "He planned to sell the laptop.",
+      "He forgot the meeting location.",
+      "He wanted to repair the laptop."
+    ],
+    "correct_answer": "He expected to use the laptop during the meeting.",
+    "explanation": "Charging the laptop suggests preparation to use it during the meeting.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q8",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The exam starts at 2 p.m. in Room 12.<br><br>Which statement is correct?",
+    "options": [
+      "The exam starts in the afternoon.",
+      "The exam starts at sunrise.",
+      "The exam is cancelled.",
+      "The exam starts in the morning."
+    ],
+    "correct_answer": "The exam starts in the afternoon.",
+    "explanation": "2 p.m. is in the afternoon.",
+    "error_type": "Valid",
+    "target_cefr": "A1",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q9",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "The road was narrow and crowded.<br><br>What does 'narrow' mean?",
+    "options": [
+      "Wide",
+      "Small in width",
+      "Beautiful",
+      "Dangerous"
+    ],
+    "correct_answer": "Small in width",
+    "explanation": "The word 'narrow' means not wide or small in width.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  },
+  {
+    "question_id": "Q10",
+    "instruction": "Read the sentence carefully and answer the question.",
+    "question": "Priya filled her water bottle before the hike.<br><br>What does this suggest about Priya?",
+    "options": [
+      "She expected physical activity outdoors.",
+      "She forgot her backpack.",
+      "She planned to skip the hike.",
+      "She wanted to clean the bottle."
+    ],
+    "correct_answer": "She expected physical activity outdoors.",
+    "explanation": "Filling a water bottle before a hike suggests preparation for outdoor activity.",
+    "error_type": "Valid",
+    "target_cefr": "A2",
+    "target_difficulty": "Easy"
+  }
+]

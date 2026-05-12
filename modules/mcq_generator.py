@@ -1,26 +1,45 @@
 """
 MCQ Generator Module — dspy-cli compatible.
 
-Exposed by `dspy-cli serve` at http://localhost:8000
-Web UI auto-generated from forward() parameters.
+Run: dspy-cli serve --system   (from d:/Topin)
+Web UI: http://localhost:8000
 
-Usage in web UI:
-  1. Fill in topic, subtopic, counts
-  2. Paste example_questions_json (JSON array — one example per CEFR level)
-  3. Click Run → questions generated and returned as JSON
+Fill in: topic, subtopic, easy_count, medium_count, hard_count
+Click Run → questions saved to data/mcq/mcq_generator_output.json
 """
 from __future__ import annotations
 
 import json
+import platform
 import subprocess
 import sys
 from pathlib import Path
 
 import dspy
 
-PROJECT_ROOT = Path(__file__).parent.parent
 
-# Default examples shown in the UI as a starting-point template
+def _find_project_root() -> Path:
+    """Walk up from this file until we find utils.py (project root marker)."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "utils.py").exists():
+            return parent
+    raise RuntimeError("Cannot find project root (utils.py not found above this file)")
+
+
+PROJECT_ROOT = _find_project_root()
+
+
+def _find_venv_python() -> str:
+    """Return the project venv Python so jupyter is available."""
+    if platform.system() == "Windows":
+        venv_py = PROJECT_ROOT / ".venv" / "Scripts" / "python.exe"
+    else:
+        venv_py = PROJECT_ROOT / ".venv" / "bin" / "python"
+    return str(venv_py) if venv_py.exists() else sys.executable
+
+
+_PYTHON = _find_venv_python()
+
 _DEFAULT_EXAMPLES = json.dumps([
     {
         "instruction": "Read the sentence and choose the correct word.",
@@ -93,6 +112,11 @@ class MCQGeneratorModule(dspy.Module):
 
     Produces CEFR-levelled MCQ questions validated by difficulty and rubric judges.
     Output is saved to data/mcq/mcq_generator_output.json.
+
+    To change example questions: edit configs/example_questions_mcq.json
+    before running. The file must be a JSON array — see configs/template_mcq.json
+    for the required format (instruction, question, options, correct_answer,
+    explanation, difficulty, cefr fields).
     """
 
     def __init__(self):
@@ -105,47 +129,52 @@ class MCQGeneratorModule(dspy.Module):
         easy_count: int,
         medium_count: int,
         hard_count: int,
-        example_questions_json: str = _DEFAULT_EXAMPLES,
     ) -> dspy.Prediction:
         """
-        Parameters
-        ----------
-        topic                : Topic (e.g. "English Grammar")
-        subtopic             : Subtopic (e.g. "Question Words")
-        easy_count           : Total Easy questions (A1 + A2)
-        medium_count         : Total Medium questions (B1 + B2)
-        hard_count           : Total Hard questions (C1 + C2)
-        example_questions_json : JSON array — one example per CEFR level (A1–C2).
-                               Edit the subtopic field to match your subtopic.
+        topic        : Topic (e.g. "English Grammar")
+        subtopic     : Subtopic (e.g. "Question Words")
+        easy_count   : Total Easy questions (split across A1 + A2)
+        medium_count : Total Medium questions (split across B1 + B2)
+        hard_count   : Total Hard questions (split across C1 + C2)
+
+        Example questions are loaded automatically from:
+            configs/example_questions_mcq.json
+        Edit that file to change your example questions before running.
         """
-        # Parse example questions
+        examples_path = PROJECT_ROOT / "configs" / "example_questions_mcq.json"
         try:
-            examples = json.loads(example_questions_json)
+            raw = json.loads(examples_path.read_text(encoding="utf-8"))
+            # Accept both a plain array and a full config object
+            if isinstance(raw, list):
+                examples = raw
+            elif isinstance(raw, dict):
+                examples = (
+                    raw.get("questions")
+                    or raw.get("example_questions")
+                    or []
+                )
+            else:
+                examples = []
+            if not examples:
+                raise ValueError("No questions found in file")
             for ex in examples:
                 if not ex.get("subtopic"):
                     ex["subtopic"] = subtopic
-        except json.JSONDecodeError as e:
-            return dspy.Prediction(
-                status="error",
-                message=f"example_questions_json is not valid JSON: {e}",
-                generated_questions="",
-            )
+        except (json.JSONDecodeError, FileNotFoundError, ValueError):
+            examples = json.loads(_DEFAULT_EXAMPLES)
+            for ex in examples:
+                if not ex.get("subtopic"):
+                    ex["subtopic"] = subtopic
 
-        # Split easy/medium/hard evenly across CEFR pairs
         config = {
             "type": "mcq",
             "topic": topic,
-            "subtopics": [
-                {
-                    "subtopic": subtopic,
-                    "a1_count": easy_count // 2,
-                    "a2_count": easy_count - easy_count // 2,
-                    "b1_count": medium_count // 2,
-                    "b2_count": medium_count - medium_count // 2,
-                    "c1_count": hard_count // 2,
-                    "c2_count": hard_count - hard_count // 2,
-                }
-            ],
+            "subtopics": [{
+                "subtopic": subtopic,
+                "easy_count":   easy_count,
+                "medium_count": medium_count,
+                "hard_count":   hard_count,
+            }],
             "constraints": {
                 "questions_per_iteration": 5,
                 "max_iterations_per_difficulty": 20,
@@ -158,11 +187,8 @@ class MCQGeneratorModule(dspy.Module):
 
         try:
             result = subprocess.run(
-                [sys.executable, str(PROJECT_ROOT / "generate.py"), "--config", str(tmp_cfg)],
-                capture_output=True,
-                text=True,
-                cwd=str(PROJECT_ROOT),
-                timeout=600,
+                [_PYTHON, str(PROJECT_ROOT / "generate.py"), "--config", str(tmp_cfg)],
+                capture_output=True, text=True, cwd=str(PROJECT_ROOT), timeout=600,
             )
         finally:
             tmp_cfg.unlink(missing_ok=True)
@@ -183,18 +209,15 @@ class MCQGeneratorModule(dspy.Module):
             )
 
         output = json.loads(out_path.read_text(encoding="utf-8"))
-        summary = output.get("summary", {})
         questions = output.get("questions", {})
-        total = sum(
-            len(v) for v in questions.values() if isinstance(v, list)
-        )
+        total = sum(len(v) for v in questions.values() if isinstance(v, list))
 
         return dspy.Prediction(
             status="success",
             message=(
-                f"Generated {total} questions. "
-                f"Easy={len(questions.get('easy', []))} "
-                f"Medium={len(questions.get('medium', []))} "
+                f"Generated {total} questions  |  "
+                f"Easy={len(questions.get('easy', []))}  "
+                f"Medium={len(questions.get('medium', []))}  "
                 f"Hard={len(questions.get('hard', []))}"
             ),
             generated_questions=json.dumps(output, indent=2, ensure_ascii=False),

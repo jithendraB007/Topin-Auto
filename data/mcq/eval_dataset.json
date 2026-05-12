@@ -1,0 +1,391 @@
+{
+  "metadata": {
+    "dataset": "MCQ Eval Dataset",
+    "description": "Curated MCQ questions split into positive (valid) and negative (flawed) sets for evaluating generator quality.",
+    "total_positive": 10,
+    "total_negative": 13
+  },
+  "positive": [
+    {
+      "question_id": "P1",
+      "instruction": "Read the sentence carefully and answer the question.",
+      "question": "Farida packed a light sweater before leaving for the museum trip.<br><br>What does this suggest about Farida?",
+      "options": [
+        "She expected the weather or indoor temperature to be cool.",
+        "She planned to buy clothes during the trip.",
+        "She had forgotten where the museum was.",
+        "She wanted to lend the sweater to the guide."
+      ],
+      "correct_answer": "She expected the weather or indoor temperature to be cool.",
+      "explanation": "Correct answer: She expected the weather or indoor temperature to be cool.\n\nExplanation: Packing a light sweater shows that she thought it might feel cool either outside or inside the museum.\n\nExplanation of each option:\n'She expected the weather or indoor temperature to be cool.' This is correct because taking a light sweater suggests she was preparing for cool conditions.\n'She planned to buy clothes during the trip.' This is incorrect because the sentence says nothing about shopping.\n'She had forgotten where the museum was.' This is incorrect because packing a sweater does not show any confusion about the location.\n'She wanted to lend the sweater to the guide.' This is incorrect because there is no information about giving the sweater to anyone else.",
+      "error_type": "Valid",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "P2",
+      "instruction": "Read the sentence carefully and answer the question.",
+      "question": "The health camp starts at 10 a.m. on the ground floor.<br><br>Which statement is correct?",
+      "options": [
+        "It starts at night on the ground floor.",
+        "It starts in the evening on the ground floor.",
+        "It starts in the morning on the ground floor.",
+        "It is cancelled."
+      ],
+      "correct_answer": "It starts in the morning on the ground floor.",
+      "explanation": "Correct answer: It starts in the morning on the ground floor.\n\nExplanation: 10 a.m. is in the morning, so the correct statement is that it starts in the morning on the ground floor.\n\nExplanation of each option:\n'It starts at night on the ground floor.' This is incorrect because 10 a.m. is not at night.\n'It starts in the evening on the ground floor.' This is incorrect because 10 a.m. is not in the evening.\n'It starts in the morning on the ground floor.' This is correct because 10 a.m. is in the morning.\n'It is cancelled.' This is incorrect because the sentence says the camp starts at 10 a.m., not that it is cancelled.",
+      "error_type": "Valid",
+      "target_cefr": "A1",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "P3",
+      "instruction": "Read the sentence carefully and answer the question.",
+      "question": "The instructions were explicit.<br><br>What does \"explicit\" mean?",
+      "options": [
+        "Vague and unclear",
+        "Clearly stated",
+        "Very long",
+        "Confusing"
+      ],
+      "correct_answer": "Clearly stated",
+      "explanation": "Correct answer: Clearly stated\n\nExplanation: The word 'explicit' means that the instructions were clearly stated and easy to understand.\n\nExplanation of each option:\n'Vague and unclear.' This is incorrect because it means the opposite of 'explicit.'\n'Clearly stated.' This is correct because 'explicit' means clearly expressed or clearly stated.\n'Very long.' This is incorrect because 'explicit' does not mean lengthy.\n'Confusing.' This is incorrect because 'explicit' means clear, not confusing.",
+      "error_type": "Valid",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "P4",
+      "instruction": "Read the sentence carefully and answer the question.",
+      "question": "Nisha packed an extra charger before leaving for the airport.<br><br>What does this suggest about Nisha?",
+      "options": [
+        "She expected to need her phone for a long time.",
+        "She had already lost her suitcase.",
+        "She was planning to buy a new phone.",
+        "She did not know where the airport was."
+      ],
+      "correct_answer": "She expected to need her phone for a long time.",
+      "explanation": "Correct answer: She expected to need her phone for a long time.\n\nExplanation: Carrying an extra charger suggests that she thought she would need to use her phone for a long time during the journey.\n\nExplanation of each option:\n'She expected to need her phone for a long time.' This is correct because an extra charger shows preparation for extended phone use.\n'She had already lost her suitcase.' This is incorrect because the sentence does not mention losing anything.\n'She was planning to buy a new phone.' This is incorrect because taking a charger does not suggest buying a new phone.\n'She did not know where the airport was.' This is incorrect because packing a charger has no connection to knowing the location.",
+      "error_type": "Valid",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "P5",
+      "instruction": "Read the sentence carefully and answer the question.",
+      "question": "The science exhibition opens to visitors at 11:00 a.m.<br><br>Which statement is correct?",
+      "options": [
+        "The exhibition begins in the evening.",
+        "Visitors may enter at 11:00 in the morning.",
+        "The exhibition has been cancelled.",
+        "Only teachers may attend the exhibition."
+      ],
+      "correct_answer": "Visitors may enter at 11:00 in the morning.",
+      "explanation": "Correct answer: Visitors may enter at 11:00 in the morning.\n\nExplanation: 11:00 a.m. means morning, so visitors can enter at that time.\n\nExplanation of each option:\n'The exhibition begins in the evening.' This is incorrect because 11:00 a.m. is in the morning.\n'Visitors may enter at 11:00 in the morning.' This is correct because the sentence clearly says it opens at 11:00 a.m.\n'The exhibition has been cancelled.' This is incorrect because the sentence says it opens to visitors.\n'Only teachers may attend the exhibition.' This is incorrect because the sentence says it opens to visitors, not only teachers.",
+      "error_type": "Valid",
+      "target_cefr": "A1",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "P6",
+      "instruction": "Choose the most appropriate option to complete the conversation.",
+      "question": "Person A: We need to finalise the event schedule today. Who prepared the draft?<br>Person B: ____________",
+      "options": [
+        "The coordinator prepared the draft and shared it with the team.",
+        "The draft was prepared and shared with the team.",
+        "The coordinator has been prepared the draft and shared it.",
+        "The draft prepared by the coordinator and shared with the team."
+      ],
+      "correct_answer": "The coordinator prepared the draft and shared it with the team.",
+      "explanation": "Correct answer: The coordinator prepared the draft and shared it with the team.\n\nExplanation: Person A asks who prepared the draft, so the answer should directly name the person and clearly state the action.\n\nExplanation of each option:\n'The coordinator prepared the draft and shared it with the team.' This is correct because it directly answers who prepared the draft and what happened next.\n'The draft was prepared and shared with the team.' This is incorrect because it does not answer the question about who prepared it.\n'The coordinator has been prepared the draft and shared it.' This is incorrect because the verb form 'has been prepared' is grammatically wrong in this sentence.\n'The draft prepared by the coordinator and shared with the team.' This is incorrect because it is not a complete sentence.",
+      "error_type": "Valid",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "P7",
+      "instruction": "Some sentences cannot be converted to a natural passive voice. From the sentences given, choose the one sentence that can be converted into a natural passive voice.",
+      "question": "",
+      "options": [
+        "He slept for two hours in the afternoon.",
+        "He exists only in my memories.",
+        "He wrote a detailed report for the project.",
+        "He arrived late to the meeting."
+      ],
+      "correct_answer": "He wrote a detailed report for the project.",
+      "explanation": "Correct answer: He wrote a detailed report for the project.\n\nExplanation: The sentence can be changed into a natural passive voice: 'A detailed report was written for the project.'\n\nExplanation of each option:\n'He slept for two hours in the afternoon.' This is incorrect because 'slept' cannot be changed into a natural passive voice here.\n'He exists only in my memories.' This is incorrect because 'exists' does not take an object and cannot form a natural passive voice.\n'He wrote a detailed report for the project.' This is correct because it has a direct object, so it can be converted into passive voice naturally.\n'He arrived late to the meeting.' This is incorrect because 'arrived' cannot be changed into a natural passive voice here.",
+      "error_type": "Valid",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "P8",
+      "instruction": "Choose the best pair of options to complete the sentence.",
+      "question": "The spokesperson neither ______ responsibility nor ______ any reassurance to the public.",
+      "options": [
+        "accepting, offered",
+        "accepted, offered",
+        "accepted, offering",
+        "accepting, offering"
+      ],
+      "correct_answer": "accepted, offered",
+      "explanation": "Correct answer: accepted, offered\n\nExplanation: The structure 'neither...nor...' requires parallel verb forms. 'Accepted' and 'offered' are both simple past tense verbs, so they fit correctly.\n\nExplanation of each option:\n'accepting, offered.' This is incorrect because the two verb forms are not parallel.\n'accepted, offered.' This is correct because both verbs are in the simple past tense and match the sentence structure.\n'accepted, offering.' This is incorrect because the two verb forms are not parallel.\n'accepting, offering.' This is incorrect because the sentence needs simple past tense verbs, not -ing forms.",
+      "error_type": "Valid",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "P9",
+      "instruction": "Read the short passage and choose the correct answer.",
+      "question": "Passage:<br>Priya began setting her alarm 20 minutes earlier each morning. This gave her enough time to eat breakfast calmly and catch the bus without rushing, so she arrived at college on time.\n\nWhy did Priya set her alarm earlier?",
+      "options": [
+        "She wanted to study late at night.",
+        "She wanted to have a calm morning and reach college on time.",
+        "She wanted to take a longer bus route."
+      ],
+      "correct_answer": "She wanted to have a calm morning and reach college on time.",
+      "explanation": "Correct answer: She wanted to have a calm morning and reach college on time.\n\nExplanation: Priya set her alarm 20 minutes earlier so that she had enough time to eat breakfast calmly, catch the bus without rushing, and arrive at college on time.\n\nExplanation of each option:\n'She wanted to study late at night.' This is incorrect because the passage does not mention studying late at night.\n'She wanted to have a calm morning and reach college on time.' This is correct because the passage clearly explains these reasons.\n'She wanted to take a longer bus route.' This is incorrect because the passage does not mention changing her bus route.",
+      "error_type": "Valid",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "P10",
+      "instruction": "Read the text and choose the correct option to complete the paragraph.",
+      "question": "<b>TEXT</b>:<br>When Maya finished her degree, she wasn't sure what to do next. She applied for a few jobs but didn't receive any replies. _____ getting disappointed, she decided to volunteer at a community centre to gain experience. She enjoyed the work and met many inspiring people, _____ helped her discover what she really wanted to do.",
+      "options": [
+        "Instead of, who",
+        "Before, that",
+        "Without, which",
+        "Despite, where"
+      ],
+      "correct_answer": "Instead of, who",
+      "explanation": "Correct answer: Instead of, who\n\nExplanation: 'Instead of getting disappointed' is correct because it shows that Maya chose one action in place of another reaction. 'Who' is correct because it refers to 'many inspiring people.'\n\nExplanation of each option:\n'Instead of, who.' This is correct because 'Instead of' fits the meaning and 'who' correctly refers to people.\n'Before, that.' This is incorrect because 'before getting disappointed' does not fit the intended meaning, and 'that' is less suitable for referring to people here.\n'Without, which.' This is incorrect because 'without getting disappointed' changes the meaning, and 'which' is not normally used for people.\n'Despite, where.' This is incorrect because 'despite getting disappointed' does not fit the sentence naturally, and 'where' cannot refer to people.",
+      "error_type": "Valid",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    }
+  ],
+  "negative": [
+    {
+      "question_id": "N1",
+      "instruction": "Choose the best pair of options to complete the sentence.",
+      "question": "The panel will either ______ the candidate today or ______ a follow-up interview next week.",
+      "options": [
+        "approve, schedulng",
+        "approving, schedulng",
+        "approve, schedule",
+        "approving, schedule"
+      ],
+      "correct_answer": "approving, schedule",
+      "explanation": "Correct answer: approve, schedule\n\nExplanation: The structure 'either...or...' needs parallel verb forms. 'Approve' and 'schedule' are both base verbs, so they fit correctly in the sentence.\n\nExplanation of each option:\n'approve, schedulng.' This is incorrect because the second word is misspelled and the pair is not correctly formed.\n'approving, schedulng.' This is incorrect because 'approving' does not match the structure and 'schedulng' is also misspelled.\n'approve, schedule.' This is correct because both verbs are in the base form and match the 'either...or...' construction properly.\n'approving, schedule.' This is incorrect because the two verb forms are not parallel.",
+      "error_type": "Grammar (Subject–Verb Agreement)",
+      "error_description": "Explanation says: 'they fits correctly' — should be 'they fit correctly'",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N2",
+      "instruction": "Some sentences cannot be converted to a natural passive voice. From the sentences given, choose the one sentence that can be converted into a natural passive voice.",
+      "question": "",
+      "options": [
+        "She cried loudly during the movie.",
+        "She belongs to a well-known family.",
+        "She studied maths at Oxford University.",
+        "She lived in a house by the river."
+      ],
+      "correct_answer": "She studied maths at Oxford University.",
+      "explanation": "Correct answer: She studied maths at Oxford University.\n\nExplanation: The sentence can be changed into a passive form like 'Maths was studied by her at Oxford University.'\n\nExplanation of each option:\n'She cried loudly during the movie.' This is incorrect because 'cried' does not normally take an object, so it cannot be made passive naturally.\n'She belongs to a well-known family.' This is incorrect because 'belongs' does not form a natural passive voice in this meaning.\n'She studied maths at Oxford University.' This is correct because the verb takes an object, so a passive form can be made.\n'She lived in a house by the river.' This is incorrect because 'lived' does not take a direct object in this sentence.",
+      "error_type": "Answer–Explanation Mismatch",
+      "error_description": "Explanation talks about 'Maria going to the park' instead of the passive voice conversion.",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N3",
+      "instruction": "Read the sentence and choose the option most similar in meaning.",
+      "question": "The committee's decision was unanimous, leaving no room for disagreement.",
+      "options": [
+        "made after a long debate",
+        "agreed on by everyone",
+        "announced without explanation"
+      ],
+      "correct_answer": "agreed on by everyone",
+      "explanation": "Correct answer: agreed on by everyone\n\nExplanation: The word 'unanimous' means that every person was in agreement, so there was no difference in opinion among them.\n\nExplanation of each option:\n'made after a long debate.' This is incorrect because 'unanimous' does not tell us how long the discussion was.\n'agreed on by everyone.' This is correct because 'unanimous' means all people agreed.\n'announced without explanation.' This is incorrect because 'unanimous' is about agreement, not about how something was announced.",
+      "error_type": "Answer–Explanation Mismatch",
+      "error_description": "Explanation refers to 'Olivia feeling settled' instead of the committee decision.",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N4",
+      "instruction": "Read the text and choose the best answer for each question.",
+      "question": "TEXT:\nMy name is Maria, and I love spending time in the park near my house. Every morning, I go there for a walk before school. Sometimes, I meet my friends, and we sit on the grass and talk. On weekends, I take my dog, Max, and we play together. The park is my favourite place because it's quiet and full of trees.\n\nQuestion: Where does Maria go with her dog on weekends?",
+      "options": [
+        "She sleeps at home.",
+        "She meets her teacher.",
+        "She goes to the park with her dog.",
+        "She studies at the park."
+      ],
+      "correct_answer": "She goes to the park with her dog.",
+      "explanation": "Correct answer: She feels settled and happy\n\nExplanation: The correct answer is 'She feels settled and happy' because it shows that Olivia now feels comfortable in village life and has adapted to it well.\n\nExplanation of each option:\n'She feels settled and happy.' This is correct because it shows Olivia is comfortable and content now.\n'She wants to return to the city.' This is incorrect because it shows dissatisfaction.\n'She is still unsure about village life.' This is incorrect because the answer says she now feels settled.\n'She misses the busy streets.' This is incorrect because this suggests she has not adjusted happily.",
+      "error_type": "Grammar (Sentence Structure)",
+      "error_description": "Explanation says: 'lunch happened later reaching the top' — incorrect phrasing; explanation content mismatched with question.",
+      "target_cefr": "A1",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "N5",
+      "instruction": "Read the text and choose the correct answer.",
+      "question": "How does Olivia feel about living in the village now?",
+      "options": [
+        "She feels settled and happy.",
+        "She wants to return to the city.",
+        "She is still unsure about village life.",
+        "She misses the busy streets."
+      ],
+      "correct_answer": "She feels settled and happy.",
+      "explanation": "Correct answer: She goes to the park with her dog.\n\nExplanation: Maria says 'On weekends, I take my dog, Max, and we play together.' Since she is talking about the park near her house, this means she goes to the park with her dog on weekends.\n\nExplanation of each option:\n'She sleeps at home.' This is incorrect because the passage does not say she sleeps at home on weekends.\n'She meets her teacher.' This is incorrect because there is no mention of a teacher in the passage.\n'She goes to the park with her dog.' This is correct because the text says she takes Max and they play together there.\n'She studies at the park.' This is incorrect because the passage talks about walking, talking, and playing, not studying.",
+      "error_type": "Incorrect Answer Key",
+      "error_description": "Marked 'Film Club' correct, but logically 'Conversation Café' fits better; explanations for N4 and N5 are swapped.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N6",
+      "instruction": "Read the text and choose the correct option to complete the paragraph.",
+      "question": "<b>TEXT</b>:<br>Last weekend, our class went on a trip to the mountains. We left early in the morning and arrived just _____ noon. The weather was perfect, so we decided to climb one of the smaller hills. _____ reaching the top, we sat down to have lunch and enjoy the view. Everyone took photos before we walked back to the camp.",
+      "options": [
+        "ahead, at",
+        "On, around",
+        "after, By",
+        "before, after"
+      ],
+      "correct_answer": "around, after",
+      "explanation": "Correct answer: around, after\n\nExplanation: 'Around noon' means close to noon. 'After reaching the top' means lunch happened after they reached the top.\n\nExplanation of each option:\n'ahead, at.' This is incorrect because 'ahead noon' and 'at reaching' are not natural expressions.\n'On, around.' This is incorrect because 'on noon' is wrong and 'around reaching' does not fit.\n'after, By.' This is incorrect because 'By reaching the top' is not natural here.\n'before, after.' This is incorrect because 'arrived just before noon' changes the meaning.",
+      "error_type": "Poor Item Construction + Incorrect Answer Key",
+      "error_description": "The correct answer 'around, after' does not appear in the options list. Explanation contains unnatural phrasing.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N7",
+      "instruction": "Read the text and decide which event is best for the person.",
+      "question": "<b>TEXT</b>:<br>Ethan wants to meet new people and practise English in an informal way.",
+      "options": [
+        "Cooking Class — Learn recipes from around the world.",
+        "Music Night — Listen to live bands every Friday.",
+        "Conversation Café — Chat in English with friendly locals.",
+        "Film Club — Watch classic movies together."
+      ],
+      "correct_answer": "Film Club — Watch classic movies together.",
+      "explanation": "Correct answer: Film Club — Watch classic movies together.\n\nExplanation: This answer is given as correct in the table, although the text says Ethan wants to meet new people and practise English in an informal way, which would normally match a speaking-based activity more directly.\n\nExplanation of each option:\n'Cooking Class.' This is incorrect because it focuses more on cooking than practising English informally.\n'Music Night.' This is incorrect because it is mostly about listening to music.\n'Conversation Café.' This would seem more suitable from the text, but it is not the marked answer.\n'Film Club.' This is treated as correct here because it is the answer provided, even though it may not fully match the description.",
+      "error_type": "Incorrect Answer Key",
+      "error_description": "Logically 'Conversation Café' fits Ethan's description better than 'Film Club'.",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "N8",
+      "instruction": "Read the text when decide which programme is best for the persons.",
+      "question": "<b>TEXT</b>:<br>Olivia hopes to gain teamwork experience for her future career and prefers something active.",
+      "options": [
+        "Music Course — Learn piano individually.",
+        "The seminar starts later than planned.",
+        "Cooking Class — Learn recipes from around the world.",
+        "Music Night — Listen to live bands every Friday."
+      ],
+      "correct_answer": "The seminar starts later than planned.",
+      "explanation": "Correct answer: The seminar starts later than planned.\n\nExplanation: This answer is kept according to the table. However, the text says Olivia wants teamwork experience and something active, so the marked answer does not completely fit the need described.\n\nExplanation of each option:\n'Music Course — Learn piano individually.' This is incorrect because it is individual, not teamwork-based.\n'The seminar starts later than planned.' This is treated as correct because it is the marked answer, although it is not a programme choice.\n'Cooking Class — Learn recipes from around the world.' This seems more active, but it is not the marked answer.\n'Music Night — Listen to live bands every Friday.' This is incorrect because it does not clearly give teamwork experience.",
+      "error_type": "Instruction Error (Grammar)",
+      "error_description": "Instruction says 'Read the text when decide which programme' — should be 'Read the text and decide'; also 'programe' misspelled.",
+      "target_cefr": "A2",
+      "target_difficulty": "Easy"
+    },
+    {
+      "question_id": "N9",
+      "instruction": "Read the sentence and choose the correct option.",
+      "question": "The speaker was convincing because <b>she not only presented clear evidence but also she explained the implications</b>.",
+      "options": [
+        "she not only presented clear evidence but also she explained the implications",
+        "she not only presented clear evidence but also explained the implications",
+        "she not only presented clear evidence but also explaining the implications",
+        "she not only presented clear evidence but also an explanation of the implications"
+      ],
+      "correct_answer": "she not only presented clear evidence but also explained the implications",
+      "explanation": "Correct answer: she not only presented clear evidence but also explained the implications\n\nExplanation: The improved form removes the second 'she' so that the structure becomes more parallel and natural.\n\nExplanation of each option:\n'she not only presented clear evidence but also she explained the implications.' This is incorrect because repeating 'she' makes the sentence less parallel.\n'she not only presented clear evidence but also explained the implications.' This is correct because both parts follow a balanced pattern.\n'she not only presented clear evidence but also explaining the implications.' This is incorrect because 'explaining' does not match the verb form 'presented.'\n'she only presented clear evidence but also an explanation of the implications.' This is incorrect because the second part changes from a verb phrase to a noun phrase.",
+      "error_type": "Multiple Correct Answers (Key Error)",
+      "error_description": "Both 'was injured' and 'got injured' are correct in equivalent questions, but only one is marked correct.",
+      "target_cefr": "B2",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N10",
+      "instruction": "Choose the most appropriate option to complete the conversation.",
+      "question": "Person A: Why is the meeting starting late today?<br>Person B: ____________",
+      "options": [
+        "The projector was damaged during setup.",
+        "The projector has damage during setup.",
+        "The projector got damaged during setup.",
+        "The projector was got damaged during setup."
+      ],
+      "correct_answer": "The projector got damaged during setup.",
+      "explanation": "Correct answer: The projector got damaged during setup.\n\nExplanation: 'The projector got damaged during setup' is natural and directly answers the question.\n\nExplanation of each option:\n'The projector was damaged during setup.' This is grammatically correct, but it sounds slightly less natural in everyday spoken reply than the marked answer.\n'The projector has damage during setup.' This is incorrect because 'has damage' is not the correct verb form here.\n'The projector got damaged during setup.' This is correct because it is natural and appropriate in conversation.\n'The projector was got damaged during setup.' This is incorrect because 'was got damaged' is grammatically wrong.",
+      "error_type": "Multiple Correct Answers (Key Error)",
+      "error_description": "Both 'was damaged' and 'got damaged' are acceptable in this context, but key marks only one.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N11",
+      "instruction": "Choose the option to complete the conversation.",
+      "question": "Person A: Why is Rahul absent today?<br>Person B: ____________",
+      "options": [
+        "He was injured while playing football yesterday.",
+        "He got injured while playing football yesterday.",
+        "He has get injured while playing football yesterday.",
+        "He was got injured while playing football yesterday."
+      ],
+      "correct_answer": "He was injured while playing football yesterday.",
+      "explanation": "Correct answer: He was injured while playing football yesterday.\n\nExplanation: 'He was injured while playing football yesterday' is grammatically correct and appropriate. The option with 'got injured' is also natural in speech, but this one is more standard in formal English.\n\nExplanation of each option:\n'He was injured while playing football yesterday.' This is correct because it is grammatically correct and clearly explains the reason.\n'He got injured while playing football yesterday.' This is incorrect here because, although natural in speech, it is not the marked answer.\n'He has get injured while playing football yesterday.' This is incorrect because 'has get injured' is not the correct verb form.\n'He was got injured while playing football yesterday.' This is incorrect because the structure is grammatically wrong.",
+      "error_type": "Multiple Correct Answers (Key Error)",
+      "error_description": "Both 'was injured' and 'got injured' are correct, but only one is marked correct.",
+      "target_cefr": "B1",
+      "target_difficulty": "Medium"
+    },
+    {
+      "question_id": "N12",
+      "instruction": "Choose the correct option.",
+      "question": "After collecting the fee, the office issued the receipt to the student.",
+      "options": [
+        "After collecting, the student was issued with the receipt.",
+        "The receipt was issued to the student after the fee was collected.",
+        "After the receipt was issued, the fee was collected by the office.",
+        "After the fee was collected, the receipt was issued to the student."
+      ],
+      "correct_answer": "The receipt was issued to the student after the fee was collected.",
+      "explanation": "Correct answer: 'The receipt was issued to the student after the fee was collected.'\n\nExplanation: Both sentences correctly change the active sentence into passive while keeping the same meaning.\n\nExplanation of each option:\n'After collecting, the student was issued with the receipt.' Incorrect. It sounds incomplete because it does not clearly mention the fee being collected.\n'The receipt was issued to the student after the fee was collected.' Correct. It keeps the meaning and shows the correct order of actions in passive form.\n'After the receipt was issued, the fee was collected by the office.' Incorrect. It changes the order of actions.\n'After the fee was collected, the receipt was issued to the student.' Correct. It keeps the meaning and shows the correct order clearly.",
+      "error_type": "Evaluation Flaw (Multiple Acceptable Answers)",
+      "error_description": "Two correct passive forms exist ('The receipt was issued...' and 'After the fee was collected, the receipt was issued...'), but the explanation dismisses the second one incorrectly.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard"
+    },
+    {
+      "question_id": "N13",
+      "instruction": "Choose the correct option.",
+      "question": "Lalita told me to make new arrangements after the hall booking got cancelled.",
+      "options": [
+        "I was told to make new arrangements by Lalita after the hall booking got cancelled.",
+        "I was told to make new arrangements by Lalita after they cancelled the booking.",
+        "New arrangements were to be made by me after the hall booking was cancelled.",
+        "I have been told to make new arrangements by Lalita after they cancelled the booking."
+      ],
+      "correct_answer": "New arrangements were to be made by me after the hall booking was cancelled.",
+      "explanation": "Correct answer: 'New arrangements were to be made by me after the hall booking was cancelled.'\n\nExplanation: Both options correctly change the instruction part into passive voice and keep the meaning.\n\nExplanation of each option:\n'I was told to make new arrangements by Lalita after the hall booking got cancelled.' Correct. The meaning is kept and the passive form is correct.\n'I was told to make new arrangements by Lalita after they cancelled the booking.' Incorrect. It adds 'they' and rewrites the cancellation event.\n'New arrangements were to be made by me after the hall booking was cancelled.' Correct. It keeps the meaning of instruction and shows the cancellation event correctly.\n'I have been told to make new arrangements by Lalita after they cancelled the booking.' Incorrect. It changes the time meaning by using 'have been told'.",
+      "error_type": "Instruction Error (Verb Form)",
+      "error_description": "Instruction says 'chose the correct option' — should be 'choose the correct option'.",
+      "target_cefr": "C1",
+      "target_difficulty": "Hard"
+    }
+  ]
+}

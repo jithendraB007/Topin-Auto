@@ -1,22 +1,44 @@
 """
 T2T (Text-to-Text / Open-Answer) Generator Module — dspy-cli compatible.
 
-Exposed by `dspy-cli serve` at http://localhost:8000
-Web UI auto-generated from forward() parameters.
+Run: dspy-cli serve --system   (from d:/Topin)
+Web UI: http://localhost:8000
 
-Example questions are loaded automatically from the training dataset —
-no need to paste them manually.
+Fill in: topic, subtopic, easy_count, medium_count, hard_count
+Click Run → questions saved to data/t2t/t2t_generator_output.json
+
+Example questions are loaded automatically from the training dataset.
 """
 from __future__ import annotations
 
 import json
+import platform
 import subprocess
 import sys
 from pathlib import Path
 
 import dspy
 
-PROJECT_ROOT = Path(__file__).parent.parent
+
+def _find_project_root() -> Path:
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "utils.py").exists():
+            return parent
+    raise RuntimeError("Cannot find project root (utils.py not found above this file)")
+
+
+PROJECT_ROOT = _find_project_root()
+
+
+def _find_venv_python() -> str:
+    if platform.system() == "Windows":
+        venv_py = PROJECT_ROOT / ".venv" / "Scripts" / "python.exe"
+    else:
+        venv_py = PROJECT_ROOT / ".venv" / "bin" / "python"
+    return str(venv_py) if venv_py.exists() else sys.executable
+
+
+_PYTHON = _find_venv_python()
 
 
 class T2TGeneratorModule(dspy.Module):
@@ -26,7 +48,7 @@ class T2TGeneratorModule(dspy.Module):
     Output is saved to data/t2t/t2t_generator_output.json.
 
     Example questions are loaded automatically from the training dataset —
-    you do not need to supply them here.
+    no need to paste them here.
     """
 
     def __init__(self):
@@ -41,28 +63,24 @@ class T2TGeneratorModule(dspy.Module):
         hard_count: int,
     ) -> dspy.Prediction:
         """
-        Parameters
-        ----------
         topic        : Topic (e.g. "English Language Skills")
         subtopic     : Subtopic (e.g. "Reading and Writing")
-        easy_count   : Total Easy questions (A1 + A2)
-        medium_count : Total Medium questions (B1 + B2)
-        hard_count   : Total Hard questions (C1 + C2)
+        easy_count   : Total Easy questions (split across A1 + A2)
+        medium_count : Total Medium questions (split across B1 + B2)
+        hard_count   : Total Hard questions (split across C1 + C2)
         """
         config = {
             "type": "t2t",
             "topic": topic,
-            "subtopics": [
-                {
-                    "subtopic": subtopic,
-                    "a1_count": easy_count // 2,
-                    "a2_count": easy_count - easy_count // 2,
-                    "b1_count": medium_count // 2,
-                    "b2_count": medium_count - medium_count // 2,
-                    "c1_count": hard_count // 2,
-                    "c2_count": hard_count - hard_count // 2,
-                }
-            ],
+            "subtopics": [{
+                "subtopic": subtopic,
+                "a1_count": easy_count // 2,
+                "a2_count": easy_count - easy_count // 2,
+                "b1_count": medium_count // 2,
+                "b2_count": medium_count - medium_count // 2,
+                "c1_count": hard_count // 2,
+                "c2_count": hard_count - hard_count // 2,
+            }],
             "constraints": {
                 "questions_per_iteration": 5,
                 "max_iterations_per_difficulty": 20,
@@ -74,11 +92,8 @@ class T2TGeneratorModule(dspy.Module):
 
         try:
             result = subprocess.run(
-                [sys.executable, str(PROJECT_ROOT / "generate.py"), "--config", str(tmp_cfg)],
-                capture_output=True,
-                text=True,
-                cwd=str(PROJECT_ROOT),
-                timeout=600,
+                [_PYTHON, str(PROJECT_ROOT / "generate.py"), "--config", str(tmp_cfg)],
+                capture_output=True, text=True, cwd=str(PROJECT_ROOT), timeout=600,
             )
         finally:
             tmp_cfg.unlink(missing_ok=True)
@@ -105,9 +120,9 @@ class T2TGeneratorModule(dspy.Module):
         return dspy.Prediction(
             status="success",
             message=(
-                f"Generated {total} questions. "
-                f"Easy={len(questions.get('easy', []))} "
-                f"Medium={len(questions.get('medium', []))} "
+                f"Generated {total} questions  |  "
+                f"Easy={len(questions.get('easy', []))}  "
+                f"Medium={len(questions.get('medium', []))}  "
                 f"Hard={len(questions.get('hard', []))}"
             ),
             generated_questions=json.dumps(output, indent=2, ensure_ascii=False),

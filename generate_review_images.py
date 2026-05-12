@@ -527,12 +527,34 @@ def main():
         print()
 
         ok, failed  = 0, 0
+
+        # Load existing log entries so we can resume without losing completed results
+        existing_log: dict[str, dict] = {}
+        if SELECTION_LOG.exists() and not args.force:
+            try:
+                saved = json.loads(SELECTION_LOG.read_text(encoding="utf-8"))
+                for entry in saved.get("results", []):
+                    qn = entry.get("question_number")
+                    if qn:
+                        existing_log[qn] = entry
+            except Exception:
+                pass
+
         selection_log = []
 
         for q in questions:
             qnum          = str(q.get("question_number", f"Q{questions.index(q)+1}"))
             image_content = q.get("image_content", "")
             out_path      = IMAGES_DIR / f"{qnum}.png"
+
+            # Skip entirely if already done (winner file exists + log entry has a winner)
+            if (not args.force and qnum in existing_log
+                    and existing_log[qnum].get("winner_file")
+                    and out_path.exists()):
+                selection_log.append(existing_log[qnum])
+                ok += 1
+                print(f"[{qnum}] Already complete — skipping")
+                continue
 
             print(f"[{qnum}] {image_content[:70]}")
             log = _generate_azure_dspy(image_content, qnum, out_path, force=args.force)
